@@ -1,0 +1,2 @@
+CREATE UNIQUE NONCLUSTERED INDEX [UATTRACTION1] ON [Attractions] ([AttractionName] );
+

@@ -1,0 +1,11 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_TravelAgency</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>(LocalDB)\MSSQLLocalDB</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>C:\Proyectos Genexus\TravelAgency\TravelAgency</Directory>
+	<DataFile>GX_KB_TravelAgency.mdf</DataFile>
+	<LogFile>GX_KB_TravelAgency_log.ldf</LogFile>
+	<HostName>CAMPOS</HostName>
+	<DetachOnClose>False</DetachOnClose>
+</ConnectionInformation>

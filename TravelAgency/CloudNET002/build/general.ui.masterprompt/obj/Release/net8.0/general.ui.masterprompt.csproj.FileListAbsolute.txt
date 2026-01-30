@@ -1,0 +1,7 @@
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\general.ui.masterprompt\bin\Release\net8.0\general.ui.masterprompt.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\general.ui.masterprompt\obj\Release\net8.0\general.ui.masterprompt.csproj.AssemblyReference.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\general.ui.masterprompt\obj\Release\net8.0\general.ui.masterprompt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\general.ui.masterprompt\obj\Release\net8.0\general.ui.masterprompt.csproj.CoreCompileInputs.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\general.ui.masterprompt\obj\Release\net8.0\general.ui.masterprompt.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\general.ui.masterprompt\obj\Release\net8.0\refint\general.ui.masterprompt.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\general.ui.masterprompt\obj\Release\net8.0\ref\general.ui.masterprompt.dll

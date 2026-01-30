@@ -1,0 +1,7 @@
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\countrygeneral\bin\Release\net8.0\countrygeneral.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\countrygeneral\obj\Release\net8.0\countrygeneral.csproj.AssemblyReference.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\countrygeneral\obj\Release\net8.0\countrygeneral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\countrygeneral\obj\Release\net8.0\countrygeneral.csproj.CoreCompileInputs.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\countrygeneral\obj\Release\net8.0\countrygeneral.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\countrygeneral\obj\Release\net8.0\refint\countrygeneral.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\countrygeneral\obj\Release\net8.0\ref\countrygeneral.dll

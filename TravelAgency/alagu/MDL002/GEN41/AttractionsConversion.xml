@@ -1,0 +1,433 @@
+
+<ReorgSpec>
+<SpecVersion>18_0_10-184260</SpecVersion>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>pk</ReorgCode>
+<ReorgMsg>Attractions needs conversion</ReorgMsg>
+<ReorgAction>#</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description>
+<TakesValueFrom>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></FromValue></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>Yes</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>AttractionName</AttriName>
+<Description>Attraction Name</Description>
+<TakesValueFrom>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>AttractionName</AttriName>
+<Description>Attraction Name</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>C</DataType>
+<Presicion>50</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>NLS</Name>
+<Value>Yes</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>CountryId</AttriName>
+<Description>Country Id</Description>
+<TakesValueFrom>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>CountryId</AttriName>
+<Description>Country Id</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>CategoryId</AttriName>
+<Description>Category Id</Description>
+<TakesValueFrom>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>CategoryId</AttriName>
+<Description>Category Id</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>Yes</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>AttractionPhoto</AttriName>
+<Description>Attraction Photo</Description>
+<TakesValueFrom>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>AttractionPhoto</AttriName>
+<Description>Attraction Photo</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>B</DataType>
+<Presicion>1024</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>AttractionPhoto_GXI</AttriName>
+<Description>AttractionPhoto_GXI</Description>
+<TakesValueFrom>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>AttractionPhoto.Uri  </AttriName>
+<Description></Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>V</DataType>
+<Presicion>2048</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>CityId</AttriName>
+<Description>City Id</Description>
+<TakesValueFrom>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>CityId</AttriName>
+<Description>City Id</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>Yes</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>45</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description>
+<TakesValueFrom>
+<FromValue>
+<Token>0</Token></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>ni</AttriChangeType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<NavigationTree>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>IATTRACTIONS</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index>
+<Index>
+<IndexName>UATTRACTION1</IndexName>
+<IndexType>k</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>AttractionName</AttriName>
+<Description>Attraction Name</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index>
+<Index>
+<IndexName>IATTRACTIONS2</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>CategoryId</AttriName>
+<Description>Category Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index>
+<Index>
+<IndexName>IATTRACTIONS1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>CountryId</AttriName>
+<Description>Country Id</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>CityId</AttriName>
+<Description>City Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></Indices>
+<NewIndices>
+<Index>
+<IndexName>IATTRACTIONS3</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>45</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></NewIndices></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>5</TableId>
+<TableName>CountryCity</TableName>
+<Description>City</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>CountryId</AttriName>
+<Description>Country Id</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>CityId</AttriName>
+<Description>City Id</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>4</TableId>
+<TableName>Category</TableName>
+<Description>Category</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>CategoryId</AttriName>
+<Description>Category Id</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>3</TableId>
+<TableName>Country</TableName>
+<Description>Country</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>CountryId</AttriName>
+<Description>Country Id</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>new</ChangeType>
+<Table>
+<TableId>10</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>45</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Statements>
+<Statement>ALTER TABLE [Attractions] ADD [SupplierId] smallint NOT NULL CONSTRAINT SupplierIdAttractions_DEFAULT DEFAULT convert(int, 0)</Statement>
+<Statement>ALTER TABLE [Attractions] DROP CONSTRAINT SupplierIdAttractions_DEFAULT</Statement>
+<Statement>SET IDENTITY_INSERT [Supplier] ON</Statement>
+<Statement>INSERT INTO [Supplier] ([SupplierId], [SupplierName], [SupplierAddress]) SELECT TOP 1 convert(int, 0), ' ', ' ' FROM [Attractions]</Statement>
+<Statement>SET IDENTITY_INSERT [Supplier] OFF</Statement>
+<Statement>CREATE NONCLUSTERED INDEX [IATTRACTIONS3] ON [Attractions] ([SupplierId] )</Statement>
+<Statement>ALTER TABLE [Attractions] ADD CONSTRAINT [IATTRACTIONS3] FOREIGN KEY ([SupplierId]) REFERENCES [Supplier] ([SupplierId])</Statement></Statements>
+<NeedReorganizationProgram>False</NeedReorganizationProgram>
+<Warnings>
+<Warning>
+<MsgCode>rgz0007</MsgCode>
+<Message>
+<Token>Attribute </Token>
+<Attribute>
+<AttriId>45</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Token> does not allow nulls and does not have an Initial Value. An empty default value will be used.</Token></Message></Warning>
+<Warning>
+<MsgCode>rgo0001</MsgCode>
+<Message>
+<Token>Table '</Token>
+<Table>
+<TableId>10</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description></Table>
+<Token>' is referenced by table '</Token>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<Token>' and at least one attribute in its foreign key (</Token>
+<Attribute>
+<AttriId>45</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Token>) does not allow nulls. The table will be initialized with a default record if table '</Token>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<Token>' has records.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Information>
+<InfoMsg>
+<MsgCode>nfo0003</MsgCode>
+<Message>
+<Token>The reorganization for this table makes the schema not backward compatible.</Token></Message>
+<AdditionalInfo>
+<Title>The following operations are not backward compatible:</Title>
+<Info>
+<Token>Add </Token>
+<Token>foreign key</Token>
+<Token>constraint</Token>
+<Token>IATTRACTIONS3</Token></Info>
+<Info>
+<Token>Add not null</Token>
+<Token>attribute</Token>
+<Attribute>
+<AttriId>45</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></Info></AdditionalInfo></InfoMsg></Information></ReorgSpec>

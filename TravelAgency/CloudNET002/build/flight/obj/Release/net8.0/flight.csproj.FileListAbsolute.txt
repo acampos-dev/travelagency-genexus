@@ -1,0 +1,7 @@
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\flight\bin\Release\net8.0\flight.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\flight\obj\Release\net8.0\flight.csproj.AssemblyReference.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\flight\obj\Release\net8.0\flight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\flight\obj\Release\net8.0\flight.csproj.CoreCompileInputs.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\flight\obj\Release\net8.0\flight.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\flight\obj\Release\net8.0\refint\flight.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\flight\obj\Release\net8.0\ref\flight.dll
