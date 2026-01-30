@@ -25,3 +25,4 @@ C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxWebStartup\ob
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxWebStartup\obj\Release\net8.0\GxWebStartup.pdb
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxWebStartup\obj\Release\net8.0\GxWebStartup.genruntimeconfig.cache
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxWebStartup\obj\Release\net8.0\ref\GxWebStartup.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxWebStartup\obj\Release\net8.0\GxWebStartup.sourcelink.json

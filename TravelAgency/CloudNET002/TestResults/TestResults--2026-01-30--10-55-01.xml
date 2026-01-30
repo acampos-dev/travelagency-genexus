@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecutionResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>NetCore tests execution</Name>
+  <Start>2026-01-30T10:55:01.0355001-03:00</Start>
+  <End>2026-01-30T10:55:01.7052497-03:00</End>
+  <WebSettings>
+    <Browser>Unknown</Browser>
+    <BaseURL />
+    <VerifyStopsExecution>false</VerifyStopsExecution>
+    <FullPageScreenshot>false</FullPageScreenshot>
+    <FileUploadBasePath />
+    <ScreenshotMode>Never</ScreenshotMode>
+    <HtmlMode>Never</HtmlMode>
+    <Arguments />
+    <LogLevel>Off</LogLevel>
+  </WebSettings>
+  <RestSettings />
+  <SuiteResults />
+  <TestResults>
+    <TestResult xsi:type="UnitTestResult">
+      <Name>Tests.AttractionListTest</Name>
+      <Result>WARNING</Result>
+      <Start>2026-01-30T10:55:01.5862526-03:00</Start>
+      <End>2026-01-30T10:55:01.6793366-03:00</End>
+      <RetriesMade>0</RetriesMade>
+      <RetriesOnError>0</RetriesOnError>
+      <ContinueOnError>true</ContinueOnError>
+      <ErrorMsg />
+      <ErrorStack />
+      <ElapsedTime>93</ElapsedTime>
+      <CoverageInt>-1</CoverageInt>
+      <Coverage />
+      <Items />
+    </TestResult>
+  </TestResults>
+</ExecutionResult>

@@ -27,12 +27,27 @@
   <Object>
     <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
     <Id>15</Id>
-    <Part>c414ed00-8cc4-4f44-8820-4baf93547173</Part>
+    <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
+  </Object>
+  <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>27</Id>
+    <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
   </Object>
   <Recent>
     <RecentKBObjectsList>
       <MaximumItems>10</MaximumItems>
       <RecentKBObjects>
+        <RecentKBObject>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-27</Key>
+          <Name>AttractionListTest</Name>
+          <LastAccess>2026-01-30T10:54:14.9764444-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-27</Key>
+          <Name>AttractionListTest</Name>
+          <LastAccess>2026-01-30T10:54:13.8301974-03:00</LastAccess>
+        </RecentKBObject>
         <RecentKBObject>
           <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-2</Key>
           <Name>Attractions</Name>
@@ -72,16 +87,6 @@
           <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-2</Key>
           <Name>Attractions</Name>
           <LastAccess>2026-01-29T12:22:22.2907878-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>857ca50e-7905-0000-0007-c5d9ff2975ec-2</Key>
-          <Name>Attractions</Name>
-          <LastAccess>2026-01-27T14:41:37.5346434-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-3</Key>
-          <Name>Country</Name>
-          <LastAccess>2026-01-27T14:31:16.6746181-03:00</LastAccess>
         </RecentKBObject>
       </RecentKBObjects>
     </RecentKBObjectsList>

@@ -1,6 +1,7 @@
  
  
  
+pgm_main_i(proc,15,'ATTRACTIONLIST',[ 41,'AATTRACTIONLIST','Attraction List','','','','HTTP' ]).
 pgm_main_i(trn,1,'CUSTOMER',[ 41,'CUSTOMER','Customer','','','','' ]).
 pgm_main_i(mnproc,1,'GENERAL\UI\SIDEBARITEMSDP',[ 41,'GENERAL\UI\ASIDEBARITEMSDP','Sidebar Items DP','','','','INTERNAL' ]).
 pgm_main_i(trn,5,'AIRPORT',[ 41,'AIRPORT','Airport','','','','' ]).
@@ -9,6 +10,8 @@ pgm_main_i(web,14,'WWATTRACTIONS',[ 41,'WWATTRACTIONS','Attractions','','','',''
 pgm_main_i(trn,3,'COUNTRY',[ 41,'COUNTRY','Country','','','','' ]).
 pgm_main_i(trn,2,'ATTRACTIONS',[ 41,'ATTRACTIONS','Attractions','','','','' ]).
  
+pgm_prop_i(proc,15,'AATTRACTIONLIST','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,15,'ATTRACTIONLIST','CALL_PROTOCOL','HTTP').
 pgm_prop_i(web,2,'GENERAL\UI\MASTERPROMPT','WEB_COMP','Master').
 pgm_prop_i(web,12,'COUNTRYCITYWC','WEB_COMP','Yes').
 pgm_prop_i(web,12,'COUNTRYCITYWC','URLAccess','No').
@@ -99,7 +102,7 @@ lng_prop_i(1,'LangTimeFormat','12',v).
 lng_prop_i(1,'LangDecimalPoint','.',v).
 lng_prop_i(1,'FullyQualifiedName','English',d).
  
-ver_stamp('20260129.153920').
+ver_stamp('20260129.171252').
  
-ver_stamp(date(2026,1,29),time(12,41,57,12)).
+ver_stamp(date(2026,1,30),time(10,42,26,87)).
  

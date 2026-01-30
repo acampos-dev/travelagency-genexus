@@ -79,6 +79,7 @@ b698f74d-9aae-464a-be10-f5a74e51e24e=PageFirst
 7af7f934-1b59-44d4-ba9d-fb0eed9d59af=PageLast
 5b718146-43d3-48b8-a182-f42ff1a1a312=PageNext
 13092c1f-a6af-40fe-a1fa-dbc994b9aa05=PagePrevious
+e1604fc8-c115-43b6-91f0-fd4b7bf7d76a=Image1
 [Location]
 4f19426c-8435-4c2c-875e-81f26ea9237e=English,GeneXusUnanimo.Unanimo,I,GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.show_more.svg,
 4f19426c-8435-4c2c-875e-81f26ea9237e=English,GeneXusUnanimo.Unanimo,I,GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.show_more.svg,
@@ -746,3 +747,9 @@ b698f74d-9aae-464a-be10-f5a74e51e24e=English,TravelAgency,E,PageFirst.gif
 13092c1f-a6af-40fe-a1fa-dbc994b9aa05=English,GeneXusUnanimo.UnanimoWeb,E,PagePrevious.gif
 13092c1f-a6af-40fe-a1fa-dbc994b9aa05=English,GeneXusUnanimo.UnanimoAngular,E,PagePrevious.gif
 13092c1f-a6af-40fe-a1fa-dbc994b9aa05=English,TravelAgency,E,PagePrevious.gif
+e1604fc8-c115-43b6-91f0-fd4b7bf7d76a=English,GeneXusUnanimo.Unanimo,I,Image1.png,
+e1604fc8-c115-43b6-91f0-fd4b7bf7d76a=English,GeneXusUnanimo.UnanimoControls,I,Image1.png,
+e1604fc8-c115-43b6-91f0-fd4b7bf7d76a=English,GeneXusUnanimo.UnanimoMobile,I,Image1.png,
+e1604fc8-c115-43b6-91f0-fd4b7bf7d76a=English,GeneXusUnanimo.UnanimoWeb,I,Image1.png,
+e1604fc8-c115-43b6-91f0-fd4b7bf7d76a=English,GeneXusUnanimo.UnanimoAngular,I,Image1.png,
+e1604fc8-c115-43b6-91f0-fd4b7bf7d76a=English,TravelAgency,I,Image1.png,

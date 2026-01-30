@@ -51,4 +51,10 @@
       <ObjDesc>Attractions</ObjDesc>
       <ObjLink>wwattractions.aspx</ObjLink>
    </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>AttractionList</ObjName>
+      <ObjDesc>Attraction List</ObjDesc>
+      <ObjLink>aattractionlist.aspx</ObjLink>
+   </Object>
 </Objects>
