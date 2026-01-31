@@ -9,7 +9,7 @@
 <ObjDesc>Attractions</ObjDesc>
 <ObjPgmName>WWAttractions</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Main>Yes</Main>
@@ -194,17 +194,6 @@
 <AttriName>CategoryId</AttriName>
 <Description>Category Id</Description></Attribute></KeyAttributes>
 <JoinType>Outer</JoinType>
-<Tables></Tables></Table>
-<Table>
-<TableId>10</TableId>
-<TableName>Supplier</TableName>
-<Description>Supplier</Description>
-<RecordsToRead>one</RecordsToRead>
-<KeyAttributes>
-<Attribute>
-<AttriId>45</AttriId>
-<AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

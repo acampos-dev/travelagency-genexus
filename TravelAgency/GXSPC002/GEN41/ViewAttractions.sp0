@@ -28,6 +28,7 @@ lac_i(3,[ [] ]).
  
 lits_i('Attractions',5,10).
 lits_i('General',5,10).
+lits_i('Supplier',5,10).
  
 cls_i([ 0,0 ],[ 5,49 ]).
  
@@ -241,7 +242,10 @@ b_line_i(33,2,5,cmd,8,[ t('',143,33,0),t('''LOAD TAB''',3,33,5) ]).
 b_line_i(34,2,6,cmd,8,[ t('',109,34,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,34,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('"General"',3,34,68) ]).
 b_line_i(35,2,6,cmd,8,[ t('',107,35,0),t([ t('Generalwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'AttractionsGeneral'),28,8,0),t(',',7,8,0),t('Attractionid',23,8,0),t(')',4,8,0) ]).
 b_line_i(36,2,6,cmd,8,[ t('',111,36,0) ]).
-b_line_i(37,2,6,cmd,8,[ t('',144,37,0) ]).
+b_line_i(37,2,6,cmd,8,[ t('',109,37,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Attraction"',3,37,42) ]).
+b_line_i(38,2,6,cmd,8,[ t('',107,38,0),t([ t('Attractionwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'AttractionsAttractionWC'),28,8,0),t(',',7,8,0),t('Attractionid',23,8,0),t(')',4,8,0) ]).
+b_line_i(39,2,6,cmd,8,[ t('',111,39,0) ]).
+b_line_i(40,2,6,cmd,8,[ t('',144,40,0) ]).
 b_line_i(1000,2,6,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
 b_line_i(1001,2,6,cmd,0,[ t('',155,0,0) ]).
 b_line_i(1002,2,6,cmd,0,[ t('',147,0,0) ]).
@@ -286,6 +290,15 @@ html_sub_i(22,23,html_i(0,div(23))).
 html_sub_i(23,24,html_i(0,div(24))).
 html_sub_i(24,25,html_i(0,div(25))).
 html_sub_i(25,26,html_i(0,comp(webcomp))).
+html_sub_i(18,27,html_i(2,container(27))).
+html_sub_i(27,28,html_i(0,t('Supplier',3))).
+html_sub_i(27,29,html_i(1,div(29))).
+html_sub_i(29,0,html_i(0,html('Attraction'))).
+html_sub_i(18,30,html_i(3,container(30))).
+html_sub_i(30,31,html_i(0,div(31))).
+html_sub_i(31,32,html_i(0,div(32))).
+html_sub_i(32,33,html_i(0,div(33))).
+html_sub_i(33,34,html_i(0,comp(webcomp))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',none).
@@ -295,6 +308,8 @@ html_tags_i(12,'data-gx-flex','').
 html_tags_i(15,'data-gx-att','att:8').
 html_tags_i(21,style,'display:none;').
 html_tags_i(26,'Object','').
+html_tags_i(29,style,'display:none;').
+html_tags_i(34,'Object','').
  
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(2,'Class','Section',d,[ str ]).
@@ -459,7 +474,7 @@ html_comp_i(18,'Usercontroltype','BasicTab',d,[ str ]).
 html_comp_i(18,'Constructorname','gx.ui.controls.BasicTab',d,[ str ]).
 html_comp_i(18,'Showmethodname',show,d,[ str ]).
 html_comp_i(18,'Controlname','Tab',v,[ str ]).
-html_comp_i(18,'Pagecount',1,v,[ num ]).
+html_comp_i(18,'Pagecount',2,v,[ num ]).
 html_comp_i(18,'Class',ww__view__tab,v,[ str ]).
 html_comp_i(18,'Historymanagement',-1,v,[ bool ]).
 html_comp_i(18,'Visible',-1,d,[ bool ]).
@@ -516,6 +531,55 @@ html_comp_i(25,'Valign',top,d,[ str ]).
 html_comp_i(26,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(26,'Controlname','Generalwc',v,[ str ]).
 html_comp_i(26,'Params',[],v,[ params ]).
+html_comp_i(27,'Containerid',title2,v,[ str ]).
+html_comp_i(28,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(28,'Caption','Supplier',d,[ str ]).
+html_comp_i(28,'Id','Attraction_title',v,[ str ]).
+html_comp_i(28,'Class','TextBlock',d,[ str ]).
+html_comp_i(28,'Event','',d,[ str ]).
+html_comp_i(28,'Returnonclick',0,d,[ bool ]).
+html_comp_i(28,'Gxformat',0,v,[ num ]).
+html_comp_i(28,'Title','',d,[ str ]).
+html_comp_i(28,'Fill',-1,d,[ bool ]).
+html_comp_i(28,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(28,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(28,'Font','',d,[ str ]).
+html_comp_i(29,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(29,'Class','Section',d,[ str ]).
+html_comp_i(29,'Id','',d,[ str ]).
+html_comp_i(29,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(29,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(29,'Semanticcontent',div,d,[ str ]).
+html_comp_i(29,'Align',left,d,[ str ]).
+html_comp_i(29,'Valign',top,d,[ str ]).
+html_comp_i(30,'Containerid',panel2,v,[ str ]).
+html_comp_i(31,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(31,'Class','ww__view__tab__form-container',v,[ str ]).
+html_comp_i(31,'Id','Tableattraction',v,[ str ]).
+html_comp_i(31,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(31,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(31,'Semanticcontent',div,d,[ str ]).
+html_comp_i(31,'Align',left,d,[ str ]).
+html_comp_i(31,'Valign',top,d,[ str ]).
+html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(32,'Class',row,v,[ str ]).
+html_comp_i(32,'Id','',d,[ str ]).
+html_comp_i(32,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(32,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(32,'Semanticcontent',div,d,[ str ]).
+html_comp_i(32,'Align',left,d,[ str ]).
+html_comp_i(32,'Valign',top,d,[ str ]).
+html_comp_i(33,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(33,'Class','col-xs-12',v,[ str ]).
+html_comp_i(33,'Id','',d,[ str ]).
+html_comp_i(33,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(33,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(33,'Semanticcontent',div,d,[ str ]).
+html_comp_i(33,'Align',left,d,[ str ]).
+html_comp_i(33,'Valign',top,d,[ str ]).
+html_comp_i(34,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(34,'Controlname','Attractionwc',v,[ str ]).
+html_comp_i(34,'Params',[],v,[ params ]).
  
  
  
@@ -543,7 +607,13 @@ lit_i(26,1,comp(webcomp),[ ctlname('Generalwc'),width(0),rect(0,0,10,10),title('
 lit_i(25,1,div(25),[ ctlname('') ]).
 lit_i(24,1,div(24),[ ctlname('') ]).
 lit_i(23,1,div(23),[ ctlname('Tablegeneral') ]).
-lit_i(18,1,usercontrol(18),[ ctlname('Tab'),ctrltype(basictab),el([]),containers([ container(19),container(22) ]) ]).
+lit_i(28,1,t('Supplier',3),[ ctlname('Attraction_title') ]).
+lit_i(29,1,div(29),[ ctlname('') ]).
+lit_i(34,1,comp(webcomp),[ ctlname('Attractionwc'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(33,1,div(33),[ ctlname('') ]).
+lit_i(32,1,div(32),[ ctlname('') ]).
+lit_i(31,1,div(31),[ ctlname('Tableattraction') ]).
+lit_i(18,1,usercontrol(18),[ ctlname('Tab'),ctrltype(basictab),el([]),containers([ container(19),container(22),container(27),container(30) ]) ]).
 lit_i(17,1,div(17),[ ctlname('') ]).
 lit_i(16,1,div(16),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
@@ -603,16 +673,18 @@ var_prop_i(2,'Attractionid',idBasedOn,'',v).
  
  
  
-sub_info_i(146,'Start',1,25,[ [ 'Pgmname',7,'Attractionid',8,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ] ] ]).
-sub_info_i(146,[ t('Tab',3,27,7),t('Tabchanged',3,27,11) ],27,31,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Attractionid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ] ] ]).
+sub_info_i(146,'Start',1,25,[ [ 'Pgmname',7,'Attractionid',8,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Attractionwc',3),t('Object',3) ] ] ]).
+sub_info_i(146,[ t('Tab',3,27,7),t('Tabchanged',3,27,11) ],27,31,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Attractionid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Attractionwc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,8,'GENERAL\SECURITY\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(web,21,'ATTRACTIONSATTRACTIONWC',[ [ int,4,0,0 ] ],[ [ 'AttractionId',in,[] ] ]).
 pgm_parm_i(web,15,'ATTRACTIONSGENERAL',[ [ int,4,0,0 ] ],[ [ 'AttractionId',in,[] ] ]).
 pgm_parm_i(web,14,'WWATTRACTIONS',[],[]).
 pgm_parm_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,13,'VIEWATTRACTIONS','INTERNAL','Secure').
 pgm_callprotocol_i(web,8,'GENERAL\SECURITY\NOTAUTHORIZED','INTERNAL','Secure').
+pgm_callprotocol_i(web,21,'ATTRACTIONSATTRACTIONWC','INTERNAL','Secure').
 pgm_callprotocol_i(web,15,'ATTRACTIONSGENERAL','INTERNAL','Secure').
 pgm_callprotocol_i(web,14,'WWATTRACTIONS','INTERNAL','Secure').
 pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Secure').

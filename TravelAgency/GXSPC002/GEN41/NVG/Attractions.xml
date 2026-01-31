@@ -9,7 +9,7 @@
 <ObjDesc>Attractions</ObjDesc>
 <ObjPgmName>Attractions</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Main>Yes</Main>
@@ -88,17 +88,6 @@
 <AttriName>CategoryId</AttriName>
 <Description>Category Id</Description></Attribute></KeyAttributes>
 <JoinType>Outer</JoinType>
-<Tables></Tables></Table>
-<Table>
-<TableId>10</TableId>
-<TableName>Supplier</TableName>
-<Description>Supplier</Description>
-<RecordsToRead>one</RecordsToRead>
-<KeyAttributes>
-<Attribute>
-<AttriId>45</AttriId>
-<AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
@@ -138,11 +127,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute>
-<Attribute>
-<AttriId>45</AttriId>
-<AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Category Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>2</TableId>
@@ -173,11 +158,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute>
-<Attribute>
-<AttriId>45</AttriId>
-<AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Category Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>2</TableId>
@@ -188,25 +169,21 @@
 <AfterInsertRules></AfterInsertRules>
 <AfterUpdateRules></AfterUpdateRules>
 <AfterDeleteRules></AfterDeleteRules>
-<TablesToControlOnDelete></TablesToControlOnDelete>
+<TablesToControlOnDelete>
+<Table>
+<TableId>11</TableId>
+<TableName>SupplierAttraction</TableName>
+<Description>Attraction</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
 <Levels></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>
 <Prompts>
-<Prompt>
-<Table>
-<TableId>10</TableId>
-<TableName>Supplier</TableName>
-<Description>Supplier</Description></Table>
-<ProgramName>
-<Token>Gx00A0</Token></ProgramName>
-<InputParameters></InputParameters>
-<OutputParameters>
-<Attribute>
-<AttriId>45</AttriId>
-<AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></OutputParameters>
-<PromptType>System</PromptType></Prompt>
 <Prompt>
 <Table>
 <TableId>4</TableId>

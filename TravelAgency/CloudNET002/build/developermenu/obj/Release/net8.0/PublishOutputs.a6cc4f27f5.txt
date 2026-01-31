@@ -6,6 +6,8 @@ C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\category.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\country.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\attractions.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\customer.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx00b1.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\attractionsattractionwc.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx00a0.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx0091.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx0080.dll
@@ -26,6 +28,7 @@ C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx0020.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx0010.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\general.ui.masterprompt.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\general.ui.masterunanimosidebar.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\aattractionlist.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\general.ui.asidebaritemsdp.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\GeneXus.Programs.Common.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\developermenu.dll
@@ -38,6 +41,7 @@ C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\GxCryptograph
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\GxEncrypt.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\GxPdfReportsCS.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\GxXsl.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\iTextSharp.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\log4net.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\Microsoft.Data.SqlClient.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\Microsoft.Identity.Client.dll

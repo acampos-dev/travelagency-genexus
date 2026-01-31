@@ -54,6 +54,12 @@
 		<ProjectReference Include=".\..\customer\customer.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
+		<ProjectReference Include=".\..\gx00b1\gx00b1.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\attractionsattractionwc\attractionsattractionwc.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
 		<ProjectReference Include=".\..\gx00a0\gx00a0.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
@@ -115,6 +121,12 @@
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\general.ui.masterunanimosidebar\general.ui.masterunanimosidebar.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\aattractionlist\aattractionlist.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\aattractionlist\aattractionlist.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\general.ui.asidebaritemsdp\general.ui.asidebaritemsdp.csproj" >

@@ -26,43 +26,25 @@
 <TableId>10</TableId>
 <TableName>Supplier</TableName>
 <Description>Supplier</Description></Table></BaseTable>
-<StandAloneRules></StandAloneRules>
-<BaseTableRule>
-<Action>
-<ActionType>ReadBaseTable</ActionType>
+<NavigationTree>
 <Table>
 <TableId>10</TableId>
 <TableName>Supplier</TableName>
-<Description>Supplier</Description></Table>
-<JoinConditions>
-<Table>
-<TableId>10</TableId>
-<TableName>Supplier</TableName>
-<Description>Supplier</Description></Table>
-<JoinCondition>
-<AttributeTo>
+<Description>Supplier</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
 <Attribute>
 <AttriId>45</AttriId>
 <AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></AttributeTo>
-<Table></Table>
-<AttributeFrom>
-<Attribute>
-<AttriId>45</AttriId>
-<AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
-<Into>
-<Attribute>
-<AttriId>46</AttriId>
-<AttriName>SupplierName</AttriName>
-<Description>Supplier Name</Description></Attribute>
-<Attribute>
-<AttriId>47</AttriId>
-<AttriName>SupplierAddress</AttriName>
-<Description>Supplier Address</Description></Attribute></Into></Action></BaseTableRule>
-<StandAloneWithModeRules></StandAloneWithModeRules>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
 <Rules></Rules>
-<BeforeConfirmRules></BeforeConfirmRules>
+<AfterAttributeRules></AfterAttributeRules>
 <AfterConfirmRules></AfterConfirmRules>
 <TablesToUpdate>
 <TableToUpdate>
@@ -102,14 +84,36 @@
 <Description>Supplier</Description></Table>
 <TableAction>delete</TableAction>
 <AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
-<BeforeInsertRules></BeforeInsertRules>
 <AfterInsertRules></AfterInsertRules>
-<BeforeUpdateRules></BeforeUpdateRules>
 <AfterUpdateRules></AfterUpdateRules>
-<BeforeDeleteRules></BeforeDeleteRules>
 <AfterDeleteRules></AfterDeleteRules>
-<AfterDisplayRules></AfterDisplayRules>
-<TablesToControlOnDelete>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>11</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>11</TableId>
+<TableName>SupplierAttraction</TableName>
+<Description>Attraction</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>11</TableId>
+<TableName>SupplierAttraction</TableName>
+<Description>Attraction</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>45</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></KeyAttributes>
+<Tables>
 <Table>
 <TableId>2</TableId>
 <TableName>Attractions</TableName>
@@ -117,16 +121,101 @@
 <RecordsToRead>one</RecordsToRead>
 <KeyAttributes>
 <Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>11</TableId>
+<TableName>SupplierAttraction</TableName>
+<Description>Attraction</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
 <AttriId>45</AttriId>
 <AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>48</AttriId>
+<AttriName>SupplierAttractionDate</AttriName>
+<Description>Supplier Attraction Date</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>11</TableId>
+<TableName>SupplierAttraction</TableName>
+<Description>Attraction</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>48</AttriId>
+<AttriName>SupplierAttractionDate</AttriName>
+<Description>Supplier Attraction Date</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>11</TableId>
+<TableName>SupplierAttraction</TableName>
+<Description>Attraction</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
 <Levels></Levels>
-<BeforeTrnRules></BeforeTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
 <AfterTrnRules></AfterTrnRules>
-<AfterLevelRules></AfterLevelRules>
-<Formulas>
-<AggSelFormulas></AggSelFormulas></Formulas></Level></Levels>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
 <Prompts>
+<Prompt>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>4</ObjId>
+<ObjName>Gx0020</ObjName>
+<ObjPgmName>Gx0020</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>11</TableId>
+<TableName>SupplierAttraction</TableName>
+<Description>Attraction</Description></Table>
+<ProgramName>
+<Token>Gx00B1</Token></ProgramName>
+<InputParameters>
+<Attribute>
+<AttriId>45</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
 <Prompt>
 <Table>
 <TableId>10</TableId>

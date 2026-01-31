@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9mkjTcRjX+rk2OnYJkNf/MqlSKRphV9C6WEhgDxY1JmpFN3xRjKt+lKrFr6xT2q3WHNpZghDumI6ozcJWHhLtg==",
+  "dgSpecHash": "o91rVCvmjVY0EF7iXmKT7pdSyrfnU1FiYhgWyrF/8gSxJhMocS0j3nOivXbah1UK0/Nup8lqoJNQ3Egy4qwzBw==",
   "success": true,
   "projectFilePath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\developermenu\\developermenu.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\alagu\\.nuget\\packages\\genexus.encrypt\\1.30.0\\genexus.encrypt.1.30.0.nupkg.sha512",
     "C:\\Users\\alagu\\.nuget\\packages\\genexus.pdfreportscs.core\\1.30.0\\genexus.pdfreportscs.core.1.30.0.nupkg.sha512",
     "C:\\Users\\alagu\\.nuget\\packages\\genexus.xsl.core\\1.30.0\\genexus.xsl.core.1.30.0.nupkg.sha512",
+    "C:\\Users\\alagu\\.nuget\\packages\\itextsharp-lgpl\\4.1.6\\itextsharp-lgpl.4.1.6.nupkg.sha512",
     "C:\\Users\\alagu\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
     "C:\\Users\\alagu\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\alagu\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
