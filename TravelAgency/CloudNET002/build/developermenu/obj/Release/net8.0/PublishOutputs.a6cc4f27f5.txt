@@ -28,6 +28,9 @@ C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx0020.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx0010.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\general.ui.masterprompt.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\general.ui.masterunanimosidebar.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\anumberofattractionsbycountry.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\aattractionspercategory.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\acategoriesandtheirattractionslist.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\aattractionlist.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\general.ui.asidebaritemsdp.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\GeneXus.Programs.Common.dll

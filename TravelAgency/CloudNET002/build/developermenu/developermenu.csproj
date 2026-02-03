@@ -123,6 +123,24 @@
 		<ProjectReference Include=".\..\general.ui.masterunanimosidebar\general.ui.masterunanimosidebar.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
+		<ProjectReference Include=".\..\anumberofattractionsbycountry\anumberofattractionsbycountry.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\anumberofattractionsbycountry\anumberofattractionsbycountry.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\aattractionspercategory\aattractionspercategory.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\aattractionspercategory\aattractionspercategory.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\acategoriesandtheirattractionslist\acategoriesandtheirattractionslist.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\acategoriesandtheirattractionslist\acategoriesandtheirattractionslist.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
 		<ProjectReference Include=".\..\aattractionlist\aattractionlist.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>

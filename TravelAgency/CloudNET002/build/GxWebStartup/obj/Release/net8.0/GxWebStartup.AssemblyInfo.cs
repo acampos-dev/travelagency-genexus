@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GxWebStartup")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+185fe7c1dc1ec2d20e153a3552735453d0784ae8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98ea3725eb01ebce9fac7524b3f4e4849e0418b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("GxWebStartup")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GxWebStartup")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

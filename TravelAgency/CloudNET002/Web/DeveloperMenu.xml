@@ -63,4 +63,16 @@
       <ObjDesc>Categories And Their Attractions List</ObjDesc>
       <ObjLink>acategoriesandtheirattractionslist.aspx</ObjLink>
    </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>AttractionsPerCategory</ObjName>
+      <ObjDesc>Attractions Per Category</ObjDesc>
+      <ObjLink>aattractionspercategory.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>NumberOfAttractionsByCountry</ObjName>
+      <ObjDesc>Number Of Attractions By Country</ObjDesc>
+      <ObjLink>anumberofattractionsbycountry.aspx</ObjLink>
+   </Object>
 </Objects>

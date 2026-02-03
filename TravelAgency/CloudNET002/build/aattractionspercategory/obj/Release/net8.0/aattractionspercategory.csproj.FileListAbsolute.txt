@@ -1,0 +1,7 @@
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\aattractionspercategory\bin\Release\net8.0\aattractionspercategory.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\aattractionspercategory\obj\Release\net8.0\aattractionspercategory.csproj.AssemblyReference.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\aattractionspercategory\obj\Release\net8.0\aattractionspercategory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\aattractionspercategory\obj\Release\net8.0\aattractionspercategory.csproj.CoreCompileInputs.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\aattractionspercategory\obj\Release\net8.0\aattractionspercategory.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\aattractionspercategory\obj\Release\net8.0\refint\aattractionspercategory.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\aattractionspercategory\obj\Release\net8.0\ref\aattractionspercategory.dll

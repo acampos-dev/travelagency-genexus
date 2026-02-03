@@ -105,7 +105,7 @@ namespace GeneXus.Programs {
             getPrinter().setM_bot(M_bot);
             H0F0( false, 187) ;
             getPrinter().GxAttris("Microsoft Sans Serif", 16, true, false, false, false, 0, 25, 25, 112, 0, 255, 255, 255) ;
-            getPrinter().GxDrawText("Attractons List", 373, Gx_line+67, 566, Gx_line+94, 0, 0, 0, 0) ;
+            getPrinter().GxDrawText("Attractons List", 380, Gx_line+67, 573, Gx_line+94, 0, 0, 0, 0) ;
             getPrinter().GxDrawBitMap(context.GetImagePath( "e1604fc8-c115-43b6-91f0-fd4b7bf7d76a", "", context.GetTheme( )), 0, Gx_line+0, 340, Gx_line+160) ;
             Gx_OldLine = Gx_line;
             Gx_line = (int)(Gx_line+187);

@@ -1,0 +1,453 @@
+spec_i([ proc,29,'Attractions Per Category','AttractionsPerCategory',78,eng,'18_0_10-184260' ]).
+ 
+struct_i(2,1,[],[]).
+struct_i(3,2,[ 11 ],[]).
+ 
+level_i(2,[ 2,[ [ 2,many ],[ 3,one ],[ 4,one ] ],[],[],[ [ [ 2,3,4 ],[ 11,40000,13,10,8,7,12,9 ] ] ],[ [ [ 2,3,4 ],[] ] ],[ 11 ],'IATTRACTIONS2',[],[] ]).
+level_i(3,[ 2,[ [ 2,many ],[ 3,one ] ],[],[],[ [ [ 2,3 ],[ 11,40000,13,10,8,7,9 ] ] ],[ [ [ 2,3 ],[] ] ],[ 11 ],'IATTRACTIONS2',[ 2,[ [ [],11,11 ] ] ],[] ]).
+ 
+tw_i(2,[ [ 3,[ [ 2,9,9 ] ] ],[ 4,[ [ 2,11,11 ] ] ] ]).
+tw_i(3,[ [ 3,[ [ 2,9,9 ] ] ] ]).
+ 
+lwi_i(3,[ [] ]).
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 2,9 ],[ 2,11 ],[ 2,40000 ],[ 2,13 ],[ 3,10 ],[ 2,8 ],[ 2,7 ],[ 4,12 ] ] ]).
+ta_i(3,[ [ [ 2,9 ],[ 2,11 ],[ 2,40000 ],[ 2,13 ],[ 3,10 ],[ 2,8 ],[ 2,7 ] ] ]).
+ 
+las_i(2,[ [ 11,40000,13,10,8,7,12,9 ] ]).
+las_i(3,[ [ 11,40000,13,10,8,7,9 ] ]).
+ 
+lac_i(2,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'DS_READ_REPLICA','No')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','Timeout=120')).
+rule_i(0,datastore(1,'USER_PASSWORD','u‹CzhÅÍ@‚øTÃCÃ4V‹C|M\â')).
+rule_i(0,datastore(1,'USER_ID',ugtMdBnoTocFnX3U)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Id1c1fb825db3a068e0d5cd009f651b7a5')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop(gxtest_ignoreForTestCoverage,'0')).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','KnowledgeBase')).
+rule_i(0,prop('FullyQualifiedName','AttractionsPerCategory')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('AppGenerator','1')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('HTTP_STREAMING_SUPPORT','Off')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,'TravelAgency'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','HTTP')).
+rule_i(0,prop('IsMain','-1')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Attractions Per Category')).
+rule_i(0,prop('ObjName','AttractionsPerCategory')).
+rule_i(0,maingen(41)).
+rule_i(0,prop('PGMTYPE',main)).
+rule_i(0,output_file(t('CategoriesAndTheirAttractionsList.pdf',3),t(pdf,3))).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Line',[],[ [],[ t(0,3) ] ]).
+a_i(2,3,t,2,[],[ [ [ [],11,11 ] ],'IATTRACTIONS2',[] ]).
+a_i(3,3,r,3,[],[ [ [ 2,9,9 ] ],'ICOUNTRY',[] ]).
+a_i(4,2,t,2,[],[ [],'IATTRACTIONS2',[] ]).
+a_i(5,2,r,3,[],[ [ [ 2,9,9 ] ],'ICOUNTRY',[] ]).
+a_i(6,2,r,4,[],[ [ [ 2,11,11 ] ],'ICATEGORY',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Line').
+v_i(t,i,2,11).
+v_i(t,o,2,9).
+v_i(t,o,2,40000).
+v_i(t,o,2,13).
+v_i(t,o,2,8).
+v_i(t,o,2,7).
+v_i(r,i,3,9).
+v_i(r,o,3,10).
+v_i(t,i,4,[]).
+v_i(t,o,4,9).
+v_i(t,o,4,11).
+v_i(t,o,4,40000).
+v_i(t,o,4,13).
+v_i(t,o,4,8).
+v_i(t,o,4,7).
+v_i(r,i,5,9).
+v_i(r,o,5,10).
+v_i(r,i,6,11).
+v_i(r,o,6,12).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',6 ]).
+attri_i(9,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
+attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',5 ]).
+attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',4 ]).
+attri_i(12,[ 'CategoryName',char,50,0,'',0,'Category Name','',0 ]).
+attri_i(11,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
+attri_i(13,[ 'AttractionPhoto',bits,4,0,'',0,'Attraction Photo','',0 ]).
+attri_i(10,[ 'CountryName',char,50,0,'',0,'Country Name','',0 ]).
+attri_i(8,[ 'AttractionName',char,50,0,'',0,'Attraction Name','',0 ]).
+attri_i(7,[ 'AttractionId',int,4,0,'ZZZ9',0,'Attraction Id','',0 ]).
+attri_i(40000,[ 'AttractionPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
+ 
+table_i(4,[ 'Category',[ 11,12 ],'Category','Category' ]).
+table_i(3,[ 'Country',[ 9,10 ],'Country','Country' ]).
+table_i(2,[ 'Attractions',[ 7,8,9,11,13,40000 ],'Attractions','Attractions' ]).
+ 
+index_i(2,[ 'IATTRACTIONS',u,[ 7 ],'IAttractions' ]).
+index_i(2,[ 'IATTRACTIONS2',d,[ 11 ],'IAttractions2' ]).
+index_i(3,[ 'ICOUNTRY',u,[ 9 ],'ICountry' ]).
+index_i(4,[ 'ICATEGORY',u,[ 11 ],'ICategory' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+add_att_i(bits,2,40000,13,'AttractionPhoto_GXI',[ svchar,2048,0,0 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(96,[ 'Id' ]).
+dom_info_i(97,[ 'Name' ]).
+ 
+ 
+break_i(3,nvg,2,[],[ [ 7,8,10,13,40000 ],[],[] ]).
+break_i(2,nvg,1,[ 11 ],[ [ 11,12 ],[],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,12).
+b_group_i(1,2,nvg,2,2,2).
+b_group_i(2,1,lit,0,14,20).
+b_group_i(2,2,nvg,3,5,5).
+b_group_i(3,1,lit,0,21,27).
+b_group_i(2,3,lit,0,28,28).
+b_group_i(1,3,lit,0,29,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,pb,0,[ t('Title',29,0,7) ]).
+b_line_i([ 1,0 ],1,1,line,0,[ t(' ',3,0,0) ]).
+b_line_i([ 1,5 ],1,1,line,5,[ t('Attractions per Category',3,5,48) ]).
+b_line_i([ 1,11 ],1,1,line,11,[ t(' ',3,11,0) ]).
+b_line_i(2,2,1,cmd,14,[ t('',121,2,0),t(table,3,2,10),t(2,3,2,10),t('ORDER',39,2,22),t(11,2,2,28) ]).
+b_line_i(3,2,1,pb,14,[ t('Categories',29,14,8) ]).
+b_line_i([ 3,0 ],2,1,line,14,[ t('Category
+',3,0,9),t(12,2,0,25) ]).
+b_line_i([ 3,2 ],2,1,line,16,[ t(' ',3,2,0) ]).
+b_line_i(4,2,1,pb,17,[ t('Columntitle',29,17,8) ]).
+b_line_i([ 4,0 ],2,1,line,17,[ t(' ',3,0,0) ]).
+b_line_i([ 4,1 ],2,1,line,18,[ t('Id
+',3,1,24),t('Name',3,1,34),t('Country',3,1,46),t('Photo',3,1,61) ]).
+b_line_i([ 4,2 ],2,1,line,19,[ t(' ',3,2,0) ]).
+b_line_i(5,3,1,cmd,21,[ t('',121,5,0),t(table,3,5,11),t(2,3,5,11) ]).
+b_line_i(6,3,1,pb,21,[ t('Attractions',29,21,9) ]).
+b_line_i([ 6,0 ],3,1,line,21,[ t(7,2,0,22),t(8,2,0,34),t(10,2,0,46),t(13,2,0,61),t(40000,2,0,61) ]).
+b_line_i([ 6,5 ],3,1,line,26,[ t(' ',3,5,0) ]).
+b_line_i(7,3,1,cmd,27,[ t('',128,7,0) ]).
+b_line_i(8,2,3,cmd,28,[ t('',128,8,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(2,1,bitmap(i(98,'e1604fc8-c115-43b6-91f0-fd4b7bf7d76a')),[ ctlname('Gxreportimage1'),rect(0,0,307,160) ]).
+lit_i(3,1,t('Attractions per Category',3),[ font('Microsoft Sans Serif',14,[ bold ]),rect(340,80,713,120),outstyle(none),align(left),valign(top),fore(rgb(0,0,205)),border(1),ctlname('Gxreportlabel1'),gxcolor([]) ]).
+lit_i(1,1,window,[ title('Text'),rect(0,0,827,193),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Title'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(1,3,t('Category
+',3),[ font('Microsoft YaHei UI',9,[ bold ]),rect(67,13,167,48),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel2'),gxcolor([]) ]).
+lit_i(5,3,t(12,2),[ font('Microsoft Sans Serif',8,[]),rect(180,13,441,28),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('12'),ctrltype(edit,5),ispwd(0),gxcolor([]) ]).
+lit_i(4,3,window,[ title('Text'),rect(0,0,827,53),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Categories'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(7,4,t('Id
+',3),[ font('Microsoft Sans Serif',8,[]),rect(173,27,193,40),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel3'),gxcolor([]) ]).
+lit_i(8,4,t('Name',3),[ font('Microsoft Sans Serif',8,[]),rect(240,27,280,41),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel4'),gxcolor([]) ]).
+lit_i(9,4,t('Country',3),[ font('Microsoft Sans Serif',8,[]),rect(327,27,380,41),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel5'),gxcolor([]) ]).
+lit_i(10,4,t('Photo',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(427,27,467,41),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel6'),gxcolor([]) ]).
+lit_i(11,4,t('Country',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(327,27,380,41),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel7'),gxcolor([]) ]).
+lit_i(12,4,t('Name',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(240,27,280,41),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel8'),gxcolor([]) ]).
+lit_i(14,4,rect(14),[ rect(140,40,487,40),outstyle(none),fill,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(1),ctlname('Gxreportline1'),gxcolor([]),borderstyle(0) ]).
+lit_i(6,4,window,[ title('Text'),rect(0,0,827,52),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Columntitle'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(16,6,t(7,2),[ font('Microsoft Sans Serif',8,[]),rect(160,0,193,15),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('7'),ctrltype(edit,16),ispwd(0),gxcolor([]) ]).
+lit_i(17,6,t(8,2),[ font('Microsoft Sans Serif',8,[]),rect(240,0,320,15),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('8'),ctrltype(edit,17),ispwd(0),gxcolor([]) ]).
+lit_i(18,6,t(10,2),[ font('Microsoft Sans Serif',8,[]),rect(327,0,400,15),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('10'),ctrltype(edit,18),ispwd(0),gxcolor([]) ]).
+lit_i(19,6,t(13,2),[ font('Microsoft Sans Serif',8,[]),rect(427,0,494,40),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('13'),ctrltype(edit,19),ispwd(0),gxcolor([]) ]).
+lit_i(15,6,window,[ title('Text'),rect(0,0,827,100),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Attractions'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(1,29).
+ 
+att_prop_i(2,7,'ExternalName','AttractionId',d).
+att_prop_i(2,7,'ExternalNamespace','TravelAgency',d).
+att_prop_i(2,7,'EmptyAsNull','Yes',d).
+att_prop_i(2,7,idBasedOn,96,v).
+att_prop_i(2,7,'AUTONUMBER','-1',v).
+att_prop_i(2,7,'AUTONUMBER_START','1',d).
+att_prop_i(2,7,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,7,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,7,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,7,'AttRegEx','',d).
+att_prop_i(2,7,'AttValidationFailedMsg','',d).
+att_prop_i(2,7,'DownloadOffline','0',d).
+att_prop_i(2,7,'VarServiceExtName','',d).
+att_prop_i(2,7,'FullName','AttractionId',v).
+att_prop_i(2,8,'ExternalName','AttractionName',d).
+att_prop_i(2,8,'ExternalNamespace','TravelAgency',d).
+att_prop_i(2,8,'EmptyAsNull','Yes',d).
+att_prop_i(2,8,idBasedOn,97,v).
+att_prop_i(2,8,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,8,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,8,'AttRegEx','',d).
+att_prop_i(2,8,'AttValidationFailedMsg','',d).
+att_prop_i(2,8,'DownloadOffline','0',d).
+att_prop_i(2,8,'VarServiceExtName','',d).
+att_prop_i(2,8,'FullName','AttractionName',v).
+att_prop_i(2,10,'ExternalName','CountryName',d).
+att_prop_i(2,10,'ExternalNamespace','TravelAgency',d).
+att_prop_i(2,10,'EmptyAsNull','Yes',d).
+att_prop_i(2,10,idBasedOn,97,v).
+att_prop_i(2,10,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,10,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,10,'AttRegEx','',d).
+att_prop_i(2,10,'AttValidationFailedMsg','',d).
+att_prop_i(2,10,'DownloadOffline','0',d).
+att_prop_i(2,10,'VarServiceExtName','',d).
+att_prop_i(2,10,'FullName','CountryName',v).
+att_prop_i(2,13,'ExternalName','AttractionPhoto',d).
+att_prop_i(2,13,'ExternalNamespace','TravelAgency',d).
+att_prop_i(2,13,'EmptyAsNull','Yes',d).
+att_prop_i(2,13,'ExternalStorage','-1',d).
+att_prop_i(2,13,idBasedOn,'',d).
+att_prop_i(2,13,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,13,'AttRegEx','',d).
+att_prop_i(2,13,'AttValidationFailedMsg','',d).
+att_prop_i(2,13,'DownloadOffline','0',d).
+att_prop_i(2,13,'VarServiceExtName','',d).
+att_prop_i(2,13,'FullName','AttractionPhoto',v).
+att_prop_i(2,11,'ExternalName','CategoryId',d).
+att_prop_i(2,11,'ExternalNamespace','TravelAgency',d).
+att_prop_i(2,11,'EmptyAsNull','Yes',d).
+att_prop_i(2,11,idBasedOn,96,v).
+att_prop_i(2,11,'AUTONUMBER','-1',d).
+att_prop_i(2,11,'AUTONUMBER_START','1',d).
+att_prop_i(2,11,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,11,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,11,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,11,'AttRegEx','',d).
+att_prop_i(2,11,'AttValidationFailedMsg','',d).
+att_prop_i(2,11,'DownloadOffline','0',d).
+att_prop_i(2,11,'VarServiceExtName','',d).
+att_prop_i(2,11,'FullName','CategoryId',v).
+att_prop_i(2,12,'ExternalName','CategoryName',d).
+att_prop_i(2,12,'ExternalNamespace','TravelAgency',d).
+att_prop_i(2,12,'EmptyAsNull','Yes',d).
+att_prop_i(2,12,idBasedOn,97,v).
+att_prop_i(2,12,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,12,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,12,'AttRegEx','',d).
+att_prop_i(2,12,'AttValidationFailedMsg','',d).
+att_prop_i(2,12,'DownloadOffline','0',d).
+att_prop_i(2,12,'VarServiceExtName','',d).
+att_prop_i(2,12,'FullName','CategoryName',v).
+att_prop_i(2,9,'ExternalName','CountryId',d).
+att_prop_i(2,9,'ExternalNamespace','TravelAgency',d).
+att_prop_i(2,9,'EmptyAsNull','Yes',d).
+att_prop_i(2,9,idBasedOn,96,v).
+att_prop_i(2,9,'AUTONUMBER','-1',d).
+att_prop_i(2,9,'AUTONUMBER_START','1',d).
+att_prop_i(2,9,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,9,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,9,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,9,'AttRegEx','',d).
+att_prop_i(2,9,'AttValidationFailedMsg','',d).
+att_prop_i(2,9,'DownloadOffline','0',d).
+att_prop_i(2,9,'VarServiceExtName','',d).
+att_prop_i(2,9,'FullName','CountryId',v).
+att_prop_i(2,40000,'ExternalName','',d).
+att_prop_i(2,40000,'ExternalNamespace','',d).
+att_prop_i(2,40000,'EmptyAsNull','Yes',d).
+att_prop_i(2,40000,idBasedOn,'',d).
+att_prop_i(2,40000,'AUTONUMBER','0',d).
+att_prop_i(2,40000,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,40000,'AttRegEx','',d).
+att_prop_i(2,40000,'AttValidationFailedMsg','',d).
+att_prop_i(2,40000,'FullName','',v).
+ 
+tbl_prop_i(2,2,'AllDirSuper',[ [ 4,[ 11 ] ],[ 3,[ 9 ] ] ],v).
+tbl_prop_i(2,2,'DirSuperNull',[ [ 4,[ 11 ] ] ],v).
+tbl_prop_i(2,4,'DirSubor',[ [ 2,[ 11 ] ] ],v).
+tbl_prop_i(2,2,'DirSuper',[ [ 4,[ 11 ] ] ],v).
+ 
+tbl_att_prop_i(2,2,7,'AllowNulls',n).
+tbl_att_prop_i(2,2,7,'AUTONUMBER',y).
+tbl_att_prop_i(2,2,8,'AllowNulls',n).
+tbl_att_prop_i(2,2,9,'AllowNulls',n).
+tbl_att_prop_i(2,2,13,'AllowNulls',n).
+tbl_att_prop_i(2,2,40000,'AllowNulls',n).
+tbl_att_prop_i(2,3,9,'AllowNulls',n).
+tbl_att_prop_i(2,3,9,'AUTONUMBER',y).
+tbl_att_prop_i(2,3,10,'AllowNulls',n).
+tbl_att_prop_i(2,4,11,'AllowNulls',n).
+tbl_att_prop_i(2,4,11,'AUTONUMBER',y).
+tbl_att_prop_i(2,4,12,'AllowNulls',n).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,29,'ATTRACTIONSPERCATEGORY','HTTP','Secure').
+ 
+ 
+pgm_main_info_i(proc,29,'ATTRACTIONSPERCATEGORY',[ 41,'AATTRACTIONSPERCATEGORY','Attractions Per Category','','','','HTTP' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
