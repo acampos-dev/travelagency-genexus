@@ -49,4 +49,10 @@
     <ObjDesc>Attractions</ObjDesc>
     <ObjLink>wwattractions.aspx</ObjLink>
   </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>EnterAttractionsFiltrer</ObjName>
+    <ObjDesc>Enter Attractions Filtrer</ObjDesc>
+    <ObjLink>enterattractionsfiltrer.aspx</ObjLink>
+  </Object>
 </Objects>

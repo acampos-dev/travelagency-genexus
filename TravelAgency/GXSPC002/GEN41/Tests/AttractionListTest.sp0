@@ -180,6 +180,7 @@ ppi_i([ 100,100 ]).
  
  
  
+warn_gen_i(msg(layout(3,[]),spc0024,[ 'Not enough parameters ',calling,' ','AttractionList','.' ])).
  
  
  
@@ -209,7 +210,7 @@ form_class_i(1,'Graphic').
  
  
  
-pgm_parm_i(proc,15,'ATTRACTIONLIST',[],[]).
+pgm_parm_i(proc,15,'ATTRACTIONLIST',[ [ int,4,0,0 ] ],[ [ 'CountryId',in,[] ] ]).
  
 pgm_callprotocol_i(proc,27,'TESTS\ATTRACTIONLISTTEST','INTERNAL','Secure').
 pgm_callprotocol_i(proc,15,'ATTRACTIONLIST','HTTP','Secure').

@@ -70,8 +70,8 @@ rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
 rule_i(0,prop('CALL_PROTOCOL','HTTP')).
 rule_i(0,prop(idISPRCWEBSERVICE,'0')).
 rule_i(0,maingen(41)).
-rule_i(0,parm([],[])).
-rule_i(0,parmio([])).
+rule_i(0,parm([ 'CountryId' ],[])).
+rule_i(0,parmio([ [ 'CountryId',in ] ])).
 rule_i(0,stub(proc)).
  
  
@@ -81,6 +81,7 @@ rule_i(0,stub(proc)).
  
  
  
+attri_i('CountryId',[ 'CountryId',int,4,0,'',0,'','',2 ]).
  
  
  
@@ -114,7 +115,7 @@ break_i(1,rpt,0,[],[ [],[],[] ]).
  
 b_group_i(1,1,lit,0,1,0).
  
-b_line_i(1,1,1,cmd,1,[ t('',163,1,0),t('AAttractionList',3,1,0),t(41,3,1,0),t('',3,1,0),t(',',7,1,0),t(')',4,1,0) ]).
+b_line_i(1,1,1,cmd,1,[ t('',163,1,0),t('AAttractionList',3,1,0),t(41,3,1,0),t('',3,1,0),t(',',7,1,0),t('CountryId',23,1,0),t(')',4,1,0) ]).
  
  
  
@@ -167,7 +168,7 @@ calling_main_i(1,15).
  
  
  
-pgm_parm_i(proc,15,'AATTRACTIONLIST',[],[]).
+pgm_parm_i(proc,15,'AATTRACTIONLIST',[ [ int,4,0,0 ] ],[ [ 'CountryId',in,[] ] ]).
  
 pgm_callprotocol_i(proc,0,'ATTRACTIONLIST','INTERNAL','').
 pgm_callprotocol_i(proc,15,'AATTRACTIONLIST','HTTP','Secure').

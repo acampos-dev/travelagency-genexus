@@ -52,10 +52,10 @@
       <ObjLink>wwattractions.aspx</ObjLink>
    </Object>
    <Object>
-      <ObjCls>1</ObjCls>
-      <ObjName>AttractionList</ObjName>
-      <ObjDesc>Attraction List</ObjDesc>
-      <ObjLink>aattractionlist.aspx</ObjLink>
+      <ObjCls>13</ObjCls>
+      <ObjName>EnterAttractionsFiltrer</ObjName>
+      <ObjDesc>Enter Attractions Filtrer</ObjDesc>
+      <ObjLink>enterattractionsfiltrer.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>1</ObjCls>

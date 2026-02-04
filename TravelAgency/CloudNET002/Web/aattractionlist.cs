@@ -37,7 +37,11 @@ namespace GeneXus.Programs {
          if ( nGotPars == 0 )
          {
             entryPointCalled = false;
-            gxfirstwebparm = GetNextPar( );
+            gxfirstwebparm = GetFirstPar( "CountryId");
+            if ( ! entryPointCalled )
+            {
+               AV8CountryId = (short)(Math.Round(NumberUtil.Val( gxfirstwebparm, "."), 18, MidpointRounding.ToEven));
+            }
          }
          if ( GxWebError == 0 )
          {
@@ -62,14 +66,16 @@ namespace GeneXus.Programs {
          dsDefault = context.GetDataStore("Default");
       }
 
-      public void execute( )
+      public void execute( short aP0_CountryId )
       {
+         this.AV8CountryId = aP0_CountryId;
          initialize();
          ExecuteImpl();
       }
 
-      public void executeSubmit( )
+      public void executeSubmit( short aP0_CountryId )
       {
+         this.AV8CountryId = aP0_CountryId;
          SubmitImpl();
       }
 
@@ -119,7 +125,7 @@ namespace GeneXus.Programs {
             Gx_OldLine = Gx_line;
             Gx_line = (int)(Gx_line+67);
             /* Using cursor P000F2 */
-            pr_default.execute(0);
+            pr_default.execute(0, new Object[] {AV8CountryId});
             while ( (pr_default.getStatus(0) != 101) )
             {
                A9CountryId = P000F2_A9CountryId[0];
@@ -261,6 +267,7 @@ namespace GeneXus.Programs {
 
       private short gxcookieaux ;
       private short nGotPars ;
+      private short AV8CountryId ;
       private short GxWebError ;
       private short A9CountryId ;
       private short A7AttractionId ;
@@ -305,9 +312,10 @@ namespace GeneXus.Programs {
        {
           Object[] prmP000F2;
           prmP000F2 = new Object[] {
+          new ParDef("@AV8CountryId",GXType.Int16,4,0)
           };
           def= new CursorDef[] {
-              new CursorDef("P000F2", "SELECT T1.[CountryId], T1.[AttractionPhoto_GXI], T1.[AttractionName], T1.[AttractionId], T2.[CountryName], T1.[AttractionPhoto] FROM ([Attractions] T1 INNER JOIN [Country] T2 ON T2.[CountryId] = T1.[CountryId]) ORDER BY T2.[CountryName] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000F2,100, GxCacheFrequency.OFF ,false,false )
+              new CursorDef("P000F2", "SELECT T1.[CountryId], T1.[AttractionPhoto_GXI], T1.[AttractionName], T1.[AttractionId], T2.[CountryName], T1.[AttractionPhoto] FROM ([Attractions] T1 INNER JOIN [Country] T2 ON T2.[CountryId] = T1.[CountryId]) WHERE T1.[CountryId] = @AV8CountryId ORDER BY T2.[CountryName] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000F2,100, GxCacheFrequency.OFF ,false,false )
           };
        }
     }

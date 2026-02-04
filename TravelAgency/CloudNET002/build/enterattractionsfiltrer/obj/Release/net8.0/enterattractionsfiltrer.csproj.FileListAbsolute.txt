@@ -1,0 +1,7 @@
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\enterattractionsfiltrer\bin\Release\net8.0\enterattractionsfiltrer.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\enterattractionsfiltrer\obj\Release\net8.0\enterattractionsfiltrer.csproj.AssemblyReference.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\enterattractionsfiltrer\obj\Release\net8.0\enterattractionsfiltrer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\enterattractionsfiltrer\obj\Release\net8.0\enterattractionsfiltrer.csproj.CoreCompileInputs.cache
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\enterattractionsfiltrer\obj\Release\net8.0\enterattractionsfiltrer.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\enterattractionsfiltrer\obj\Release\net8.0\refint\enterattractionsfiltrer.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\enterattractionsfiltrer\obj\Release\net8.0\ref\enterattractionsfiltrer.dll

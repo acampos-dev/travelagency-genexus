@@ -39,14 +39,16 @@ namespace GeneXus.Programs {
          dsDefault = context.GetDataStore("Default");
       }
 
-      public void execute( )
+      public void execute( short aP0_CountryId )
       {
+         this.AV2CountryId = aP0_CountryId;
          initialize();
          ExecuteImpl();
       }
 
-      public void executeSubmit( )
+      public void executeSubmit( short aP0_CountryId )
       {
+         this.AV2CountryId = aP0_CountryId;
          SubmitImpl();
       }
 
@@ -54,8 +56,11 @@ namespace GeneXus.Programs {
       {
          /* GeneXus formulas */
          /* Output device settings */
-         args = new Object[] {} ;
+         args = new Object[] {(short)AV2CountryId} ;
          ClassLoader.Execute("aattractionlist","GeneXus.Programs","aattractionlist", new Object[] {context }, "execute", args);
+         if ( ( args != null ) && ( args.Length == 1 ) )
+         {
+         }
          cleanup();
       }
 
@@ -73,6 +78,7 @@ namespace GeneXus.Programs {
          /* GeneXus formulas. */
       }
 
+      private short AV2CountryId ;
       private IGxDataStore dsDefault ;
       private Object[] args ;
    }

@@ -11,6 +11,7 @@ attractions
 attractions
 customer
 customer
+enterattractionsfiltrer
 gx00b1
 attractionsattractionwc
 gx00a0
@@ -34,6 +35,10 @@ gx0020
 gx0010
 general\ui\masterprompt
 general\ui\masterunanimosidebar
+aattractionsbynameandcountry
+aattractionsbynameandcountry
+aattractionsbyname
+aattractionsbyname
 anumberofattractionsbycountry
 anumberofattractionsbycountry
 aattractionspercategory

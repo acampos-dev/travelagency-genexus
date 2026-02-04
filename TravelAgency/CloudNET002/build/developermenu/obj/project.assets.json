@@ -2270,6 +2270,44 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "aattractionsbyname/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0",
+          "iTextSharp-LGPL": "4.1.6"
+        },
+        "compile": {
+          "bin/placeholder/aattractionsbyname.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/aattractionsbyname.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "aattractionsbynameandcountry/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0",
+          "iTextSharp-LGPL": "4.1.6"
+        },
+        "compile": {
+          "bin/placeholder/aattractionsbynameandcountry.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/aattractionsbynameandcountry.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "aattractionspercategory/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2502,6 +2540,25 @@
         },
         "runtime": {
           "bin/placeholder/customer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "enterattractionsfiltrer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0",
+          "iTextSharp-LGPL": "4.1.6"
+        },
+        "compile": {
+          "bin/placeholder/enterattractionsfiltrer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/enterattractionsfiltrer.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -7809,6 +7866,16 @@
       "path": "../aattractionlist/aattractionlist.csproj",
       "msbuildProject": "../aattractionlist/aattractionlist.csproj"
     },
+    "aattractionsbyname/1.0.0": {
+      "type": "project",
+      "path": "../aattractionsbyname/aattractionsbyname.csproj",
+      "msbuildProject": "../aattractionsbyname/aattractionsbyname.csproj"
+    },
+    "aattractionsbynameandcountry/1.0.0": {
+      "type": "project",
+      "path": "../aattractionsbynameandcountry/aattractionsbynameandcountry.csproj",
+      "msbuildProject": "../aattractionsbynameandcountry/aattractionsbynameandcountry.csproj"
+    },
     "aattractionspercategory/1.0.0": {
       "type": "project",
       "path": "../aattractionspercategory/aattractionspercategory.csproj",
@@ -7873,6 +7940,11 @@
       "type": "project",
       "path": "../customer/customer.csproj",
       "msbuildProject": "../customer/customer.csproj"
+    },
+    "enterattractionsfiltrer/1.0.0": {
+      "type": "project",
+      "path": "../enterattractionsfiltrer/enterattractionsfiltrer.csproj",
+      "msbuildProject": "../enterattractionsfiltrer/enterattractionsfiltrer.csproj"
     },
     "flight/1.0.0": {
       "type": "project",
@@ -7991,6 +8063,8 @@
       "GeneXus.PdfReportsCS.Core >= 1.30.0 <= 1.30.0",
       "GeneXus.Programs.Common >= 1.0.0",
       "aattractionlist >= 1.0.0",
+      "aattractionsbyname >= 1.0.0",
+      "aattractionsbynameandcountry >= 1.0.0",
       "aattractionspercategory >= 1.0.0",
       "acategoriesandtheirattractionslist >= 1.0.0",
       "airline >= 1.0.0",
@@ -8004,6 +8078,7 @@
       "countrycitywc >= 1.0.0",
       "countrygeneral >= 1.0.0",
       "customer >= 1.0.0",
+      "enterattractionsfiltrer >= 1.0.0",
       "flight >= 1.0.0",
       "general.security.notauthorized >= 1.0.0",
       "general.ui.asidebaritemsdp >= 1.0.0",
@@ -8065,6 +8140,12 @@
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionlist\\aattractionlist.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionlist\\aattractionlist.csproj"
             },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionsbynameandcountry\\aattractionsbynameandcountry.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionsbynameandcountry\\aattractionsbynameandcountry.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionsbyname\\aattractionsbyname.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionsbyname\\aattractionsbyname.csproj"
+            },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionspercategory\\aattractionspercategory.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionspercategory\\aattractionspercategory.csproj"
             },
@@ -8103,6 +8184,9 @@
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\customer\\customer.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\customer\\customer.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\enterattractionsfiltrer\\enterattractionsfiltrer.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\enterattractionsfiltrer\\enterattractionsfiltrer.csproj"
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\flight\\flight.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\flight\\flight.csproj"

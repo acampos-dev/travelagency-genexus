@@ -33,7 +33,12 @@
 <GenId>41</GenId>
 <GenName>Default (.NET)</GenName></Generator>
 <FormClass>Graphic</FormClass>
-<Parameters></Parameters>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Countryid</VarId>
+<VarName>&amp;CountryId</VarName></Variable></Parameter></Parameters>
 <Levels>
 <Level>
 <LevelNumber>2</LevelNumber>
@@ -59,7 +64,18 @@
 <LoopWhile>
 <Condition>
 <Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
-<NonOptimizedWhere></NonOptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>CountryId</AttriName>
+<Description>Country Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Countryid</VarId>
+<VarName>&amp;CountryId</VarName></Variable></Condition></NonOptimizedWhere>
 <JoinLocation>1</JoinLocation>
 <NavigationTree>
 <Table>
@@ -72,6 +88,27 @@
 <AttriId>7</AttriId>
 <AttriName>AttractionId</AttriName>
 <Description>Attraction Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>CountryId</AttriName>
+<Description>Country Id</Description></Attribute>
+<Attribute>
+<AttriId>40000</AttriId>
+<AttriName>AttractionPhoto.Uri  </AttriName>
+<Description></Description></Attribute>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>AttractionPhoto</AttriName>
+<Description>Attraction Photo</Description></Attribute>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>AttractionName</AttriName>
+<Description>Attraction Name</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></Into>
 <Tables>
 <Table>
 <TableId>3</TableId>
@@ -83,6 +120,11 @@
 <AttriId>9</AttriId>
 <AttriName>CountryId</AttriName>
 <Description>Country Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>CountryName</AttriName>
+<Description>Country Name</Description></Attribute></Into>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

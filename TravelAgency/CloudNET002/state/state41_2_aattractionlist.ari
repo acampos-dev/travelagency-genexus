@@ -31,7 +31,7 @@ ij_main_object(aattractionlist,'Attraction List','','""','HTTP',default).
 ij_object_dependency(aattractionlist,[],[],[],15).
  
  
-obj_parms_i([],[]).
+obj_parms_i([ 'short aP0_CountryId' ],[ [ 'Countryid',in ] ]).
  
  
  

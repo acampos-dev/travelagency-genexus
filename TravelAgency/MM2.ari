@@ -9,9 +9,11 @@ pgm_main_i(trn,3,'COUNTRY',[ 41,'COUNTRY','Country','','','','' ]).
 pgm_main_i(web,14,'WWATTRACTIONS',[ 41,'WWATTRACTIONS','Attractions','','','','' ]).
 pgm_main_i(trn,2,'ATTRACTIONS',[ 41,'ATTRACTIONS','Attractions','','','','' ]).
 pgm_main_i(proc,28,'CATEGORIESANDTHEIRATTRACTIONSLIST',[ 41,'ACATEGORIESANDTHEIRATTRACTIONSLIST','Categories And Their Attractions List','','','','HTTP' ]).
-pgm_main_i(proc,15,'ATTRACTIONLIST',[ 41,'AATTRACTIONLIST','Attraction List','','','','HTTP' ]).
 pgm_main_i(proc,29,'ATTRACTIONSPERCATEGORY',[ 41,'AATTRACTIONSPERCATEGORY','Attractions Per Category','','','','HTTP' ]).
 pgm_main_i(proc,30,'NUMBEROFATTRACTIONSBYCOUNTRY',[ 41,'ANUMBEROFATTRACTIONSBYCOUNTRY','Number Of Attractions By Country','','','','HTTP' ]).
+pgm_main_i(proc,15,'ATTRACTIONLIST',[ 41,'AATTRACTIONLIST','Attraction List','','','','HTTP' ]).
+pgm_main_i(proc,31,'ATTRACTIONSBYNAME',[ 41,'AATTRACTIONSBYNAME','Attractions By Name','','','','HTTP' ]).
+pgm_main_i(proc,32,'ATTRACTIONSBYNAMEANDCOUNTRY',[ 41,'AATTRACTIONSBYNAMEANDCOUNTRY','Attractions By Name And Country','','','','HTTP' ]).
  
 pgm_prop_i(web,2,'GENERAL\UI\MASTERPROMPT','WEB_COMP','Master').
 pgm_prop_i(web,12,'COUNTRYCITYWC','WEB_COMP','Yes').
@@ -27,12 +29,16 @@ pgm_prop_i(web,21,'ATTRACTIONSATTRACTIONWC','WEB_COMP','Yes').
 pgm_prop_i(web,21,'ATTRACTIONSATTRACTIONWC','URLAccess','No').
 pgm_prop_i(proc,28,'ACATEGORIESANDTHEIRATTRACTIONSLIST','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,28,'CATEGORIESANDTHEIRATTRACTIONSLIST','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,15,'AATTRACTIONLIST','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,15,'ATTRACTIONLIST','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,29,'AATTRACTIONSPERCATEGORY','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,29,'ATTRACTIONSPERCATEGORY','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,30,'ANUMBEROFATTRACTIONSBYCOUNTRY','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,30,'NUMBEROFATTRACTIONSBYCOUNTRY','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,15,'AATTRACTIONLIST','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,15,'ATTRACTIONLIST','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,31,'AATTRACTIONSBYNAME','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,31,'ATTRACTIONSBYNAME','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,32,'AATTRACTIONSBYNAMEANDCOUNTRY','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,32,'ATTRACTIONSBYNAMEANDCOUNTRY','CALL_PROTOCOL','HTTP').
  
 model_wrkinfo_i([ '.NET','CloudNET002' ]).
  

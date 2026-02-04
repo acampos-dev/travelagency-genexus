@@ -10,7 +10,18 @@
 <ObjPgmName>Tests.AttractionListTest</ObjPgmName>
 <ObjClsName>Procedure</ObjClsName></Object>
 <Result>genreq</Result>
-<Warnings></Warnings>
+<Warnings>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Source</Type>
+<Line>3</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>AttractionList</Token>
+<Token>.</Token></Message></Warning></Warnings>
 <Errors></Errors>
 <OutputDevices>
 <Device>None</Device></OutputDevices>
