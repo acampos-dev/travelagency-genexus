@@ -1,0 +1,18 @@
+# GeneXus Generated
+GX_KB_*.mdf
+GX_KB_*.ldf
+FTIndex/
+Locks/
+*.cfs
+*.del
+*.ari
+*.spc
+TestResults.xml
+GXSPC*/
+
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
