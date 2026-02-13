@@ -1,69 +1,13 @@
 <Objects>
   <Object>
-    <Type>1db606f2-af09-4cf9-a3b5-b481519d28f6</Type>
-    <Id>9</Id>
-    <Part>264be5fb-1b28-4b25-a598-6ca900dd059f</Part>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>34</Id>
+    <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
   </Object>
   <Object>
     <Type>1db606f2-af09-4cf9-a3b5-b481519d28f6</Type>
     <Id>2</Id>
-    <Part>d8074ef1-17d8-0000-0002-b49c0f0c02f3</Part>
+    <Part>264be5fb-1b28-4b25-a598-6ca900dd059f</Part>
   </Object>
-  <Recent>
-    <RecentKBObjectsList>
-      <MaximumItems>10</MaximumItems>
-      <RecentKBObjects>
-        <RecentKBObject>
-          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-2</Key>
-          <Name>Attractions</Name>
-          <LastAccess>2026-02-09T19:57:27.1356276-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-9</Key>
-          <Name>AttractionWithoutParameters</Name>
-          <LastAccess>2026-02-09T19:47:34.1030831-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-9</Key>
-          <Name>AttractionWithoutParameters</Name>
-          <LastAccess>2026-02-09T19:47:32.4605185-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-2</Key>
-          <Name>Attractions</Name>
-          <LastAccess>2026-02-09T19:45:30.9378758-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>447527b5-9210-4523-898b-5dccb17be60a-75</Key>
-          <Name>SDTCountries</Name>
-          <LastAccess>2026-02-09T19:29:02.8903852-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>447527b5-9210-4523-898b-5dccb17be60a-75</Key>
-          <Name>SDTCountries</Name>
-          <LastAccess>2026-02-09T19:29:02.4391777-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-32</Key>
-          <Name>AttractionsByNameAndCountry</Name>
-          <LastAccess>2026-02-04T19:19:58.8147918-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-32</Key>
-          <Name>AttractionsByNameAndCountry</Name>
-          <LastAccess>2026-02-04T19:19:58.4676811-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-31</Key>
-          <Name>AttractionsByName</Name>
-          <LastAccess>2026-02-04T19:11:45.8390288-03:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-31</Key>
-          <Name>AttractionsByName</Name>
-          <LastAccess>2026-02-04T19:11:45.194811-03:00</LastAccess>
-        </RecentKBObject>
-      </RecentKBObjects>
-    </RecentKBObjectsList>
-  </Recent>
+  <Recent />
 </Objects>
