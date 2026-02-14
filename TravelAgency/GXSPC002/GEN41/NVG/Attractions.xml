@@ -9,10 +9,9 @@
 <ObjDesc>Attractions</ObjDesc>
 <ObjPgmName>Attractions</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
-<Main>Yes</Main>
 <Generator>
 <GenId>41</GenId>
 <GenName>Default (.NET)</GenName></Generator>

@@ -38,6 +38,12 @@
     <ObjLink>supplier.aspx</ObjLink>
   </Object>
   <Object>
+    <ObjCls>0</ObjCls>
+    <ObjName>AttractionWithoutParameters</ObjName>
+    <ObjDesc>Attraction Without Parameters</ObjDesc>
+    <ObjLink>attractionwithoutparameters.aspx</ObjLink>
+  </Object>
+  <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWCountry</ObjName>
     <ObjDesc>Countries</ObjDesc>
@@ -54,5 +60,11 @@
     <ObjName>EnterAttractionsFiltrer</ObjName>
     <ObjDesc>Enter Attractions Filtrer</ObjDesc>
     <ObjLink>enterattractionsfiltrer.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>CategoriesAndAttractions</ObjName>
+    <ObjDesc>Categories And Attractions</ObjDesc>
+    <ObjLink>categoriesandattractions.aspx</ObjLink>
   </Object>
 </Objects>

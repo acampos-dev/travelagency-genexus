@@ -1292,11 +1292,12 @@ trn_level_i(11,[ [ 7,8,13,40000,48 ],'Attraction','Attraction','Attraction','',4
  
  
 pgm_parm_i(web,20,'GX00A0',[ [ int,4,0,0 ] ],[ [ pSupplierId,out,[] ] ]).
-pgm_parm_i(web,0,'GX00B1',[ [ int,4,0,0 ],[ int,4,0,0 ] ],[ [ 'SupplierId',in,[] ],[ 'V7',out,[] ] ]).
+pgm_parm_i(web,22,'GX00B1',[ [ int,4,0,0 ],[ int,4,0,0 ] ],[ [ pSupplierId,in,[] ],[ pAttractionId,out,[] ] ]).
 pgm_parm_i(web,4,'GX0020',[ [ int,4,0,0 ] ],[ [ pAttractionId,out,[] ] ]).
  
 pgm_callprotocol_i(trn,8,'SUPPLIER','INTERNAL','Secure').
 pgm_callprotocol_i(web,20,'GX00A0','INTERNAL','Secure').
+pgm_callprotocol_i(web,22,'GX00B1','INTERNAL','Secure').
 pgm_callprotocol_i(web,4,'GX0020','INTERNAL','Secure').
  
  

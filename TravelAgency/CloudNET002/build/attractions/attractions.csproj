@@ -33,6 +33,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Compile Include = "$(WebDirectory)\attractions_bc.cs" />
 		<Compile Include = "$(WebDirectory)\attractions.cs" />
 		<Compile Include = "$(WebDirectory)\general\security\isauthorized.cs" />
 

@@ -78,10 +78,13 @@ rule_i(0,datastore(1,'HelpKeyword','20')).
 rule_i(0,datastore(1,'DBMS',12)).
 rule_i(0,datastore(1,'NAME','Default')).
 rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop(gxtest_ignoreForTestCoverage,'0')).
 rule_i(0,prop('PWFCallable','0')).
 rule_i(0,prop('ObjectVisibility','KnowledgeBase')).
 rule_i(0,prop('FullyQualifiedName','Category')).
 rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SEARCH_VIEWER','')).
+rule_i(0,prop('SEARCHABLE','UMPV')).
 rule_i(0,prop('MTIER_OPT','Yes')).
 rule_i(0,prop('Hint_firstrows','UMPV')).
 rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
@@ -130,17 +133,18 @@ rule_i(0,prop('MasterPage',o(13,'General.UI.MasterUnanimoSidebar'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop(idFormLayout,'UnanimoTemplate')).
 rule_i(0,prop('Theme',o(102,'TravelAgency'))).
-rule_i(0,prop('AppGenerator','1')).
-rule_i(0,prop('AppLocation','')).
-rule_i(0,prop('AppIcon','')).
-rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('WS_Delete','-1')).
+rule_i(0,prop('WS_Update','-1')).
+rule_i(0,prop('WS_Insert','-1')).
+rule_i(0,prop('WS_View','-1')).
+rule_i(0,prop(idISBCWEBSERVICE,'0')).
 rule_i(0,prop('ExternalNamespace','TravelAgency')).
 rule_i(0,prop('ExternalName','Category')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
 rule_i(0,prop(idConnectivitySupport,idInherit)).
 rule_i(0,prop('OBJECT_METADATA','')).
-rule_i(0,prop('IsMain','-1')).
 rule_i(0,prop(sessiontype,'RW')).
-rule_i(0,prop(idBC,'0')).
+rule_i(0,prop(idBC,'-1')).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
 rule_i(0,prop('ObjDesc','Category')).
 rule_i(0,prop('ObjName','Category')).
@@ -148,7 +152,6 @@ rule_i(4,prompt([ 4,[ [ [],11,11 ] ],[],[],[ t(o(13,'Gx0040'),28),t(11,2) ],[],n
 rule_i(4,rule([ a(23,[ [ 11 ],[ t(o(13,'Gx0040'),28),t(11,2) ] ]) ],[],[],[ 11 ])).
 rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
 rule_i(0,maingen(41)).
-rule_i(0,prop('PGMTYPE',main)).
  
 a_i(1,4,t,4,[],[ [ [ [],11,11 ] ],'ICATEGORY',[] ]).
  
@@ -819,6 +822,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
+att_prop_i(2,11,'HORIZONTAL_DESCRIPTION','Category Id',d).
 att_prop_i(2,11,'ExternalName','CategoryId',d).
 att_prop_i(2,11,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,11,'EmptyAsNull','Yes',d).
@@ -833,6 +837,7 @@ att_prop_i(2,11,'AttValidationFailedMsg','',d).
 att_prop_i(2,11,'DownloadOffline','0',d).
 att_prop_i(2,11,'VarServiceExtName','',d).
 att_prop_i(2,11,'FullName','CategoryId',v).
+att_prop_i(2,12,'HORIZONTAL_DESCRIPTION','Category Name',d).
 att_prop_i(2,12,'ExternalName','CategoryName',d).
 att_prop_i(2,12,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,12,'EmptyAsNull','Yes',d).
@@ -844,6 +849,7 @@ att_prop_i(2,12,'AttValidationFailedMsg','',d).
 att_prop_i(2,12,'DownloadOffline','0',d).
 att_prop_i(2,12,'VarServiceExtName','',d).
 att_prop_i(2,12,'FullName','CategoryName',v).
+att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Attraction Id',d).
 att_prop_i(2,7,'ExternalName','AttractionId',d).
 att_prop_i(2,7,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).
@@ -889,7 +895,6 @@ pgm_callprotocol_i(trn,4,'CATEGORY','INTERNAL','Secure').
 pgm_callprotocol_i(web,6,'GX0040','INTERNAL','Secure').
  
  
-pgm_main_info_i(trn,4,'CATEGORY',[ 41,'CATEGORY','Category','','','','' ]).
  
  
  

@@ -21,7 +21,6 @@ called_tree_i(0,2,1,13).
  
  
  
-ij_main_object(attractions,'Attractions','','""','',default).
  
  
  
@@ -32,6 +31,7 @@ ij_object_dependency(attractions,[],[],[],2).
 obj_parms_i([ 'string aP0_Gx_mode','short aP1_AttractionId' ],[ [ 'Mode',in ],[ 'Attractionid',in ] ]).
  
  
+has_silent_trn_i(attractions_bc).
  
  
  

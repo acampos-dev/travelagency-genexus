@@ -9,7 +9,7 @@
 <ObjDesc>Categories And Their Attractions List</ObjDesc>
 <ObjPgmName>CategoriesAndTheirAttractionsList</ObjPgmName>
 <ObjClsName>Procedure</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <OutputDevices>

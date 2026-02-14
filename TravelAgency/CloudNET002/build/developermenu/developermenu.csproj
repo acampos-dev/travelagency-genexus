@@ -15,6 +15,12 @@
 	</PropertyGroup>
 	
 	<ItemGroup>
+		<ProjectReference Include=".\..\attractionwithoutparameters\attractionwithoutparameters.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\attractionwithoutparameters\attractionwithoutparameters.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
 		<ProjectReference Include=".\..\supplier\supplier.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
@@ -33,9 +39,6 @@
 		<ProjectReference Include=".\..\category\category.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
-		<ProjectReference Include=".\..\category\category.csproj" >
-			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
-		</ProjectReference>
 		<ProjectReference Include=".\..\country\country.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
@@ -45,13 +48,13 @@
 		<ProjectReference Include=".\..\attractions\attractions.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
-		<ProjectReference Include=".\..\attractions\attractions.csproj" >
-			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
-		</ProjectReference>
 		<ProjectReference Include=".\..\customer\customer.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\customer\customer.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\categoriesandattractions\categoriesandattractions.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\enterattractionsfiltrer\enterattractionsfiltrer.csproj" >
@@ -172,6 +175,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Reference Include="GeneXus.dll" > 
+			<HintPath>$(WebBinDirectory)\GeneXus.dll</HintPath>
+		</Reference>
 
 
 	</ItemGroup>

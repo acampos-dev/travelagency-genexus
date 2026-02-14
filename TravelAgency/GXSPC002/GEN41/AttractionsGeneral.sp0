@@ -1429,7 +1429,6 @@ pgm_callprotocol_i(web,9,'VIEWCOUNTRY','INTERNAL','Secure').
 pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Secure').
  
  
-pgm_main_info_i(trn,2,'ATTRACTIONS',[ 41,'ATTRACTIONS','','','','','INTERNAL' ]).
  
  
  

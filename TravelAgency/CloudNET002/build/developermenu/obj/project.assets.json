@@ -2455,6 +2455,42 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "attractionwithoutparameters/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/attractionwithoutparameters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/attractionwithoutparameters.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "categoriesandattractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/categoriesandattractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/categoriesandattractions.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "category/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -7916,6 +7952,16 @@
       "path": "../attractionsgeneral/attractionsgeneral.csproj",
       "msbuildProject": "../attractionsgeneral/attractionsgeneral.csproj"
     },
+    "attractionwithoutparameters/1.0.0": {
+      "type": "project",
+      "path": "../attractionwithoutparameters/attractionwithoutparameters.csproj",
+      "msbuildProject": "../attractionwithoutparameters/attractionwithoutparameters.csproj"
+    },
+    "categoriesandattractions/1.0.0": {
+      "type": "project",
+      "path": "../categoriesandattractions/categoriesandattractions.csproj",
+      "msbuildProject": "../categoriesandattractions/categoriesandattractions.csproj"
+    },
     "category/1.0.0": {
       "type": "project",
       "path": "../category/category.csproj",
@@ -8073,6 +8119,8 @@
       "attractions >= 1.0.0",
       "attractionsattractionwc >= 1.0.0",
       "attractionsgeneral >= 1.0.0",
+      "attractionwithoutparameters >= 1.0.0",
+      "categoriesandattractions >= 1.0.0",
       "category >= 1.0.0",
       "country >= 1.0.0",
       "countrycitywc >= 1.0.0",
@@ -8169,6 +8217,12 @@
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractions\\attractions.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractions\\attractions.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionwithoutparameters\\attractionwithoutparameters.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionwithoutparameters\\attractionwithoutparameters.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\categoriesandattractions\\categoriesandattractions.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\categoriesandattractions\\categoriesandattractions.csproj"
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\category\\category.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\category\\category.csproj"

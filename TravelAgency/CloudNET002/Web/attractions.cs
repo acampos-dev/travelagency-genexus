@@ -53,7 +53,7 @@ namespace GeneXus.Programs {
             dyncall( GetNextPar( )) ;
             return  ;
          }
-         else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxExecAct_"+"gxLoad_16") == 0 )
+         else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxExecAct_"+"gxLoad_17") == 0 )
          {
             A9CountryId = (short)(Math.Round(NumberUtil.Val( GetPar( "CountryId"), "."), 18, MidpointRounding.ToEven));
             AssignAttri("", false, "A9CountryId", StringUtil.LTrimStr( (decimal)(A9CountryId), 4, 0));
@@ -63,10 +63,10 @@ namespace GeneXus.Programs {
                GxWebError = 1;
                return  ;
             }
-            gxLoad_16( A9CountryId) ;
+            gxLoad_17( A9CountryId) ;
             return  ;
          }
-         else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxExecAct_"+"gxLoad_17") == 0 )
+         else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxExecAct_"+"gxLoad_18") == 0 )
          {
             A9CountryId = (short)(Math.Round(NumberUtil.Val( GetPar( "CountryId"), "."), 18, MidpointRounding.ToEven));
             AssignAttri("", false, "A9CountryId", StringUtil.LTrimStr( (decimal)(A9CountryId), 4, 0));
@@ -79,10 +79,10 @@ namespace GeneXus.Programs {
                GxWebError = 1;
                return  ;
             }
-            gxLoad_17( A9CountryId, A14CityId) ;
+            gxLoad_18( A9CountryId, A14CityId) ;
             return  ;
          }
-         else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxExecAct_"+"gxLoad_18") == 0 )
+         else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxExecAct_"+"gxLoad_19") == 0 )
          {
             A11CategoryId = (short)(Math.Round(NumberUtil.Val( GetPar( "CategoryId"), "."), 18, MidpointRounding.ToEven));
             n11CategoryId = false;
@@ -93,7 +93,7 @@ namespace GeneXus.Programs {
                GxWebError = 1;
                return  ;
             }
-            gxLoad_18( A11CategoryId) ;
+            gxLoad_19( A11CategoryId) ;
             return  ;
          }
          else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxEvt") == 0 )
@@ -1008,7 +1008,7 @@ namespace GeneXus.Programs {
 
       protected void ZM022( short GX_JID )
       {
-         if ( ( GX_JID == 14 ) || ( GX_JID == 0 ) )
+         if ( ( GX_JID == 15 ) || ( GX_JID == 0 ) )
          {
             if ( ! IsIns( ) )
             {
@@ -1025,7 +1025,7 @@ namespace GeneXus.Programs {
                Z11CategoryId = A11CategoryId;
             }
          }
-         if ( GX_JID == -14 )
+         if ( GX_JID == -15 )
          {
             Z7AttractionId = A7AttractionId;
             Z8AttractionName = A8AttractionName;
@@ -1169,7 +1169,7 @@ namespace GeneXus.Programs {
             AssignAttri("", false, "A13AttractionPhoto", A13AttractionPhoto);
             AssignProp("", false, imgAttractionPhoto_Internalname, "Bitmap", (String.IsNullOrEmpty(StringUtil.RTrim( A13AttractionPhoto)) ? A40000AttractionPhoto_GXI : context.convertURL( context.PathToRelativeUrl( A13AttractionPhoto))), true);
             AssignProp("", false, imgAttractionPhoto_Internalname, "SrcSet", context.GetImageSrcSet( A13AttractionPhoto), true);
-            ZM022( -14) ;
+            ZM022( -15) ;
          }
          pr_default.close(5);
          OnLoadActions022( ) ;
@@ -1197,6 +1197,13 @@ namespace GeneXus.Programs {
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
          }
          pr_default.close(6);
+         if ( String.IsNullOrEmpty(StringUtil.RTrim( A8AttractionName)) )
+         {
+            GX_msglist.addItem("The attraction name must not be empty", 1, "ATTRACTIONNAME");
+            AnyError = 1;
+            GX_FocusControl = edtAttractionName_Internalname;
+            AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
+         }
          /* Using cursor T00024 */
          pr_default.execute(2, new Object[] {A9CountryId});
          if ( (pr_default.getStatus(2) == 101) )
@@ -1252,7 +1259,7 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void gxLoad_16( short A9CountryId )
+      protected void gxLoad_17( short A9CountryId )
       {
          /* Using cursor T00029 */
          pr_default.execute(7, new Object[] {A9CountryId});
@@ -1278,7 +1285,7 @@ namespace GeneXus.Programs {
          pr_default.close(7);
       }
 
-      protected void gxLoad_17( short A9CountryId ,
+      protected void gxLoad_18( short A9CountryId ,
                                 short A14CityId )
       {
          /* Using cursor T000210 */
@@ -1308,7 +1315,7 @@ namespace GeneXus.Programs {
          pr_default.close(8);
       }
 
-      protected void gxLoad_18( short A11CategoryId )
+      protected void gxLoad_19( short A11CategoryId )
       {
          /* Using cursor T000211 */
          pr_default.execute(9, new Object[] {n11CategoryId, A11CategoryId});
@@ -1358,7 +1365,7 @@ namespace GeneXus.Programs {
          pr_default.execute(1, new Object[] {A7AttractionId});
          if ( (pr_default.getStatus(1) != 101) )
          {
-            ZM022( 14) ;
+            ZM022( 15) ;
             RcdFound2 = 1;
             A7AttractionId = T00023_A7AttractionId[0];
             AssignAttri("", false, "A7AttractionId", StringUtil.LTrimStr( (decimal)(A7AttractionId), 4, 0));
@@ -2210,7 +2217,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202613112525388", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20262142055193", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -2226,7 +2233,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("attractions.js", "?202613112525388", false, true);
+         context.AddJavascriptSource("attractions.js", "?20262142055193", false, true);
          /* End function include_jscripts */
       }
 
@@ -2356,6 +2363,12 @@ namespace GeneXus.Programs {
             GX_FocusControl = edtAttractionName_Internalname;
          }
          pr_default.close(22);
+         if ( String.IsNullOrEmpty(StringUtil.RTrim( A8AttractionName)) )
+         {
+            GX_msglist.addItem("The attraction name must not be empty", 1, "ATTRACTIONNAME");
+            AnyError = 1;
+            GX_FocusControl = edtAttractionName_Internalname;
+         }
          dynload_actions( ) ;
          /*  Sending validation outputs */
       }

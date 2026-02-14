@@ -86,10 +86,13 @@ rule_i(0,datastore(1,'HelpKeyword','20')).
 rule_i(0,datastore(1,'DBMS',12)).
 rule_i(0,datastore(1,'NAME','Default')).
 rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop(gxtest_ignoreForTestCoverage,'0')).
 rule_i(0,prop('PWFCallable','0')).
 rule_i(0,prop('ObjectVisibility','KnowledgeBase')).
 rule_i(0,prop('FullyQualifiedName','Attractions')).
 rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SEARCH_VIEWER',o(13,'ViewAttractions'))).
+rule_i(0,prop('SEARCHABLE','UMPV')).
 rule_i(0,prop('MTIER_OPT','Yes')).
 rule_i(0,prop('Hint_firstrows','UMPV')).
 rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
@@ -138,17 +141,18 @@ rule_i(0,prop('MasterPage',o(13,'General.UI.MasterUnanimoSidebar'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop(idFormLayout,'UnanimoTemplate')).
 rule_i(0,prop('Theme',o(102,'TravelAgency'))).
-rule_i(0,prop('AppGenerator','1')).
-rule_i(0,prop('AppLocation','')).
-rule_i(0,prop('AppIcon','')).
-rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('WS_Delete','-1')).
+rule_i(0,prop('WS_Update','-1')).
+rule_i(0,prop('WS_Insert','-1')).
+rule_i(0,prop('WS_View','-1')).
+rule_i(0,prop(idISBCWEBSERVICE,'0')).
 rule_i(0,prop('ExternalNamespace','TravelAgency')).
 rule_i(0,prop('ExternalName','Attractions')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
 rule_i(0,prop(idConnectivitySupport,idInherit)).
 rule_i(0,prop('OBJECT_METADATA','')).
-rule_i(0,prop('IsMain','-1')).
 rule_i(0,prop(sessiontype,'RW')).
-rule_i(0,prop(idBC,'0')).
+rule_i(0,prop(idBC,'-1')).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
 rule_i(0,prop('ObjDesc','Attractions')).
 rule_i(0,prop('ObjName','Attractions')).
@@ -160,7 +164,6 @@ rule_i(2,prompt([ 3,[ [ 2,9,9 ] ],[ 9 ],[ 9 ],[ t(o(13,'Gx0030'),28),t(9,2) ],[]
 rule_i(2,rule([ a(23,[ [ 9 ],[ t(o(13,'Gx0030'),28),t(9,2) ] ]) ],[],[],[ 9 ])).
 rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
 rule_i(0,maingen(41)).
-rule_i(0,prop('PGMTYPE',main)).
 rule_i(0,rule([ a(10,[ 'Mode','Attractionid' ]) ],[],[ insert,update,delete,display ],[])).
 rule_i(0,parmio([ [ 'Mode',in ],[ 'Attractionid',in ] ])).
 rule_i(2,rule([ a(18,[ [ 9,14 ] ]) ],[],[ insert,update,delete ],[ 9,14 ])).
@@ -170,6 +173,7 @@ rule_i(2,rule([ a(21,[ [ 7 ] ]) ],[],[ insert,update,delete,display ],[ 7 ])).
 rule_i(2,rule([ a(3,[ t(9,2) ]) ],[ t('Mode',23),t(=,10),t([ 71,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_countryid',23),t(')',4) ],[ insert,update,delete,display ],[ 9,'Mode','Insert_countryid' ])).
 rule_i(2,rule([ a(3,[ t(11,2) ]) ],[ t('Mode',23),t(=,10),t([ 71,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_categoryid',23),t(')',4) ],[ insert,update,delete,display ],[ 11,'Mode','Insert_categoryid' ])).
 rule_i(2,rule([ a(3,[ t(14,2) ]) ],[ t('Mode',23),t(=,10),t([ 71,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_cityid',23),t(')',4) ],[ insert,update,delete,display ],[ 14,'Mode','Insert_cityid' ])).
+rule_i(2,rule([ a(1,[ t('"The attraction name must not be empty"',3) ]) ],[ t('null(',1),t(8,2),t(')',4) ],[ insert,update,delete,display ],[ 8 ])).
 rule_i(2,rule([ a(19,[ [ 9 ],msg([ t('"No matching ''Country''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 9 ])).
 rule_i(2,rule([ a(19,[ [ 9,14 ],msg([ t('"No matching ''City''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 9,14 ])).
 rule_i(2,rule([ a(19,[ [ 11 ],msg([ t('"No matching ''Category''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 11 ])).
@@ -185,12 +189,13 @@ a_i(10,2,f,[ t(14,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('Mode',23),t
 a_i(11,2,b,6,[],[ [],[ a(3,[ t(9,2) ]) ],[ t('Mode',23),t(=,10),t([ 71,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_countryid',23),t(')',4) ] ]).
 a_i(12,2,b,8,[],[ [],[ a(3,[ t(11,2) ]) ],[ t('Mode',23),t(=,10),t([ 71,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_categoryid',23),t(')',4) ] ]).
 a_i(13,2,b,10,[],[ [],[ a(3,[ t(14,2) ]) ],[ t('Mode',23),t(=,10),t([ 71,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_cityid',23),t(')',4) ] ]).
-a_i(14,2,t,2,[],[ [ [ [],7,7 ] ],'IATTRACTIONS',[] ]).
-a_i(15,2,k,2,[],[ [ [ [],8,8 ] ],'UATTRACTION1',[] ]).
-a_i(16,2,r,3,[],[ [ [ 2,9,9 ] ],'ICOUNTRY',[] ]).
-a_i(17,2,r,5,[],[ [ [ 2,9,9 ],[ 2,14,14 ] ],'ICOUNTRYCITY',[] ]).
-a_i(18,2,r,4,[],[ [ [ 2,11,11 ] ],'ICATEGORY',[] ]).
-a_i(19,2,f,'Pgmname',[],[ [],[ t('"Attractions"',3) ] ]).
+a_i(14,2,b,11,[],[ [],[ a(1,[ t('"The attraction name must not be empty"',3) ]) ],[ t('null(',1),t(8,2),t(')',4) ] ]).
+a_i(15,2,t,2,[],[ [ [ [],7,7 ] ],'IATTRACTIONS',[] ]).
+a_i(16,2,k,2,[],[ [ [ [],8,8 ] ],'UATTRACTION1',[] ]).
+a_i(17,2,r,3,[],[ [ [ 2,9,9 ] ],'ICOUNTRY',[] ]).
+a_i(18,2,r,5,[],[ [ [ 2,9,9 ],[ 2,14,14 ] ],'ICOUNTRYCITY',[] ]).
+a_i(19,2,r,4,[],[ [ [ 2,11,11 ] ],'ICATEGORY',[] ]).
+a_i(20,2,f,'Pgmname',[],[ [],[ t('"Attractions"',3) ] ]).
  
 v_i(f,i,3,'Attractionid').
 v_i(f,o,3,7).
@@ -214,25 +219,27 @@ v_i(b,i,12,'Insert_categoryid').
 v_i(b,o,12,[]).
 v_i(b,i,13,'Insert_cityid').
 v_i(b,o,13,[]).
-v_i(t,i,14,7).
-v_i(t,o,14,8).
-v_i(t,o,14,13).
-v_i(t,o,14,40000).
-v_i(t,o,14,9).
-v_i(t,o,14,14).
-v_i(t,o,14,11).
-v_i(k,i,15,8).
-v_i(k,i,15,7).
-v_i(k,o,15,[]).
-v_i(r,i,16,9).
-v_i(r,o,16,10).
+v_i(b,i,14,8).
+v_i(b,o,14,[]).
+v_i(t,i,15,7).
+v_i(t,o,15,8).
+v_i(t,o,15,13).
+v_i(t,o,15,40000).
+v_i(t,o,15,9).
+v_i(t,o,15,14).
+v_i(t,o,15,11).
+v_i(k,i,16,8).
+v_i(k,i,16,7).
+v_i(k,o,16,[]).
 v_i(r,i,17,9).
-v_i(r,i,17,14).
-v_i(r,o,17,15).
-v_i(r,i,18,11).
-v_i(r,o,18,12).
-v_i(f,i,19,[]).
-v_i(f,o,19,'Pgmname').
+v_i(r,o,17,10).
+v_i(r,i,18,9).
+v_i(r,i,18,14).
+v_i(r,o,18,15).
+v_i(r,i,19,11).
+v_i(r,o,19,12).
+v_i(f,i,20,[]).
+v_i(f,o,20,'Pgmname').
  
 act_info_i(3,[ [ 7 ] ]).
 act_info_i(5,[ [ 9 ] ]).
@@ -1501,6 +1508,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
+att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Attraction Id',d).
 att_prop_i(2,7,'ExternalName','AttractionId',d).
 att_prop_i(2,7,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).
@@ -1515,6 +1523,7 @@ att_prop_i(2,7,'AttValidationFailedMsg','',d).
 att_prop_i(2,7,'DownloadOffline','0',d).
 att_prop_i(2,7,'VarServiceExtName','',d).
 att_prop_i(2,7,'FullName','AttractionId',v).
+att_prop_i(2,8,'HORIZONTAL_DESCRIPTION','Attraction Name',d).
 att_prop_i(2,8,'ExternalName','AttractionName',d).
 att_prop_i(2,8,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,8,'EmptyAsNull','Yes',d).
@@ -1526,6 +1535,7 @@ att_prop_i(2,8,'AttValidationFailedMsg','',d).
 att_prop_i(2,8,'DownloadOffline','0',d).
 att_prop_i(2,8,'VarServiceExtName','',d).
 att_prop_i(2,8,'FullName','AttractionName',v).
+att_prop_i(2,9,'HORIZONTAL_DESCRIPTION','Country Id',d).
 att_prop_i(2,9,'ExternalName','CountryId',d).
 att_prop_i(2,9,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,9,'EmptyAsNull','Yes',d).
@@ -1540,6 +1550,7 @@ att_prop_i(2,9,'AttValidationFailedMsg','',d).
 att_prop_i(2,9,'DownloadOffline','0',d).
 att_prop_i(2,9,'VarServiceExtName','',d).
 att_prop_i(2,9,'FullName','CountryId',v).
+att_prop_i(2,10,'HORIZONTAL_DESCRIPTION','Country Name',d).
 att_prop_i(2,10,'ExternalName','CountryName',d).
 att_prop_i(2,10,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,10,'EmptyAsNull','Yes',d).
@@ -1551,6 +1562,7 @@ att_prop_i(2,10,'AttValidationFailedMsg','',d).
 att_prop_i(2,10,'DownloadOffline','0',d).
 att_prop_i(2,10,'VarServiceExtName','',d).
 att_prop_i(2,10,'FullName','CountryName',v).
+att_prop_i(2,11,'HORIZONTAL_DESCRIPTION','Category Id',d).
 att_prop_i(2,11,'ExternalName','CategoryId',d).
 att_prop_i(2,11,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,11,'EmptyAsNull','Yes',d).
@@ -1565,6 +1577,7 @@ att_prop_i(2,11,'AttValidationFailedMsg','',d).
 att_prop_i(2,11,'DownloadOffline','0',d).
 att_prop_i(2,11,'VarServiceExtName','',d).
 att_prop_i(2,11,'FullName','CategoryId',v).
+att_prop_i(2,12,'HORIZONTAL_DESCRIPTION','Category Name',d).
 att_prop_i(2,12,'ExternalName','CategoryName',d).
 att_prop_i(2,12,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,12,'EmptyAsNull','Yes',d).
@@ -1576,6 +1589,7 @@ att_prop_i(2,12,'AttValidationFailedMsg','',d).
 att_prop_i(2,12,'DownloadOffline','0',d).
 att_prop_i(2,12,'VarServiceExtName','',d).
 att_prop_i(2,12,'FullName','CategoryName',v).
+att_prop_i(2,13,'HORIZONTAL_DESCRIPTION','Attraction Photo',d).
 att_prop_i(2,13,'ExternalName','AttractionPhoto',d).
 att_prop_i(2,13,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,13,'EmptyAsNull','Yes',d).
@@ -1587,6 +1601,7 @@ att_prop_i(2,13,'AttValidationFailedMsg','',d).
 att_prop_i(2,13,'DownloadOffline','0',d).
 att_prop_i(2,13,'VarServiceExtName','',d).
 att_prop_i(2,13,'FullName','AttractionPhoto',v).
+att_prop_i(2,14,'HORIZONTAL_DESCRIPTION','City Id',d).
 att_prop_i(2,14,'ExternalName','CityId',d).
 att_prop_i(2,14,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,14,'EmptyAsNull','Yes',d).
@@ -1601,6 +1616,7 @@ att_prop_i(2,14,'AttValidationFailedMsg','',d).
 att_prop_i(2,14,'DownloadOffline','0',d).
 att_prop_i(2,14,'VarServiceExtName','',d).
 att_prop_i(2,14,'FullName','CityId',v).
+att_prop_i(2,15,'HORIZONTAL_DESCRIPTION','City Name',d).
 att_prop_i(2,15,'ExternalName','CityName',d).
 att_prop_i(2,15,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,15,'EmptyAsNull','Yes',d).
@@ -1612,6 +1628,7 @@ att_prop_i(2,15,'AttValidationFailedMsg','',d).
 att_prop_i(2,15,'DownloadOffline','0',d).
 att_prop_i(2,15,'VarServiceExtName','',d).
 att_prop_i(2,15,'FullName','CityName',v).
+att_prop_i(2,45,'HORIZONTAL_DESCRIPTION','Supplier Id',d).
 att_prop_i(2,45,'ExternalName','SupplierId',d).
 att_prop_i(2,45,'ExternalNamespace','TravelAgency',d).
 att_prop_i(2,45,'EmptyAsNull','Yes',d).
@@ -1830,7 +1847,6 @@ pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Secure').
  
  
 pgm_main_info_i(web,14,'WWATTRACTIONS',[ 41,'WWATTRACTIONS','','','','','INTERNAL' ]).
-pgm_main_info_i(trn,2,'ATTRACTIONS',[ 41,'ATTRACTIONS','Attractions','','','','' ]).
  
  
  

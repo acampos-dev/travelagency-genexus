@@ -1616,7 +1616,6 @@ pgm_callprotocol_i(trn,2,'ATTRACTIONS','INTERNAL','Secure').
 pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Secure').
  
  
-pgm_main_info_i(trn,2,'ATTRACTIONS',[ 41,'ATTRACTIONS','','','','','INTERNAL' ]).
 pgm_main_info_i(web,14,'WWATTRACTIONS',[ 41,'WWATTRACTIONS','Attractions','','','','' ]).
  
  

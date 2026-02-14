@@ -20,7 +20,6 @@ current_guid('780bd3a0-8a26-4715-8d3e-7e459e511c30').
  
  
  
-ij_main_object(category,'Category','','""','',default).
  
  
  
@@ -31,6 +30,7 @@ ij_object_dependency(category,[],[],[],4).
 obj_parms_i([],[]).
  
  
+has_silent_trn_i(category_bc).
  
  
  
