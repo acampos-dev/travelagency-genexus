@@ -67,4 +67,10 @@
     <ObjDesc>Categories And Attractions</ObjDesc>
     <ObjLink>categoriesandattractions.aspx</ObjLink>
   </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>MassiveInsertRemove</ObjName>
+    <ObjDesc>Massive Insert Remove</ObjDesc>
+    <ObjLink>massiveinsertremove.aspx</ObjLink>
+  </Object>
 </Objects>

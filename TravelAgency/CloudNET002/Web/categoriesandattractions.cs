@@ -254,6 +254,10 @@ namespace GeneXus.Programs {
          /* Send hidden variables. */
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
+         GxWebStd.gx_hidden_field( context, "CITYNAME", StringUtil.RTrim( A15CityName));
+         GxWebStd.gx_hidden_field( context, "CATEGORYNAME", StringUtil.RTrim( A12CategoryName));
+         GxWebStd.gx_hidden_field( context, "ATTRACTIONID", StringUtil.LTrim( StringUtil.NToC( (decimal)(A7AttractionId), 4, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "CATEGORYID", StringUtil.LTrim( StringUtil.NToC( (decimal)(A40001CategoryId), 4, 0, ".", "")));
       }
 
       public override void RenderHtmlCloseForm( )
@@ -432,12 +436,19 @@ namespace GeneXus.Programs {
                               /* Execute user event: 'Do' */
                               E110O2 ();
                            }
+                           else if ( StringUtil.StrCmp(sEvt, "'UNDO'") == 0 )
+                           {
+                              context.wbHandled = 1;
+                              dynload_actions( ) ;
+                              /* Execute user event: 'Undo' */
+                              E120O2 ();
+                           }
                            else if ( StringUtil.StrCmp(sEvt, "LOAD") == 0 )
                            {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: Load */
-                              E120O2 ();
+                              E130O2 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                            {
@@ -451,11 +462,6 @@ namespace GeneXus.Programs {
                                  dynload_actions( ) ;
                               }
                               /* No code required for Cancel button. It is implemented as the Reset button. */
-                           }
-                           else if ( StringUtil.StrCmp(sEvt, "'UNDO'") == 0 )
-                           {
-                              context.wbHandled = 1;
-                              dynload_actions( ) ;
                            }
                            else if ( StringUtil.StrCmp(sEvt, "LSCR") == 0 )
                            {
@@ -567,7 +573,7 @@ namespace GeneXus.Programs {
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
             /* Execute user event: Load */
-            E120O2 ();
+            E130O2 ();
             WB0O0( ) ;
          }
       }
@@ -578,6 +584,20 @@ namespace GeneXus.Programs {
 
       protected void before_start_formulas( )
       {
+         /* Using cursor H000O3 */
+         pr_default.execute(0);
+         if ( (pr_default.getStatus(0) != 101) )
+         {
+            A40001CategoryId = H000O3_A40001CategoryId[0];
+            n40001CategoryId = H000O3_n40001CategoryId[0];
+         }
+         else
+         {
+            A40001CategoryId = 0;
+            n40001CategoryId = false;
+            AssignAttri("", false, "A40001CategoryId", StringUtil.LTrimStr( (decimal)(A40001CategoryId), 4, 0));
+         }
+         pr_default.close(0);
          fix_multi_value_controls( ) ;
       }
 
@@ -609,11 +629,67 @@ namespace GeneXus.Programs {
          new insertcategoryupdateattractions(context ).execute( ) ;
       }
 
+      protected void E120O2( )
+      {
+         /* 'Undo' Routine */
+         returnInSub = false;
+         /* Using cursor H000O5 */
+         pr_default.execute(1);
+         while ( (pr_default.getStatus(1) != 101) )
+         {
+            A9CountryId = H000O5_A9CountryId[0];
+            A14CityId = H000O5_A14CityId[0];
+            n14CityId = H000O5_n14CityId[0];
+            A11CategoryId = H000O5_A11CategoryId[0];
+            n11CategoryId = H000O5_n11CategoryId[0];
+            A12CategoryName = H000O5_A12CategoryName[0];
+            A15CityName = H000O5_A15CityName[0];
+            A7AttractionId = H000O5_A7AttractionId[0];
+            A40000CategoryId = H000O5_A40000CategoryId[0];
+            n40000CategoryId = H000O5_n40000CategoryId[0];
+            A15CityName = H000O5_A15CityName[0];
+            A12CategoryName = H000O5_A12CategoryName[0];
+            A40000CategoryId = H000O5_A40000CategoryId[0];
+            n40000CategoryId = H000O5_n40000CategoryId[0];
+            AV7att.Load(A7AttractionId);
+            AV7att.gxTpr_Categoryid = A40000CategoryId;
+            AV7att.Update();
+            pr_default.readNext(1);
+         }
+         pr_default.close(1);
+         /* Using cursor H000O7 */
+         pr_default.execute(2);
+         if ( (pr_default.getStatus(2) != 101) )
+         {
+            A40001CategoryId = H000O7_A40001CategoryId[0];
+            n40001CategoryId = H000O7_n40001CategoryId[0];
+         }
+         else
+         {
+            A40001CategoryId = 0;
+            n40001CategoryId = false;
+            AssignAttri("", false, "A40001CategoryId", StringUtil.LTrimStr( (decimal)(A40001CategoryId), 4, 0));
+         }
+         pr_default.close(2);
+         AV5categoryId = A40001CategoryId;
+         AV6category.Load(AV5categoryId);
+         AV6category.Delete();
+         if ( AV6category.Success() )
+         {
+            context.CommitDataStores("categoriesandattractions",pr_default);
+         }
+         else
+         {
+            context.RollbackDataStores("categoriesandattractions",pr_default);
+         }
+         /*  Sending Event outputs  */
+      }
+
       protected void nextLoad( )
       {
       }
 
-      protected void E120O2( )
+      protected void E130O2( )
       {
          /* Load Routine */
          returnInSub = false;
@@ -658,7 +734,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20262142054931", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202621510185511", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -674,7 +750,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("categoriesandattractions.js", "?20262142054931", false, true);
+         context.AddJavascriptSource("categoriesandattractions.js", "?202621510185511", false, true);
          /* End function include_jscripts */
       }
 
@@ -720,6 +796,8 @@ namespace GeneXus.Programs {
       {
          setEventMetadata("REFRESH","""{"handler":"Refresh","iparms":[]}""");
          setEventMetadata("'DO'","""{"handler":"E110O2","iparms":[]}""");
+         setEventMetadata("'UNDO'","""{"handler":"E120O2","iparms":[{"av":"A15CityName","fld":"CITYNAME"},{"av":"A12CategoryName","fld":"CATEGORYNAME"},{"av":"A7AttractionId","fld":"ATTRACTIONID","pic":"ZZZ9"}]""");
+         setEventMetadata("'UNDO'",""","oparms":[{"av":"A40000CategoryId","fld":"CATEGORYID","pic":"9999"},{"av":"A40001CategoryId","fld":"CATEGORYID","pic":"9999"}]}""");
          return  ;
       }
 
@@ -732,6 +810,10 @@ namespace GeneXus.Programs {
          }
       }
 
+      protected override void CloseCursors( )
+      {
+      }
+
       public override void initialize( )
       {
          gxfirstwebparm = "";
@@ -740,6 +822,8 @@ namespace GeneXus.Programs {
          FormProcess = "";
          bodyStyle = "";
          GXKey = "";
+         A15CityName = "";
+         A12CategoryName = "";
          GX_FocusControl = "";
          Form = new GXWebForm();
          sPrefix = "";
@@ -753,18 +837,56 @@ namespace GeneXus.Programs {
          EvtGridId = "";
          EvtRowId = "";
          sEvtType = "";
+         H000O3_A40001CategoryId = new short[1] ;
+         H000O3_n40001CategoryId = new bool[] {false} ;
+         H000O5_A9CountryId = new short[1] ;
+         H000O5_A14CityId = new short[1] ;
+         H000O5_n14CityId = new bool[] {false} ;
+         H000O5_A11CategoryId = new short[1] ;
+         H000O5_n11CategoryId = new bool[] {false} ;
+         H000O5_A12CategoryName = new string[] {""} ;
+         H000O5_A15CityName = new string[] {""} ;
+         H000O5_A7AttractionId = new short[1] ;
+         H000O5_A40000CategoryId = new short[1] ;
+         H000O5_n40000CategoryId = new bool[] {false} ;
+         AV7att = new SdtAttractions(context);
+         H000O7_A40001CategoryId = new short[1] ;
+         H000O7_n40001CategoryId = new bool[] {false} ;
+         AV6category = new SdtCategory(context);
          BackMsgLst = new msglist();
          LclMsgLst = new msglist();
+         pr_default = new DataStoreProvider(context, new GeneXus.Programs.categoriesandattractions__default(),
+            new Object[][] {
+                new Object[] {
+               H000O3_A40001CategoryId, H000O3_n40001CategoryId
+               }
+               , new Object[] {
+               H000O5_A9CountryId, H000O5_A14CityId, H000O5_n14CityId, H000O5_A11CategoryId, H000O5_n11CategoryId, H000O5_A12CategoryName, H000O5_A15CityName, H000O5_A7AttractionId, H000O5_A40000CategoryId, H000O5_n40000CategoryId
+               }
+               , new Object[] {
+               H000O7_A40001CategoryId, H000O7_n40001CategoryId
+               }
+            }
+         );
          /* GeneXus formulas. */
       }
 
+      private short nRcdExists_3 ;
+      private short nIsMod_3 ;
       private short nGotPars ;
       private short GxWebError ;
       private short gxajaxcallmode ;
+      private short A7AttractionId ;
+      private short A40001CategoryId ;
       private short wbEnd ;
       private short wbStart ;
       private short nDonePA ;
       private short gxcookieaux ;
+      private short A9CountryId ;
+      private short A14CityId ;
+      private short A11CategoryId ;
+      private short A40000CategoryId ;
+      private short AV5categoryId ;
       private short nGXWrapped ;
       private int idxLst ;
       private string gxfirstwebparm ;
@@ -773,6 +895,8 @@ namespace GeneXus.Programs {
       private string FormProcess ;
       private string bodyStyle ;
       private string GXKey ;
+      private string A15CityName ;
+      private string A12CategoryName ;
       private string GX_FocusControl ;
       private string sPrefix ;
       private string divMaintable_Internalname ;
@@ -795,11 +919,97 @@ namespace GeneXus.Programs {
       private bool Rfr0gs ;
       private bool wbErr ;
       private bool gxdyncontrolsrefreshing ;
+      private bool n40001CategoryId ;
       private bool returnInSub ;
+      private bool n14CityId ;
+      private bool n11CategoryId ;
+      private bool n40000CategoryId ;
       private GXWebForm Form ;
       private IGxDataStore dsDefault ;
+      private IDataStoreProvider pr_default ;
+      private short[] H000O3_A40001CategoryId ;
+      private bool[] H000O3_n40001CategoryId ;
+      private short[] H000O5_A9CountryId ;
+      private short[] H000O5_A14CityId ;
+      private bool[] H000O5_n14CityId ;
+      private short[] H000O5_A11CategoryId ;
+      private bool[] H000O5_n11CategoryId ;
+      private string[] H000O5_A12CategoryName ;
+      private string[] H000O5_A15CityName ;
+      private short[] H000O5_A7AttractionId ;
+      private short[] H000O5_A40000CategoryId ;
+      private bool[] H000O5_n40000CategoryId ;
+      private SdtAttractions AV7att ;
+      private short[] H000O7_A40001CategoryId ;
+      private bool[] H000O7_n40001CategoryId ;
+      private SdtCategory AV6category ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
    }
+
+   public class categoriesandattractions__default : DataStoreHelperBase, IDataStoreHelper
+   {
+      public ICursor[] getCursors( )
+      {
+         cursorDefinitions();
+         return new Cursor[] {
+          new ForEachCursor(def[0])
+         ,new ForEachCursor(def[1])
+         ,new ForEachCursor(def[2])
+       };
+    }
+
+    private static CursorDef[] def;
+    private void cursorDefinitions( )
+    {
+       if ( def == null )
+       {
+          Object[] prmH000O3;
+          prmH000O3 = new Object[] {
+          };
+          Object[] prmH000O5;
+          prmH000O5 = new Object[] {
+          };
+          Object[] prmH000O7;
+          prmH000O7 = new Object[] {
+          };
+          def= new CursorDef[] {
+              new CursorDef("H000O3", "SELECT COALESCE( T1.[CategoryId], 0) AS CategoryId FROM (SELECT MIN([CategoryId]) AS CategoryId FROM [Category] WHERE [CategoryName] = 'Tourist site' ) T1 ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000O3,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("H000O5", "SELECT T1.[CountryId], T1.[CityId], T1.[CategoryId], T3.[CategoryName], T2.[CityName], T1.[AttractionId], COALESCE( T4.[CategoryId], 0) AS CategoryId FROM (([Attractions] T1 LEFT JOIN [CountryCity] T2 ON T2.[CountryId] = T1.[CountryId] AND T2.[CityId] = T1.[CityId]) LEFT JOIN [Category] T3 ON T3.[CategoryId] = T1.[CategoryId]),  (SELECT MIN([CategoryId]) AS CategoryId FROM [Category] WHERE [CategoryName] = 'Monument' ) T4 WHERE (T2.[CityName] = 'Beijing') AND (T3.[CategoryName] = 'Tourist Site') ORDER BY T1.[AttractionId] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000O5,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("H000O7", "SELECT COALESCE( T1.[CategoryId], 0) AS CategoryId FROM (SELECT MIN([CategoryId]) AS CategoryId FROM [Category] WHERE [CategoryName] = 'Tourist site' ) T1 ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000O7,1, GxCacheFrequency.OFF ,true,false )
+          };
+       }
+    }
+
+    public void getResults( int cursor ,
+                            IFieldGetter rslt ,
+                            Object[] buf )
+    {
+       switch ( cursor )
+       {
+             case 0 :
+                ((short[]) buf[0])[0] = rslt.getShort(1);
+                ((bool[]) buf[1])[0] = rslt.wasNull(1);
+                return;
+             case 1 :
+                ((short[]) buf[0])[0] = rslt.getShort(1);
+                ((short[]) buf[1])[0] = rslt.getShort(2);
+                ((bool[]) buf[2])[0] = rslt.wasNull(2);
+                ((short[]) buf[3])[0] = rslt.getShort(3);
+                ((bool[]) buf[4])[0] = rslt.wasNull(3);
+                ((string[]) buf[5])[0] = rslt.getString(4, 50);
+                ((string[]) buf[6])[0] = rslt.getString(5, 50);
+                ((short[]) buf[7])[0] = rslt.getShort(6);
+                ((short[]) buf[8])[0] = rslt.getShort(7);
+                ((bool[]) buf[9])[0] = rslt.wasNull(7);
+                return;
+             case 2 :
+                ((short[]) buf[0])[0] = rslt.getShort(1);
+                ((bool[]) buf[1])[0] = rslt.wasNull(1);
+                return;
+       }
+    }
+
+ }
 
 }

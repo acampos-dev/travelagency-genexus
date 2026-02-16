@@ -2905,6 +2905,24 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "massiveinsertremove/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/massiveinsertremove.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/massiveinsertremove.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "supplier/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -8077,6 +8095,11 @@
       "path": "../gx00b1/gx00b1.csproj",
       "msbuildProject": "../gx00b1/gx00b1.csproj"
     },
+    "massiveinsertremove/1.0.0": {
+      "type": "project",
+      "path": "../massiveinsertremove/massiveinsertremove.csproj",
+      "msbuildProject": "../massiveinsertremove/massiveinsertremove.csproj"
+    },
     "supplier/1.0.0": {
       "type": "project",
       "path": "../supplier/supplier.csproj",
@@ -8143,6 +8166,7 @@
       "gx0091 >= 1.0.0",
       "gx00a0 >= 1.0.0",
       "gx00b1 >= 1.0.0",
+      "massiveinsertremove >= 1.0.0",
       "supplier >= 1.0.0",
       "viewattractions >= 1.0.0",
       "viewcountry >= 1.0.0",
@@ -8292,6 +8316,9 @@
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00b1\\gx00b1.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00b1\\gx00b1.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\massiveinsertremove\\massiveinsertremove.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\massiveinsertremove\\massiveinsertremove.csproj"
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\supplier\\supplier.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\supplier\\supplier.csproj"

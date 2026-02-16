@@ -40,6 +40,7 @@ pgm_prop_i(trn,4,'CATEGORY',idISBUSINESSCOMPONENT,'-1').
 pgm_prop_i(web,15,'ATTRACTIONSGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,15,'ATTRACTIONSGENERAL','URLAccess','No').
 pgm_prop_i(trn,2,'ATTRACTIONS',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(mnproc,3,'CATEGORY_DP','OutputSDT',o(0,'Category')).
  
 model_wrkinfo_i([ '.NET','CloudNET002' ]).
  

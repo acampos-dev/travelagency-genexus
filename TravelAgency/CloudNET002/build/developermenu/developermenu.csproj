@@ -54,6 +54,9 @@
 		<ProjectReference Include=".\..\customer\customer.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
+		<ProjectReference Include=".\..\massiveinsertremove\massiveinsertremove.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
 		<ProjectReference Include=".\..\categoriesandattractions\categoriesandattractions.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>

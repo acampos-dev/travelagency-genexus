@@ -70,6 +70,12 @@
       <ObjLink>categoriesandattractions.aspx</ObjLink>
    </Object>
    <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>MassiveInsertRemove</ObjName>
+      <ObjDesc>Massive Insert Remove</ObjDesc>
+      <ObjLink>massiveinsertremove.aspx</ObjLink>
+   </Object>
+   <Object>
       <ObjCls>1</ObjCls>
       <ObjName>CategoriesAndTheirAttractionsList</ObjName>
       <ObjDesc>Categories And Their Attractions List</ObjDesc>
