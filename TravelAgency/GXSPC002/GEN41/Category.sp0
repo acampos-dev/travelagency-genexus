@@ -123,7 +123,8 @@ rule_i(0,prop('CFMTRN','No')).
 rule_i(0,prop('TRNEND','Yes')).
 rule_i(0,prop('IsDwhTrn','0')).
 rule_i(0,prop(idDynTrnUpdatePolicy,idDynTrnUpdatePolicy_UPDATABLE)).
-rule_i(0,prop(idIsDynTrn,'0')).
+rule_i(0,prop(idDynTrnExecTime,idDynTrnExecTime_CREATION)).
+rule_i(0,prop(idIsDynTrn,'-1')).
 rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
 rule_i(0,prop('HTTP_PROTOCOL','Secure')).
 rule_i(0,prop('USE_ENCRYPTION','NO')).

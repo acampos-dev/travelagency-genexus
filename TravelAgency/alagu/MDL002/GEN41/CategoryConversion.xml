@@ -6,9 +6,9 @@
 <TableName>Category</TableName>
 <Description>Category</Description></Table>
 <ReorgCls>c</ReorgCls>
-<ReorgCode>new</ReorgCode>
-<ReorgMsg>Category is new</ReorgMsg>
-<ReorgAction>*</ReorgAction>
+<ReorgCode>same</ReorgCode>
+<ReorgMsg>Category needs initialization (initialize with Category_DataProvider)</ReorgMsg>
+<ReorgAction>#</ReorgAction>
 <TableAttributes>
 <AttrisInTable>
 <Attribute>
@@ -68,8 +68,7 @@
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>Yes</Clustered></Index></Indices></TableIndices>
 <FKConstraints></FKConstraints>
-<Statements>
-<Statement>CREATE TABLE [Category] ([CategoryId] smallint NOT NULL IDENTITY(1,1), [CategoryName] nchar(50) NOT NULL , PRIMARY KEY([CategoryId])) </Statement></Statements>
+<Statements></Statements>
 <NeedReorganizationProgram>False</NeedReorganizationProgram>
 <Warnings></Warnings>
 <Errors></Errors></ReorgSpec>

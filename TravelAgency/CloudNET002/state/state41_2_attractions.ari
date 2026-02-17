@@ -4,6 +4,7 @@ current_guid('fb8ec440-973b-47b0-a786-6d2b7c1b8e0f').
  
  
 called_tree_i(0,2,1,13).
+called_tree_i(0,2,1000,2).
  
  
  
@@ -35,6 +36,8 @@ has_silent_trn_i(attractions_bc).
  
  
  
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
 module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
 module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  

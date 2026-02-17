@@ -2327,6 +2327,24 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "aattractions_dataprovider/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/aattractions_dataprovider.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/aattractions_dataprovider.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "acategoriesandtheirattractionslist/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2341,6 +2359,24 @@
         },
         "runtime": {
           "bin/placeholder/acategoriesandtheirattractionslist.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "acategory_dataprovider/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/acategory_dataprovider.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/acategory_dataprovider.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -7935,10 +7971,20 @@
       "path": "../aattractionspercategory/aattractionspercategory.csproj",
       "msbuildProject": "../aattractionspercategory/aattractionspercategory.csproj"
     },
+    "aattractions_dataprovider/1.0.0": {
+      "type": "project",
+      "path": "../aattractions_dataprovider/aattractions_dataprovider.csproj",
+      "msbuildProject": "../aattractions_dataprovider/aattractions_dataprovider.csproj"
+    },
     "acategoriesandtheirattractionslist/1.0.0": {
       "type": "project",
       "path": "../acategoriesandtheirattractionslist/acategoriesandtheirattractionslist.csproj",
       "msbuildProject": "../acategoriesandtheirattractionslist/acategoriesandtheirattractionslist.csproj"
+    },
+    "acategory_dataprovider/1.0.0": {
+      "type": "project",
+      "path": "../acategory_dataprovider/acategory_dataprovider.csproj",
+      "msbuildProject": "../acategory_dataprovider/acategory_dataprovider.csproj"
     },
     "airline/1.0.0": {
       "type": "project",
@@ -8132,10 +8178,12 @@
       "GeneXus.PdfReportsCS.Core >= 1.30.0 <= 1.30.0",
       "GeneXus.Programs.Common >= 1.0.0",
       "aattractionlist >= 1.0.0",
+      "aattractions_dataprovider >= 1.0.0",
       "aattractionsbyname >= 1.0.0",
       "aattractionsbynameandcountry >= 1.0.0",
       "aattractionspercategory >= 1.0.0",
       "acategoriesandtheirattractionslist >= 1.0.0",
+      "acategory_dataprovider >= 1.0.0",
       "airline >= 1.0.0",
       "airport >= 1.0.0",
       "anumberofattractionsbycountry >= 1.0.0",
@@ -8221,8 +8269,14 @@
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionspercategory\\aattractionspercategory.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractionspercategory\\aattractionspercategory.csproj"
             },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractions_dataprovider\\aattractions_dataprovider.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\aattractions_dataprovider\\aattractions_dataprovider.csproj"
+            },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\acategoriesandtheirattractionslist\\acategoriesandtheirattractionslist.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\acategoriesandtheirattractionslist\\acategoriesandtheirattractionslist.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\acategory_dataprovider\\acategory_dataprovider.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\acategory_dataprovider\\acategory_dataprovider.csproj"
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\airline\\airline.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\airline\\airline.csproj"

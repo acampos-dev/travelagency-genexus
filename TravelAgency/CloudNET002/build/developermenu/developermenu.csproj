@@ -168,6 +168,12 @@
 		<ProjectReference Include=".\..\aattractionlist\aattractionlist.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
+		<ProjectReference Include=".\..\aattractions_dataprovider\aattractions_dataprovider.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\acategory_dataprovider\acategory_dataprovider.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
 		<ProjectReference Include=".\..\general.ui.asidebaritemsdp\general.ui.asidebaritemsdp.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
