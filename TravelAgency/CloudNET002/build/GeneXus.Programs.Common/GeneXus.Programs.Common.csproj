@@ -33,11 +33,11 @@
 		<Compile Include = "$(WebDirectory)\SoapParm.cs" />
 		<Compile Include = "$(WebDirectory)\GxWebStd.cs" />
 		<Compile Include = "$(WebDirectory)\gxdomainlocation.cs" />
+		<Compile Include = "$(WebDirectory)\general\gxdomainpage.cs" />
 		<Compile Include = "$(WebDirectory)\GxFullTextSearchReindexer.cs" />
-		<Compile Include = "$(WebDirectory)\type_SdtAttractions.cs" />
 		<Compile Include = "$(WebDirectory)\gxdomainseatchar.cs" />
 		<Compile Include = "$(WebDirectory)\GxModelInfoProvider.cs" />
-		<Compile Include = "$(WebDirectory)\general\gxdomainpage.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtAttraction.cs" />
 
 	</ItemGroup>
 	<ItemGroup Condition="'$(PostgresqlSupport)'=='true'">

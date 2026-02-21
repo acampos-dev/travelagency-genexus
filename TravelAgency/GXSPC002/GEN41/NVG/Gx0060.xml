@@ -148,23 +148,6 @@
 <AttriId>18</AttriId>
 <AttriName>AirportId</AttriName>
 <Description>Airport Id</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>14</AttriId>
-<AttriName>CityId</AttriName>
-<Description>City Id</Description></Attribute>
-<Attribute>
-<AttriId>9</AttriId>
-<AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
-<Attribute>
-<AttriId>19</AttriId>
-<AttriName>AirPortName</AttriName>
-<Description>Air Port Name</Description></Attribute>
-<Attribute>
-<AttriId>18</AttriId>
-<AttriName>AirportId</AttriName>
-<Description>Airport Id</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

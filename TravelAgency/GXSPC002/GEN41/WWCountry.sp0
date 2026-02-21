@@ -127,6 +127,7 @@ rule_i(0,prop('Theme',o(102,'TravelAgency'))).
 rule_i(0,prop('ObjDesc','Countries')).
 rule_i(0,prop('ObjName','WWCountry')).
 rule_i(0,maingen(41)).
+rule_i(0,prop('PGMTYPE',main)).
 rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"WWCountry"',3) ] ]).
@@ -1056,6 +1057,7 @@ pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Secure').
  
  
 pgm_main_info_i(trn,3,'COUNTRY',[ 41,'COUNTRY','','','','','INTERNAL' ]).
+pgm_main_info_i(web,10,'WWCOUNTRY',[ 41,'WWCOUNTRY','Countries','','','','' ]).
  
  
  

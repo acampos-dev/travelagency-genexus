@@ -45,13 +45,16 @@
 		<ProjectReference Include=".\..\country\country.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
-		<ProjectReference Include=".\..\attractions\attractions.csproj" >
+		<ProjectReference Include=".\..\attraction\attraction.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\customer\customer.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\customer\customer.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\massiveinsertremove\massiveinsertremove.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\massiveinsertremove\massiveinsertremove.csproj" >
@@ -66,7 +69,7 @@
 		<ProjectReference Include=".\..\gx00b1\gx00b1.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
-		<ProjectReference Include=".\..\attractionsattractionwc\attractionsattractionwc.csproj" >
+		<ProjectReference Include=".\..\attractionattractionwc\attractionattractionwc.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\gx00a0\gx00a0.csproj" >
@@ -84,22 +87,25 @@
 		<ProjectReference Include=".\..\gx0060\gx0060.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
-		<ProjectReference Include=".\..\attractionsgeneral\attractionsgeneral.csproj" >
+		<ProjectReference Include=".\..\attractiongeneral\attractiongeneral.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
-		<ProjectReference Include=".\..\wwattractions\wwattractions.csproj" >
+		<ProjectReference Include=".\..\wwattraction\wwattraction.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
-		<ProjectReference Include=".\..\wwattractions\wwattractions.csproj" >
+		<ProjectReference Include=".\..\wwattraction\wwattraction.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
-		<ProjectReference Include=".\..\viewattractions\viewattractions.csproj" >
+		<ProjectReference Include=".\..\viewattraction\viewattraction.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\countrycitywc\countrycitywc.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\countrygeneral\countrygeneral.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\wwcountry\wwcountry.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\wwcountry\wwcountry.csproj" >
@@ -166,12 +172,6 @@
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\aattractionlist\aattractionlist.csproj" >
-			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
-		</ProjectReference>
-		<ProjectReference Include=".\..\aattractions_dataprovider\aattractions_dataprovider.csproj" >
-			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
-		</ProjectReference>
-		<ProjectReference Include=".\..\acategory_dataprovider\acategory_dataprovider.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\general.ui.asidebaritemsdp\general.ui.asidebaritemsdp.csproj" >

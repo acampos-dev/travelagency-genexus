@@ -24,7 +24,7 @@ namespace GeneXus.Programs {
          obj = new SdtCategory(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
-         obj = new SdtAttractions(context);
+         obj = new SdtAttraction(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
          return 1 ;

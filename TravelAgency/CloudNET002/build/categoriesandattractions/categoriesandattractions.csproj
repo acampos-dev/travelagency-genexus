@@ -33,10 +33,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Include = "$(WebDirectory)\attractions_bc.cs" />
 		<Compile Include = "$(WebDirectory)\insertcategoryupdateattractions.cs" />
 		<Compile Include = "$(WebDirectory)\categoriesandattractions.cs" />
 		<Compile Include = "$(WebDirectory)\category_bc.cs" />
+		<Compile Include = "$(WebDirectory)\attraction_bc.cs" />
 
 	</ItemGroup>
 	<ItemGroup Condition="'$(PostgresqlSupport)'=='true'">

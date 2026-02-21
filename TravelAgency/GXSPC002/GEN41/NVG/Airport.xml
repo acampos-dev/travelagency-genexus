@@ -9,7 +9,7 @@
 <ObjDesc>Airport</ObjDesc>
 <ObjPgmName>Airport</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Main>Yes</Main>

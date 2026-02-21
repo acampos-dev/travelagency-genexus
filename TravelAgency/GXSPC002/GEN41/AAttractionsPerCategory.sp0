@@ -229,7 +229,7 @@ b_line_i(1,1,1,pb,0,[ t('Title',29,0,7) ]).
 b_line_i([ 1,0 ],1,1,line,0,[ t(' ',3,0,0) ]).
 b_line_i([ 1,5 ],1,1,line,5,[ t('Attractions per Category',3,5,48) ]).
 b_line_i([ 1,11 ],1,1,line,11,[ t(' ',3,11,0) ]).
-b_line_i(2,2,1,cmd,14,[ t('',121,2,0),t(table,3,2,10),t(2,3,2,10),t('ORDER',39,2,22),t(11,2,2,28) ]).
+b_line_i(2,2,1,cmd,14,[ t('',121,2,0),t(table,3,2,10),t(2,3,2,10),t('ORDER',39,2,21),t(11,2,2,27) ]).
 b_line_i(3,2,1,pb,14,[ t('Categories',29,14,8) ]).
 b_line_i([ 3,0 ],2,1,line,14,[ t('Category
 ',3,0,9),t(12,2,0,25) ]).

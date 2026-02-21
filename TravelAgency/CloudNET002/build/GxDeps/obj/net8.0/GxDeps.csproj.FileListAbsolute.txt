@@ -16,3 +16,4 @@ C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxDeps\obj\net8
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxDeps\obj\net8.0\refint\GxDeps.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxDeps\obj\net8.0\GxDeps.pdb
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxDeps\obj\net8.0\ref\GxDeps.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\build\GxDeps\obj\net8.0\GxDeps.sourcelink.json

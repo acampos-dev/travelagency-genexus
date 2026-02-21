@@ -53,9 +53,9 @@
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
-      <ObjName>WWAttractions</ObjName>
+      <ObjName>WWAttraction</ObjName>
       <ObjDesc>Attractions</ObjDesc>
-      <ObjLink>wwattractions.aspx</ObjLink>
+      <ObjLink>wwattraction.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>

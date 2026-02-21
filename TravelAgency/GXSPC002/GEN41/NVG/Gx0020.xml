@@ -9,7 +9,7 @@
 <ObjDesc>Selection List Attractions</ObjDesc>
 <ObjPgmName>Gx0020</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

@@ -298,7 +298,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "start", "top", "", "", "div");
          /* Text block */
-         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Attractions", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "heading-01", 0, "", 1, 1, 0, 0, "HLP_Attractions.htm");
+         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Attraction", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "heading-01", 0, "", 1, 1, 0, 0, "HLP_Attractions.htm");
          GxWebStd.gx_div_end( context, "start", "top", "div");
          GxWebStd.gx_div_end( context, "start", "top", "div");
          /* Div Control */
@@ -703,7 +703,7 @@ namespace GeneXus.Programs {
                getMultimediaValue(imgAttractionPhoto_Internalname, ref  A13AttractionPhoto, ref  A40000AttractionPhoto_GXI);
                GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
                forbiddenHiddens = new GXProperties();
-               forbiddenHiddens.Add("hshsalt", "hsh"+"Attractions");
+               forbiddenHiddens.Add("hshsalt", "hsh"+"Attraction");
                A7AttractionId = (short)(Math.Round(context.localUtil.CToN( cgiGet( edtAttractionId_Internalname), ".", ","), 18, MidpointRounding.ToEven));
                AssignAttri("", false, "A7AttractionId", StringUtil.LTrimStr( (decimal)(A7AttractionId), 4, 0));
                forbiddenHiddens.Add("AttractionId", context.localUtil.Format( (decimal)(A7AttractionId), "ZZZ9"));
@@ -991,7 +991,7 @@ namespace GeneXus.Programs {
          returnInSub = false;
          if ( ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) && ! AV9TrnContext.gxTpr_Callerondelete )
          {
-            CallWebObject(formatLink("wwattractions.aspx") );
+            CallWebObject(formatLink("wwattraction.aspx") );
             context.wjLocDisableFrm = 1;
          }
          context.setWebReturnParms(new Object[] {});
@@ -2049,7 +2049,7 @@ namespace GeneXus.Programs {
       {
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
          forbiddenHiddens = new GXProperties();
-         forbiddenHiddens.Add("hshsalt", "hsh"+"Attractions");
+         forbiddenHiddens.Add("hshsalt", "hsh"+"Attraction");
          forbiddenHiddens.Add("AttractionId", context.localUtil.Format( (decimal)(A7AttractionId), "ZZZ9"));
          forbiddenHiddens.Add("Gx_mode", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")));
          GxWebStd.gx_hidden_field( context, "hsh", GetEncryptedHash( forbiddenHiddens.ToString(), GXKey));
@@ -2217,7 +2217,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202621620464482", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202621822165499", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -2233,7 +2233,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("attractions.js", "?202621620464483", false, true);
+         context.AddJavascriptSource("attractions.js", "?20262182216550", false, true);
          /* End function include_jscripts */
       }
 

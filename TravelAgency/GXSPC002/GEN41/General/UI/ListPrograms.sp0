@@ -161,9 +161,9 @@ b_line_i(0,1,1,cmd,0,[]).
 b_line_i(1,1,1,cmd,0,[]).
 b_line_i(2,1,1,cmd,0,[ t('',107,2,0),t('Programnames',23,0,0),t(=,10,0,0),t([ 'General\UI\ProgramNames',[ t('(',0,2,20),t(')',4,2,21) ],n ],46,0,0) ]).
 b_line_i(3,1,1,cmd,0,[]).
-b_line_i(4,1,1,cmd,0,[ t('',107,4,0),t('Name',23,0,0),t(=,10,0,0),t('"WWAttractions"',3,0,0) ]).
+b_line_i(4,1,1,cmd,0,[ t('',107,4,0),t('Name',23,0,0),t(=,10,0,0),t('"WWAttraction"',3,0,0) ]).
 b_line_i(5,1,1,cmd,0,[ t('',107,5,0),t('Description',23,0,0),t(=,10,0,0),t('"Attractions"',3,0,0) ]).
-b_line_i(6,1,1,cmd,0,[ t('',107,6,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWAttractions'),28,0,0),t(')',4,0,0) ]).
+b_line_i(6,1,1,cmd,0,[ t('',107,6,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWAttraction'),28,0,0),t(')',4,0,0) ]).
 b_line_i(7,1,1,cmd,0,[ t('',145,7,0),t('''ADDPROGRAM''',3,7,4) ]).
 b_line_i(8,1,1,cmd,0,[]).
 b_line_i(9,1,1,cmd,0,[ t('',107,9,0),t('Name',23,0,0),t(=,10,0,0),t('"WWCountry"',3,0,0) ]).
@@ -317,15 +317,15 @@ struct_dt_elem_i([ 26,61,91 ],3,'JsonInclude',idJsonEmpty).
  
 pgm_parm_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
 pgm_parm_i(web,10,'WWCOUNTRY',[],[]).
-pgm_parm_i(web,14,'WWATTRACTIONS',[],[]).
+pgm_parm_i(web,14,'WWATTRACTION',[],[]).
  
 pgm_callprotocol_i(proc,14,'GENERAL\UI\LISTPROGRAMS','INTERNAL','Secure').
 pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Secure').
 pgm_callprotocol_i(web,10,'WWCOUNTRY','INTERNAL','Secure').
-pgm_callprotocol_i(web,14,'WWATTRACTIONS','INTERNAL','Secure').
+pgm_callprotocol_i(web,14,'WWATTRACTION','INTERNAL','Secure').
  
  
-pgm_main_info_i(web,14,'WWATTRACTIONS',[ 41,'WWATTRACTIONS','','','','','INTERNAL' ]).
+pgm_main_info_i(web,14,'WWATTRACTION',[ 41,'WWATTRACTION','','','','','INTERNAL' ]).
 pgm_main_info_i(web,10,'WWCOUNTRY',[ 41,'WWCOUNTRY','','','','','INTERNAL' ]).
  
  

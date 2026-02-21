@@ -106,7 +106,7 @@ namespace GeneXus.Programs {
          P000Y2_A7AttractionId = new short[1] ;
          A12CategoryName = "";
          A15CityName = "";
-         AV8att = new SdtAttractions(context);
+         AV8att = new SdtAttraction(context);
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.insertcategoryupdateattractions__default(),
             new Object[][] {
                 new Object[] {
@@ -136,7 +136,7 @@ namespace GeneXus.Programs {
       private string[] P000Y2_A12CategoryName ;
       private string[] P000Y2_A15CityName ;
       private short[] P000Y2_A7AttractionId ;
-      private SdtAttractions AV8att ;
+      private SdtAttraction AV8att ;
    }
 
    public class insertcategoryupdateattractions__default : DataStoreHelperBase, IDataStoreHelper

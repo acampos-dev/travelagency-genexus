@@ -6,7 +6,7 @@ GxFullTextSearchReindexer.cs
 GxModelInfoProvider.cs
 @genexus.programs.sdt.bld
 type_SdtCategory.cs
-type_SdtAttractions.cs
+type_SdtAttraction.cs
 gxdomainlocation.cs
 gxdomainseatchar.cs
 general\gxdomainpage.cs

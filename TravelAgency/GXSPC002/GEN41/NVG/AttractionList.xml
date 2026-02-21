@@ -9,7 +9,7 @@
 <ObjDesc>Attraction List</ObjDesc>
 <ObjPgmName>AttractionList</ObjPgmName>
 <ObjClsName>Procedure</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0038</MsgCode>

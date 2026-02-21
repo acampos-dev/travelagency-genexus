@@ -688,12 +688,12 @@ namespace GeneXus.Programs {
 
       protected void AddRow022( )
       {
-         VarsToRow2( bcAttractions) ;
+         VarsToRow2( bcAttraction) ;
       }
 
       protected void ReadRow022( )
       {
-         RowToVars2( bcAttractions, 1) ;
+         RowToVars2( bcAttraction, 1) ;
       }
 
       protected void InitializeNonKey022( )
@@ -745,7 +745,7 @@ namespace GeneXus.Programs {
          return ((StringUtil.StrCmp(Gx_mode, "DSP")==0) ? true : false) ;
       }
 
-      public void VarsToRow2( SdtAttractions obj2 )
+      public void VarsToRow2( SdtAttraction obj2 )
       {
          obj2.gxTpr_Mode = Gx_mode;
          obj2.gxTpr_Attractionname = A8AttractionName;
@@ -773,13 +773,13 @@ namespace GeneXus.Programs {
          return  ;
       }
 
-      public void KeyVarsToRow2( SdtAttractions obj2 )
+      public void KeyVarsToRow2( SdtAttraction obj2 )
       {
          obj2.gxTpr_Attractionid = A7AttractionId;
          return  ;
       }
 
-      public void RowToVars2( SdtAttractions obj2 ,
+      public void RowToVars2( SdtAttraction obj2 ,
                               int forceLoad )
       {
          Gx_mode = obj2.gxTpr_Mode;
@@ -846,7 +846,7 @@ namespace GeneXus.Programs {
          context.GX_msglist.removeAllItems();
          BackMsgLst = context.GX_msglist;
          context.GX_msglist = LclMsgLst;
-         RowToVars2( bcAttractions, 0) ;
+         RowToVars2( bcAttraction, 0) ;
          ScanKeyStart022( ) ;
          if ( RcdFound2 == 0 )
          {
@@ -948,9 +948,9 @@ namespace GeneXus.Programs {
          context.GX_msglist = LclMsgLst;
          AnyError = 0;
          context.GX_msglist.removeAllItems();
-         RowToVars2( bcAttractions, 1) ;
+         RowToVars2( bcAttraction, 1) ;
          SaveImpl( ) ;
-         VarsToRow2( bcAttractions) ;
+         VarsToRow2( bcAttraction) ;
          context.GX_msglist = BackMsgLst;
          return  ;
       }
@@ -961,12 +961,12 @@ namespace GeneXus.Programs {
          context.GX_msglist = LclMsgLst;
          AnyError = 0;
          context.GX_msglist.removeAllItems();
-         RowToVars2( bcAttractions, 1) ;
+         RowToVars2( bcAttraction, 1) ;
          Gx_mode = "INS";
          /* Insert record */
          Insert022( ) ;
          AfterTrn( ) ;
-         VarsToRow2( bcAttractions) ;
+         VarsToRow2( bcAttraction) ;
          context.GX_msglist = BackMsgLst;
          return (AnyError==0) ;
       }
@@ -976,18 +976,18 @@ namespace GeneXus.Programs {
          if ( IsUpd( ) )
          {
             SaveImpl( ) ;
-            VarsToRow2( bcAttractions) ;
+            VarsToRow2( bcAttraction) ;
          }
          else
          {
-            SdtAttractions auxBC = new SdtAttractions(context);
+            SdtAttraction auxBC = new SdtAttraction(context);
             IGxSilentTrn auxTrn = auxBC.getTransaction();
             auxBC.Load(A7AttractionId);
             if ( auxTrn.Errors() == 0 )
             {
-               auxBC.UpdateDirties(bcAttractions);
+               auxBC.UpdateDirties(bcAttraction);
                auxBC.Save();
-               bcAttractions.Copy((GxSilentTrnSdt)(auxBC));
+               bcAttraction.Copy((GxSilentTrnSdt)(auxBC));
             }
             LclMsgLst = (msglist)(auxTrn.GetMessages());
             AnyError = (short)(auxTrn.Errors());
@@ -1006,7 +1006,7 @@ namespace GeneXus.Programs {
          context.GX_msglist = LclMsgLst;
          AnyError = 0;
          context.GX_msglist.removeAllItems();
-         RowToVars2( bcAttractions, 1) ;
+         RowToVars2( bcAttraction, 1) ;
          UpdateImpl( ) ;
          context.GX_msglist = BackMsgLst;
          return (AnyError==0) ;
@@ -1018,7 +1018,7 @@ namespace GeneXus.Programs {
          context.GX_msglist = LclMsgLst;
          AnyError = 0;
          context.GX_msglist.removeAllItems();
-         RowToVars2( bcAttractions, 1) ;
+         RowToVars2( bcAttraction, 1) ;
          Gx_mode = "INS";
          /* Insert record */
          Insert022( ) ;
@@ -1032,13 +1032,13 @@ namespace GeneXus.Programs {
             }
             else
             {
-               VarsToRow2( bcAttractions) ;
+               VarsToRow2( bcAttraction) ;
             }
          }
          else
          {
             AfterTrn( ) ;
-            VarsToRow2( bcAttractions) ;
+            VarsToRow2( bcAttraction) ;
          }
          context.GX_msglist = BackMsgLst;
          return (AnyError==0) ;
@@ -1050,7 +1050,7 @@ namespace GeneXus.Programs {
          context.GX_msglist = LclMsgLst;
          AnyError = 0;
          context.GX_msglist.removeAllItems();
-         RowToVars2( bcAttractions, 0) ;
+         RowToVars2( bcAttraction, 0) ;
          GetKey022( ) ;
          if ( RcdFound2 == 1 )
          {
@@ -1101,7 +1101,7 @@ namespace GeneXus.Programs {
          pr_default.close(14);
          pr_default.close(13);
          context.RollbackDataStores("attractions_bc",pr_default);
-         VarsToRow2( bcAttractions) ;
+         VarsToRow2( bcAttraction) ;
          context.GX_msglist = BackMsgLst;
          return  ;
       }
@@ -1122,41 +1122,41 @@ namespace GeneXus.Programs {
 
       public string GetMode( )
       {
-         Gx_mode = bcAttractions.gxTpr_Mode;
+         Gx_mode = bcAttraction.gxTpr_Mode;
          return Gx_mode ;
       }
 
       public void SetMode( string lMode )
       {
          Gx_mode = lMode;
-         bcAttractions.gxTpr_Mode = Gx_mode;
+         bcAttraction.gxTpr_Mode = Gx_mode;
          return  ;
       }
 
       public void SetSDT( GxSilentTrnSdt sdt ,
                           short sdtToBc )
       {
-         if ( sdt != bcAttractions )
+         if ( sdt != bcAttraction )
          {
-            bcAttractions = (SdtAttractions)(sdt);
-            if ( StringUtil.StrCmp(bcAttractions.gxTpr_Mode, "") == 0 )
+            bcAttraction = (SdtAttraction)(sdt);
+            if ( StringUtil.StrCmp(bcAttraction.gxTpr_Mode, "") == 0 )
             {
-               bcAttractions.gxTpr_Mode = "INS";
+               bcAttraction.gxTpr_Mode = "INS";
             }
             if ( sdtToBc == 1 )
             {
-               VarsToRow2( bcAttractions) ;
+               VarsToRow2( bcAttraction) ;
             }
             else
             {
-               RowToVars2( bcAttractions, 1) ;
+               RowToVars2( bcAttraction, 1) ;
             }
          }
          else
          {
-            if ( StringUtil.StrCmp(bcAttractions.gxTpr_Mode, "") == 0 )
+            if ( StringUtil.StrCmp(bcAttraction.gxTpr_Mode, "") == 0 )
             {
-               bcAttractions.gxTpr_Mode = "INS";
+               bcAttraction.gxTpr_Mode = "INS";
             }
          }
          return  ;
@@ -1164,7 +1164,7 @@ namespace GeneXus.Programs {
 
       public void ReloadFromSDT( )
       {
-         RowToVars2( bcAttractions, 1) ;
+         RowToVars2( bcAttraction, 1) ;
          return  ;
       }
 
@@ -1173,10 +1173,10 @@ namespace GeneXus.Programs {
          return  ;
       }
 
-      public SdtAttractions Attractions_BC
+      public SdtAttraction Attractions_BC
       {
          get {
-            return bcAttractions ;
+            return bcAttraction ;
          }
 
       }
@@ -1436,7 +1436,7 @@ namespace GeneXus.Programs {
       private short[] BC000218_A11CategoryId ;
       private bool[] BC000218_n11CategoryId ;
       private string[] BC000218_A13AttractionPhoto ;
-      private SdtAttractions bcAttractions ;
+      private SdtAttraction bcAttraction ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
    }

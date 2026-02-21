@@ -16,9 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aattractionsbynameandcountr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "customer", "customer\customer.csproj", "{4A249571-B7C8-4B72-B497-522139E57C50}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "attractions", "attractions\attractions.csproj", "{FB8EC440-973B-47B0-A786-6D2B7C1B8E0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "attraction", "attraction\attraction.csproj", "{FB8EC440-973B-47B0-A786-6D2B7C1B8E0F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "attractions_bc", "attractions_bc\attractions_bc.csproj", "{C2DC4A3B-1D3E-02B3-1826-F16CBBEBEE96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "attraction_bc", "attraction_bc\attraction_bc.csproj", "{C2DC4A3B-1D3E-02B3-1826-F16CBBEBEE96}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "country", "country\country.csproj", "{F47A502B-F4D4-4F2E-8B06-3B79EAE17545}"
 EndProject
@@ -60,11 +60,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "countrygeneral", "countryge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "countrycitywc", "countrycitywc\countrycitywc.csproj", "{8A1DAE6B-E59B-456C-BEDC-019D21E87D02}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "viewattractions", "viewattractions\viewattractions.csproj", "{D93E5EDF-63B4-4AB2-A8DF-D7CF3C9CCA70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "viewattraction", "viewattraction\viewattraction.csproj", "{D93E5EDF-63B4-4AB2-A8DF-D7CF3C9CCA70}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wwattractions", "wwattractions\wwattractions.csproj", "{6C18B483-160C-4E6F-8FBD-88729DE9159B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wwattraction", "wwattraction\wwattraction.csproj", "{6C18B483-160C-4E6F-8FBD-88729DE9159B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "attractionsgeneral", "attractionsgeneral\attractionsgeneral.csproj", "{5EBC9808-F82C-48DB-9656-BABEC849AD7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "attractiongeneral", "attractiongeneral\attractiongeneral.csproj", "{5EBC9808-F82C-48DB-9656-BABEC849AD7A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gx0060", "gx0060\gx0060.csproj", "{E54E45DE-D8A0-4257-A04B-BBD5D8859BB1}"
 EndProject
@@ -76,7 +76,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gx0091", "gx0091\gx0091.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gx00a0", "gx00a0\gx00a0.csproj", "{10A60D70-8AD5-4357-A988-68CF80A6CE0C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "attractionsattractionwc", "attractionsattractionwc\attractionsattractionwc.csproj", "{077DD446-20D3-4914-AFA2-78BDD3F4B235}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "attractionattractionwc", "attractionattractionwc\attractionattractionwc.csproj", "{077DD446-20D3-4914-AFA2-78BDD3F4B235}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gx00b1", "gx00b1\gx00b1.csproj", "{ED2BBAB0-A82C-44C1-A2B6-82B1EFBA4009}"
 EndProject
@@ -88,13 +88,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "massiveinsertremove", "mass
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "general.ui.asidebaritemsdp", "general.ui.asidebaritemsdp\general.ui.asidebaritemsdp.csproj", "{1CA91264-EA84-4368-9E5F-ADCA07AB88AF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "acategory_dataprovider", "acategory_dataprovider\acategory_dataprovider.csproj", "{4734EC9F-B519-782A-B201-417AA16E230F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aattractions_dataprovider", "aattractions_dataprovider\aattractions_dataprovider.csproj", "{C4B1FB7F-A804-788F-98B9-52144324B130}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developermenu", "developermenu\developermenu.csproj", "{F0866BD6-60F4-4FCD-A1DF-E897592FC214}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneXus.Programs.Common", "GeneXus.Programs.Common\GeneXus.Programs.Common.csproj", "{3A2A342D-6572-461E-ADDB-F6B68943EE73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneXus.Programs.Common", "GeneXus.Programs.Common\GeneXus.Programs.Common.csproj", "{144418C8-55D3-457C-8938-88C787D00B06}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GxWebStartup", "GxWebStartup\GxWebStartup.csproj", "{E73F5F30-1979-4AE2-8204-400788D5B7D5}"
 EndProject
@@ -280,22 +276,14 @@ Global
 		{1CA91264-EA84-4368-9E5F-ADCA07AB88AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CA91264-EA84-4368-9E5F-ADCA07AB88AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CA91264-EA84-4368-9E5F-ADCA07AB88AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4734EC9F-B519-782A-B201-417AA16E230F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4734EC9F-B519-782A-B201-417AA16E230F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4734EC9F-B519-782A-B201-417AA16E230F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4734EC9F-B519-782A-B201-417AA16E230F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4B1FB7F-A804-788F-98B9-52144324B130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4B1FB7F-A804-788F-98B9-52144324B130}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4B1FB7F-A804-788F-98B9-52144324B130}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4B1FB7F-A804-788F-98B9-52144324B130}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F0866BD6-60F4-4FCD-A1DF-E897592FC214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F0866BD6-60F4-4FCD-A1DF-E897592FC214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0866BD6-60F4-4FCD-A1DF-E897592FC214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0866BD6-60F4-4FCD-A1DF-E897592FC214}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A2A342D-6572-461E-ADDB-F6B68943EE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A2A342D-6572-461E-ADDB-F6B68943EE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A2A342D-6572-461E-ADDB-F6B68943EE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A2A342D-6572-461E-ADDB-F6B68943EE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144418C8-55D3-457C-8938-88C787D00B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144418C8-55D3-457C-8938-88C787D00B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144418C8-55D3-457C-8938-88C787D00B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144418C8-55D3-457C-8938-88C787D00B06}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E73F5F30-1979-4AE2-8204-400788D5B7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E73F5F30-1979-4AE2-8204-400788D5B7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E73F5F30-1979-4AE2-8204-400788D5B7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU

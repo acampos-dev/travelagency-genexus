@@ -25,6 +25,7 @@
 <Token>'</Token>
 <Token>.</Token></Message></Warning></Warnings>
 <Errors></Errors>
+<Main>Yes</Main>
 <Generator>
 <GenId>41</GenId>
 <GenName>Default (.NET)</GenName></Generator>
@@ -109,19 +110,6 @@
 <AttriId>9</AttriId>
 <AttriName>CountryId</AttriName>
 <Description>Country Id</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>17</AttriId>
-<AttriName>CountryLastLine</AttriName>
-<Description>Country Last Line</Description></Attribute>
-<Attribute>
-<AttriId>10</AttriId>
-<AttriName>CountryName</AttriName>
-<Description>Country Name</Description></Attribute>
-<Attribute>
-<AttriId>9</AttriId>
-<AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

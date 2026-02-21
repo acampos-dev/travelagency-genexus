@@ -102,15 +102,6 @@
 <AttriId>45</AttriId>
 <AttriName>SupplierId</AttriName>
 <Description>Supplier Id</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>46</AttriId>
-<AttriName>SupplierName</AttriName>
-<Description>Supplier Name</Description></Attribute>
-<Attribute>
-<AttriId>45</AttriId>
-<AttriName>SupplierId</AttriName>
-<Description>Supplier Id</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

@@ -734,7 +734,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202621510185511", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20262192051625", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -750,7 +750,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("categoriesandattractions.js", "?202621510185511", false, true);
+         context.AddJavascriptSource("categoriesandattractions.js", "?20262192051625", false, true);
          /* End function include_jscripts */
       }
 
@@ -849,7 +849,7 @@ namespace GeneXus.Programs {
          H000O5_A7AttractionId = new short[1] ;
          H000O5_A40000CategoryId = new short[1] ;
          H000O5_n40000CategoryId = new bool[] {false} ;
-         AV7att = new SdtAttractions(context);
+         AV7att = new SdtAttraction(context);
          H000O7_A40001CategoryId = new short[1] ;
          H000O7_n40001CategoryId = new bool[] {false} ;
          AV6category = new SdtCategory(context);
@@ -939,7 +939,7 @@ namespace GeneXus.Programs {
       private short[] H000O5_A7AttractionId ;
       private short[] H000O5_A40000CategoryId ;
       private bool[] H000O5_n40000CategoryId ;
-      private SdtAttractions AV7att ;
+      private SdtAttraction AV7att ;
       private short[] H000O7_A40001CategoryId ;
       private bool[] H000O7_n40001CategoryId ;
       private SdtCategory AV6category ;
