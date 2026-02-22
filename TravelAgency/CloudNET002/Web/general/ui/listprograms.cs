@@ -82,6 +82,16 @@ namespace GeneXus.Programs.general.ui {
             cleanup();
             if (true) return;
          }
+         AV11name = "WWTrip";
+         AV12description = "Trips";
+         AV13link = formatLink("wwtrip.aspx") ;
+         /* Execute user subroutine: 'ADDPROGRAM' */
+         S111 ();
+         if ( returnInSub )
+         {
+            cleanup();
+            if (true) return;
+         }
          cleanup();
       }
 

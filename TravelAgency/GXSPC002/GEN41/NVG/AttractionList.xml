@@ -64,18 +64,7 @@
 <LoopWhile>
 <Condition>
 <Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
-<NonOptimizedWhere>
-<Condition>
-<Attribute>
-<AttriId>9</AttriId>
-<AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
-<Sp></Sp>
-<Token>=</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Countryid</VarId>
-<VarName>&amp;CountryId</VarName></Variable></Condition></NonOptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
 <JoinLocation>1</JoinLocation>
 <NavigationTree>
 <Table>

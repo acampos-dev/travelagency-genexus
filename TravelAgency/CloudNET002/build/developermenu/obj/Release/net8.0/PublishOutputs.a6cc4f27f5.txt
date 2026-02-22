@@ -8,6 +8,8 @@ C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\category.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\country.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\attraction.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\customer.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\viewcountryinfo.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\viewattractionfromscratch.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx00d1.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx00c0.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\attractionattraction1wc.dll

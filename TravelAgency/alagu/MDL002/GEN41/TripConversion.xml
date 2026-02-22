@@ -6,16 +6,27 @@
 <TableName>Trip</TableName>
 <Description>Trip</Description></Table>
 <ReorgCls>c</ReorgCls>
-<ReorgCode>new</ReorgCode>
-<ReorgMsg>Trip is new</ReorgMsg>
-<ReorgAction>*</ReorgAction>
+<ReorgCode>pk</ReorgCode>
+<ReorgMsg>Trip needs conversion</ReorgMsg>
+<ReorgAction>#</ReorgAction>
 <TableAttributes>
 <AttrisInTable>
 <Attribute>
 <AttriId>49</AttriId>
 <AttriName>TripId</AttriName>
 <Description>Trip Id</Description>
-<TakesValueFrom></TakesValueFrom>
+<TakesValueFrom>
+<Table>
+<TableId>12</TableId>
+<TableName>Trip</TableName>
+<Description>Trip</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>49</AttriId>
+<AttriName>TripId</AttriName>
+<Description>Trip Id</Description></Attribute></FromValue></TakesValueFrom>
 <OnPrimaryKey>Yes</OnPrimaryKey>
 <AttriType>
 <DataType>N</DataType>
@@ -35,7 +46,18 @@
 <AttriId>50</AttriId>
 <AttriName>TripDate</AttriName>
 <Description>Trip Date</Description>
-<TakesValueFrom></TakesValueFrom>
+<TakesValueFrom>
+<Table>
+<TableId>12</TableId>
+<TableName>Trip</TableName>
+<Description>Trip</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>TripDate</AttriName>
+<Description>Trip Date</Description></Attribute></FromValue></TakesValueFrom>
 <AttriType>
 <DataType>D</DataType>
 <Presicion>8</Presicion>
@@ -54,7 +76,18 @@
 <AttriId>51</AttriId>
 <AttriName>TripDescription</AttriName>
 <Description>Trip Description</Description>
-<TakesValueFrom></TakesValueFrom>
+<TakesValueFrom>
+<Table>
+<TableId>12</TableId>
+<TableName>Trip</TableName>
+<Description>Trip</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>51</AttriId>
+<AttriName>TripDescription</AttriName>
+<Description>Trip Description</Description></Attribute></FromValue></TakesValueFrom>
 <AttriType>
 <DataType>V</DataType>
 <Presicion>200</Presicion>
@@ -71,9 +104,44 @@
 <Value>No</Value></Property>
 <Property>
 <Name>NLS</Name>
-<Value>Yes</Value></Property></Properties></AttriType></Attribute></AttrisInTable>
+<Value>Yes</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>TripAmount</AttriName>
+<Description>Trip Amount</Description>
+<TakesValueFrom>
+<FromValue>
+<Token>0</Token></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>9</Presicion>
+<Scale>2</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>ni</AttriChangeType></Attribute></AttrisInTable>
 <AttrisNoLongerInTable></AttrisNoLongerInTable>
 <AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<NavigationTree>
+<Table>
+<TableId>12</TableId>
+<TableName>Trip</TableName>
+<Description>Trip</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>49</AttriId>
+<AttriName>TripId</AttriName>
+<Description>Trip Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
 <TableIndices>
 <Indices>
 <Index>
@@ -88,7 +156,31 @@
 <Clustered>Yes</Clustered></Index></Indices></TableIndices>
 <FKConstraints></FKConstraints>
 <Statements>
-<Statement>CREATE TABLE [Trip] ([TripId] smallint NOT NULL IDENTITY(1,1), [TripDate] datetime NOT NULL , [TripDescription] nvarchar(200) NOT NULL , PRIMARY KEY([TripId])) </Statement></Statements>
+<Statement>ALTER TABLE [Trip] ADD [TripAmount] money NOT NULL CONSTRAINT TripAmountTrip_DEFAULT DEFAULT convert(int, 0)</Statement>
+<Statement>ALTER TABLE [Trip] DROP CONSTRAINT TripAmountTrip_DEFAULT</Statement></Statements>
 <NeedReorganizationProgram>False</NeedReorganizationProgram>
-<Warnings></Warnings>
-<Errors></Errors></ReorgSpec>
+<Warnings>
+<Warning>
+<MsgCode>rgz0007</MsgCode>
+<Message>
+<Token>Attribute </Token>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>TripAmount</AttriName>
+<Description>Trip Amount</Description></Attribute>
+<Token> does not allow nulls and does not have an Initial Value. An empty default value will be used.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Information>
+<InfoMsg>
+<MsgCode>nfo0003</MsgCode>
+<Message>
+<Token>The reorganization for this table makes the schema not backward compatible.</Token></Message>
+<AdditionalInfo>
+<Title>The following operations are not backward compatible:</Title>
+<Info>
+<Token>Add not null</Token>
+<Token>attribute</Token>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>TripAmount</AttriName>
+<Description>Trip Amount</Description></Attribute></Info></AdditionalInfo></InfoMsg></Information></ReorgSpec>

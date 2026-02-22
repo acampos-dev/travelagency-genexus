@@ -7,6 +7,8 @@
 	--GX-Image_PageNext : url(PageNext.gif);
 	--GX-Image_PagePrevious : url(PagePrevious.gif);
 	--GX-Image_Image1 : url(../Image1.png);
+	--GX-Image_updateIcon24 : url(../updateIcon24.jpg);
+	--GX-Image_editar : url(../editar.png);
 }
 
 .GX_Image_selectRow_Class{content: var(--GX-Image_selectRow);}
@@ -15,4 +17,6 @@
 .GX_Image_PageNext_Class{content: var(--GX-Image_PageNext);}
 .GX_Image_PagePrevious_Class{content: var(--GX-Image_PagePrevious);}
 .GX_Image_Image1_Class{content: var(--GX-Image_Image1);}
+.GX_Image_updateIcon24_Class{content: var(--GX-Image_updateIcon24);}
+.GX_Image_editar_Class{content: var(--GX-Image_editar);}
 }

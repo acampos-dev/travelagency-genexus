@@ -125,7 +125,7 @@ namespace GeneXus.Programs {
             Gx_OldLine = Gx_line;
             Gx_line = (int)(Gx_line+67);
             /* Using cursor P000F2 */
-            pr_default.execute(0, new Object[] {AV8CountryId});
+            pr_default.execute(0);
             while ( (pr_default.getStatus(0) != 101) )
             {
                A9CountryId = P000F2_A9CountryId[0];
@@ -312,10 +312,9 @@ namespace GeneXus.Programs {
        {
           Object[] prmP000F2;
           prmP000F2 = new Object[] {
-          new ParDef("@AV8CountryId",GXType.Int16,4,0)
           };
           def= new CursorDef[] {
-              new CursorDef("P000F2", "SELECT T1.[CountryId], T1.[AttractionPhoto_GXI], T1.[AttractionName], T1.[AttractionId], T2.[CountryName], T1.[AttractionPhoto] FROM ([Attractions] T1 INNER JOIN [Country] T2 ON T2.[CountryId] = T1.[CountryId]) WHERE T1.[CountryId] = @AV8CountryId ORDER BY T2.[CountryName] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000F2,100, GxCacheFrequency.OFF ,false,false )
+              new CursorDef("P000F2", "SELECT T1.[CountryId], T1.[AttractionPhoto_GXI], T1.[AttractionName], T1.[AttractionId], T2.[CountryName], T1.[AttractionPhoto] FROM ([Attractions] T1 INNER JOIN [Country] T2 ON T2.[CountryId] = T1.[CountryId]) ORDER BY T2.[CountryName] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000F2,100, GxCacheFrequency.OFF ,false,false )
           };
        }
     }

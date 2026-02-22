@@ -125,7 +125,7 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
  
  
  
-function_i(1,'Isauthorized',yes,udp,o(1,'General\Security\IsAuthorized'),[],16,'Isauthorized',[ [ t('Name',23) ] ]).
+function_i(1,'Isauthorized',yes,udp,o(1,'General\Security\IsAuthorized'),[],21,'Isauthorized',[ [ t('Name',23) ] ]).
  
  
  
@@ -154,8 +154,8 @@ dom_info_i(8,[ 'GeneXus\Url' ]).
  
 break_i(1,rpt,0,[],[ [],[],[] ]).
  
-b_group_i(1,1,lit,0,1,14).
-b_group_i(1,2,lit,0,15,0).
+b_group_i(1,1,lit,0,1,19).
+b_group_i(1,2,lit,0,20,0).
  
 b_line_i(0,1,1,cmd,0,[]).
 b_line_i(1,1,1,cmd,0,[]).
@@ -171,17 +171,22 @@ b_line_i(10,1,1,cmd,0,[ t('',107,10,0),t('Description',23,0,0),t(=,10,0,0),t('"C
 b_line_i(11,1,1,cmd,0,[ t('',107,11,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWCountry'),28,0,0),t(')',4,0,0) ]).
 b_line_i(12,1,1,cmd,0,[ t('',145,12,0),t('''ADDPROGRAM''',3,12,4) ]).
 b_line_i(13,1,1,cmd,0,[]).
-b_line_i(14,1,1,cmd,0,[ t('',143,14,0),t('''ADDPROGRAM''',3,14,5) ]).
-b_line_i(15,1,2,cmd,0,[ t('',107,15,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
-b_line_i(16,1,2,cmd,0,[ t('',107,16,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('udp(',1,0,0),t('Isauthorized',3,0,0),t(16,3,0,0),t('Name',23,0,0),t(')',4,0,0) ]).
-b_line_i(17,1,2,cmd,0,[ t('',109,17,0),t('(',0,0,5),t('Isauthorized',23,0,6),t(')',4,0,19) ]).
-b_line_i(18,1,2,cmd,0,[ t('',107,18,0),t('Programname',23,0,0),t(=,10,0,0),t([ 'General\UI\ProgramNames.ProgramName',[ t('(',0,18,131),t(')',4,18,132) ],n ],46,0,0) ]).
-b_line_i(19,1,2,cmd,0,[ t('',107,19,0),t([ t('Programname',23,0,0),t('Name',3,0,0) ],29,0,0),t(=,10,0,0),t('Name',23,0,0) ]).
-b_line_i(20,1,2,cmd,0,[ t('',107,20,0),t([ t('Programname',23,0,0),t('Description',3,0,0) ],29,0,0),t(=,10,0,0),t('Description',23,0,0) ]).
-b_line_i(21,1,2,cmd,0,[ t('',107,21,0),t([ t('Programname',23,0,0),t('Link',3,0,0) ],29,0,0),t(=,10,0,0),t('Link',23,0,0) ]).
-b_line_i(22,1,2,cmd,0,[ t('',107,22,0),t([ t('Programnames',23,22,3),t('add(',1,22,17) ],31,22,3),t('Programname',23,0,22),t(')',4,0,34) ]).
-b_line_i(23,1,2,cmd,0,[ t('',111,23,0) ]).
-b_line_i(24,1,2,cmd,0,[ t('',144,24,0) ]).
+b_line_i(14,1,1,cmd,0,[ t('',107,14,0),t('Name',23,0,0),t(=,10,0,0),t('"WWTrip"',3,0,0) ]).
+b_line_i(15,1,1,cmd,0,[ t('',107,15,0),t('Description',23,0,0),t(=,10,0,0),t('"Trips"',3,0,0) ]).
+b_line_i(16,1,1,cmd,0,[ t('',107,16,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWTrip'),28,0,0),t(')',4,0,0) ]).
+b_line_i(17,1,1,cmd,0,[ t('',145,17,0),t('''ADDPROGRAM''',3,17,4) ]).
+b_line_i(18,1,1,cmd,0,[]).
+b_line_i(19,1,1,cmd,0,[ t('',143,19,0),t('''ADDPROGRAM''',3,19,5) ]).
+b_line_i(20,1,2,cmd,0,[ t('',107,20,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(21,1,2,cmd,0,[ t('',107,21,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('udp(',1,0,0),t('Isauthorized',3,0,0),t(21,3,0,0),t('Name',23,0,0),t(')',4,0,0) ]).
+b_line_i(22,1,2,cmd,0,[ t('',109,22,0),t('(',0,0,5),t('Isauthorized',23,0,6),t(')',4,0,19) ]).
+b_line_i(23,1,2,cmd,0,[ t('',107,23,0),t('Programname',23,0,0),t(=,10,0,0),t([ 'General\UI\ProgramNames.ProgramName',[ t('(',0,23,131),t(')',4,23,132) ],n ],46,0,0) ]).
+b_line_i(24,1,2,cmd,0,[ t('',107,24,0),t([ t('Programname',23,0,0),t('Name',3,0,0) ],29,0,0),t(=,10,0,0),t('Name',23,0,0) ]).
+b_line_i(25,1,2,cmd,0,[ t('',107,25,0),t([ t('Programname',23,0,0),t('Description',3,0,0) ],29,0,0),t(=,10,0,0),t('Description',23,0,0) ]).
+b_line_i(26,1,2,cmd,0,[ t('',107,26,0),t([ t('Programname',23,0,0),t('Link',3,0,0) ],29,0,0),t(=,10,0,0),t('Link',23,0,0) ]).
+b_line_i(27,1,2,cmd,0,[ t('',107,27,0),t([ t('Programnames',23,27,3),t('add(',1,27,17) ],31,27,3),t('Programname',23,0,22),t(')',4,0,34) ]).
+b_line_i(28,1,2,cmd,0,[ t('',111,28,0) ]).
+b_line_i(29,1,2,cmd,0,[ t('',144,29,0) ]).
  
  
  
@@ -316,11 +321,13 @@ struct_dt_elem_i([ 26,61,91 ],3,'JsonInclude',idJsonEmpty).
  
  
 pgm_parm_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
+pgm_parm_i(web,33,'WWTRIP',[],[]).
 pgm_parm_i(web,10,'WWCOUNTRY',[],[]).
 pgm_parm_i(web,14,'WWATTRACTION',[],[]).
  
 pgm_callprotocol_i(proc,14,'GENERAL\UI\LISTPROGRAMS','INTERNAL','Secure').
 pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Secure').
+pgm_callprotocol_i(web,33,'WWTRIP','INTERNAL','Secure').
 pgm_callprotocol_i(web,10,'WWCOUNTRY','INTERNAL','Secure').
 pgm_callprotocol_i(web,14,'WWATTRACTION','INTERNAL','Secure').
  

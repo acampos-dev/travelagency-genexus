@@ -57,6 +57,15 @@
 		<ProjectReference Include=".\..\customer\customer.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
+		<ProjectReference Include=".\..\viewcountryinfo\viewcountryinfo.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\viewcountryinfo\viewcountryinfo.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\viewattractionfromscratch\viewattractionfromscratch.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
 		<ProjectReference Include=".\..\gx00d1\gx00d1.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>

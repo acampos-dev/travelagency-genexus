@@ -28,7 +28,6 @@ ij_object_dependency(gxdomainlocation,[],[],[],102).
  
  
 obj_parms_i([],[]).
-obj_parms_i([],[]).
  
  
  

@@ -1758,6 +1758,14 @@ namespace GeneXus.Programs {
                AnyError = 1;
             }
             pr_default.close(20);
+            /* Using cursor T000923 */
+            pr_default.execute(21, new Object[] {A7AttractionId});
+            if ( (pr_default.getStatus(21) != 101) )
+            {
+               GX_msglist.addItem(context.GetMessage( "GXM_del", new   object[]  {"Attraction"}), "CannotDeleteReferencedRecord", 1, "");
+               AnyError = 1;
+            }
+            pr_default.close(21);
          }
       }
 
@@ -1805,13 +1813,13 @@ namespace GeneXus.Programs {
       public void ScanStart092( )
       {
          /* Scan By routine */
-         /* Using cursor T000923 */
-         pr_default.execute(21);
+         /* Using cursor T000924 */
+         pr_default.execute(22);
          RcdFound2 = 0;
-         if ( (pr_default.getStatus(21) != 101) )
+         if ( (pr_default.getStatus(22) != 101) )
          {
             RcdFound2 = 1;
-            A7AttractionId = T000923_A7AttractionId[0];
+            A7AttractionId = T000924_A7AttractionId[0];
             AssignAttri("", false, "A7AttractionId", StringUtil.LTrimStr( (decimal)(A7AttractionId), 4, 0));
          }
          /* Load Subordinate Levels */
@@ -1820,19 +1828,19 @@ namespace GeneXus.Programs {
       protected void ScanNext092( )
       {
          /* Scan next routine */
-         pr_default.readNext(21);
+         pr_default.readNext(22);
          RcdFound2 = 0;
-         if ( (pr_default.getStatus(21) != 101) )
+         if ( (pr_default.getStatus(22) != 101) )
          {
             RcdFound2 = 1;
-            A7AttractionId = T000923_A7AttractionId[0];
+            A7AttractionId = T000924_A7AttractionId[0];
             AssignAttri("", false, "A7AttractionId", StringUtil.LTrimStr( (decimal)(A7AttractionId), 4, 0));
          }
       }
 
       protected void ScanEnd092( )
       {
-         pr_default.close(21);
+         pr_default.close(22);
       }
 
       protected void AfterConfirm092( )
@@ -2114,7 +2122,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20262192052256", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202622210165183", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -2130,7 +2138,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("attractionwithoutparameters.js", "?20262192052257", false, true);
+         context.AddJavascriptSource("attractionwithoutparameters.js", "?202622210165183", false, true);
          /* End function include_jscripts */
       }
 
@@ -2297,15 +2305,15 @@ namespace GeneXus.Programs {
 
       public void Valid_Attractionname( )
       {
-         /* Using cursor T000924 */
-         pr_default.execute(22, new Object[] {A8AttractionName, A7AttractionId});
-         if ( (pr_default.getStatus(22) != 101) )
+         /* Using cursor T000925 */
+         pr_default.execute(23, new Object[] {A8AttractionName, A7AttractionId});
+         if ( (pr_default.getStatus(23) != 101) )
          {
             GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Attraction Name"}), 1, "ATTRACTIONNAME");
             AnyError = 1;
             GX_FocusControl = edtAttractionName_Internalname;
          }
-         pr_default.close(22);
+         pr_default.close(23);
          if ( String.IsNullOrEmpty(StringUtil.RTrim( A8AttractionName)) )
          {
             GX_msglist.addItem("The attraction name must not be empty", 1, "ATTRACTIONNAME");
@@ -2503,9 +2511,11 @@ namespace GeneXus.Programs {
          T000919_A10CountryName = new string[] {""} ;
          T000920_A12CategoryName = new string[] {""} ;
          T000921_A15CityName = new string[] {""} ;
-         T000922_A45SupplierId = new short[1] ;
+         T000922_A49TripId = new short[1] ;
          T000922_A7AttractionId = new short[1] ;
+         T000923_A45SupplierId = new short[1] ;
          T000923_A7AttractionId = new short[1] ;
+         T000924_A7AttractionId = new short[1] ;
          sDynURL = "";
          FormProcess = "";
          bodyStyle = "";
@@ -2516,7 +2526,7 @@ namespace GeneXus.Programs {
          ZZ10CountryName = "";
          ZZ15CityName = "";
          ZZ12CategoryName = "";
-         T000924_A8AttractionName = new string[] {""} ;
+         T000925_A8AttractionName = new string[] {""} ;
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.attractionwithoutparameters__default(),
             new Object[][] {
                 new Object[] {
@@ -2578,13 +2588,16 @@ namespace GeneXus.Programs {
                T000921_A15CityName
                }
                , new Object[] {
-               T000922_A45SupplierId, T000922_A7AttractionId
+               T000922_A49TripId, T000922_A7AttractionId
                }
                , new Object[] {
-               T000923_A7AttractionId
+               T000923_A45SupplierId, T000923_A7AttractionId
                }
                , new Object[] {
-               T000924_A8AttractionName
+               T000924_A7AttractionId
+               }
+               , new Object[] {
+               T000925_A8AttractionName
                }
             }
          );
@@ -2777,10 +2790,12 @@ namespace GeneXus.Programs {
       private string[] T000919_A10CountryName ;
       private string[] T000920_A12CategoryName ;
       private string[] T000921_A15CityName ;
-      private short[] T000922_A45SupplierId ;
+      private short[] T000922_A49TripId ;
       private short[] T000922_A7AttractionId ;
+      private short[] T000923_A45SupplierId ;
       private short[] T000923_A7AttractionId ;
-      private string[] T000924_A8AttractionName ;
+      private short[] T000924_A7AttractionId ;
+      private string[] T000925_A8AttractionName ;
    }
 
    public class attractionwithoutparameters__default : DataStoreHelperBase, IDataStoreHelper
@@ -2812,6 +2827,7 @@ namespace GeneXus.Programs {
          ,new ForEachCursor(def[20])
          ,new ForEachCursor(def[21])
          ,new ForEachCursor(def[22])
+         ,new ForEachCursor(def[23])
        };
     }
 
@@ -2921,9 +2937,13 @@ namespace GeneXus.Programs {
           };
           Object[] prmT000923;
           prmT000923 = new Object[] {
+          new ParDef("@AttractionId",GXType.Int16,4,0)
           };
           Object[] prmT000924;
           prmT000924 = new Object[] {
+          };
+          Object[] prmT000925;
+          prmT000925 = new Object[] {
           new ParDef("@AttractionName",GXType.NChar,50,0) ,
           new ParDef("@AttractionId",GXType.Int16,4,0)
           };
@@ -2948,9 +2968,10 @@ namespace GeneXus.Programs {
              ,new CursorDef("T000919", "SELECT [CountryName] FROM [Country] WHERE [CountryId] = @CountryId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000919,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000920", "SELECT [CategoryName] FROM [Category] WHERE [CategoryId] = @CategoryId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000920,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000921", "SELECT [CityName] FROM [CountryCity] WHERE [CountryId] = @CountryId AND [CityId] = @CityId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000921,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T000922", "SELECT TOP 1 [SupplierId], [AttractionId] FROM [SupplierAttraction] WHERE [AttractionId] = @AttractionId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000922,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T000923", "SELECT [AttractionId] FROM [Attractions] ORDER BY [AttractionId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000923,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T000924", "SELECT [AttractionName] FROM [Attractions] WHERE ([AttractionName] = @AttractionName) AND (Not ( [AttractionId] = @AttractionId)) ",true, GxErrorMask.GX_NOMASK, false, this,prmT000924,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000922", "SELECT TOP 1 [TripId], [AttractionId] FROM [TripAttraction] WHERE [AttractionId] = @AttractionId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000922,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000923", "SELECT TOP 1 [SupplierId], [AttractionId] FROM [SupplierAttraction] WHERE [AttractionId] = @AttractionId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000923,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000924", "SELECT [AttractionId] FROM [Attractions] ORDER BY [AttractionId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000924,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000925", "SELECT [AttractionName] FROM [Attractions] WHERE ([AttractionName] = @AttractionName) AND (Not ( [AttractionId] = @AttractionId)) ",true, GxErrorMask.GX_NOMASK, false, this,prmT000925,1, GxCacheFrequency.OFF ,true,false )
           };
        }
     }
@@ -3045,8 +3066,12 @@ namespace GeneXus.Programs {
                 return;
              case 21 :
                 ((short[]) buf[0])[0] = rslt.getShort(1);
+                ((short[]) buf[1])[0] = rslt.getShort(2);
                 return;
              case 22 :
+                ((short[]) buf[0])[0] = rslt.getShort(1);
+                return;
+             case 23 :
                 ((string[]) buf[0])[0] = rslt.getString(1, 50);
                 return;
        }

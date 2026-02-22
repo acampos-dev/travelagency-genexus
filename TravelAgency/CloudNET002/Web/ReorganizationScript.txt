@@ -1,8 +1,3 @@
-CREATE TABLE [TripAttraction] ([TripId] smallint NOT NULL , [AttractionId] smallint NOT NULL , PRIMARY KEY([TripId], [AttractionId]));
-CREATE NONCLUSTERED INDEX [ITRIPATTRACTION1] ON [TripAttraction] ([AttractionId] );
-
-CREATE TABLE [Trip] ([TripId] smallint NOT NULL IDENTITY(1,1), [TripDate] datetime NOT NULL , [TripDescription] nvarchar(200) NOT NULL , PRIMARY KEY([TripId]));
-
-ALTER TABLE [TripAttraction] ADD CONSTRAINT [ITRIPATTRACTION2] FOREIGN KEY ([TripId]) REFERENCES [Trip] ([TripId]);
-ALTER TABLE [TripAttraction] ADD CONSTRAINT [ITRIPATTRACTION1] FOREIGN KEY ([AttractionId]) REFERENCES [Attractions] ([AttractionId]);
+ALTER TABLE [Trip] ADD [TripAmount] money NOT NULL CONSTRAINT TripAmountTrip_DEFAULT DEFAULT convert(int, 0);
+ALTER TABLE [Trip] DROP CONSTRAINT TripAmountTrip_DEFAULT;
 
