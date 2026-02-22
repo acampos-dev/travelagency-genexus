@@ -14,9 +14,9 @@ pgm_main_i(trn,3,'COUNTRY',[ 41,'COUNTRY','Country','','','','' ]).
 pgm_main_i(trn,5,'AIRPORT',[ 41,'AIRPORT','Airport','','','','' ]).
 pgm_main_i(trn,1,'CUSTOMER',[ 41,'CUSTOMER','Customer','','','','' ]).
 pgm_main_i(web,10,'WWCOUNTRY',[ 41,'WWCOUNTRY','Countries','','','','' ]).
-pgm_main_i(web,14,'WWATTRACTION',[ 41,'WWATTRACTION','Attractions','','','','' ]).
 pgm_main_i(web,25,'MASSIVEINSERTREMOVE',[ 41,'MASSIVEINSERTREMOVE','Massive Insert Remove','','','','' ]).
 pgm_main_i(trn,9,'ATTRACTIONWITHOUTPARAMETERS',[ 41,'ATTRACTIONWITHOUTPARAMETERS','Attraction Without Parameters','','','','' ]).
+pgm_main_i(web,14,'WWATTRACTION',[ 41,'WWATTRACTION','Attractions','','','','' ]).
  
 pgm_prop_i(mnproc,6,'AATTRACTIONS_DATAPROVIDER','OutputSDT',o(0,'Attractions')).
 pgm_prop_i(mnproc,6,'ATTRACTIONS_DATAPROVIDER','OutputSDT',o(0,'Attractions')).
@@ -36,19 +36,21 @@ pgm_prop_i(proc,32,'AATTRACTIONSBYNAMEANDCOUNTRY','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,32,'ATTRACTIONSBYNAMEANDCOUNTRY','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,30,'ANUMBEROFATTRACTIONSBYCOUNTRY','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,30,'NUMBEROFATTRACTIONSBYCOUNTRY','CALL_PROTOCOL','HTTP').
-pgm_prop_i(web,21,'ATTRACTIONATTRACTIONWC','WEB_COMP','Yes').
-pgm_prop_i(web,21,'ATTRACTIONATTRACTIONWC','URLAccess','No').
 pgm_prop_i(web,11,'COUNTRYGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,11,'COUNTRYGENERAL','URLAccess','No').
 pgm_prop_i(mnproc,3,'CATEGORY_DP','OutputSDT',o(0,'Category')).
-pgm_prop_i(web,15,'ATTRACTIONGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,15,'ATTRACTIONGENERAL','URLAccess','No').
 pgm_prop_i(trn,4,'CATEGORY',idISBUSINESSCOMPONENT,'-1').
-pgm_prop_i(trn,2,'ATTRACTION',idISBUSINESSCOMPONENT,'-1').
 pgm_prop_i(web,12,'COUNTRYCITYWC','WEB_COMP','Yes').
 pgm_prop_i(web,12,'COUNTRYCITYWC','URLAccess','No').
 pgm_prop_i(web,2,'GENERAL\UI\MASTERPROMPT','WEB_COMP','Master').
 pgm_prop_i(web,1,'GENERAL\UI\MASTERUNANIMOSIDEBAR','WEB_COMP','Master').
+pgm_prop_i(web,27,'ATTRACTIONATTRACTION1WC','WEB_COMP','Yes').
+pgm_prop_i(web,27,'ATTRACTIONATTRACTION1WC','URLAccess','No').
+pgm_prop_i(web,21,'ATTRACTIONATTRACTIONWC','WEB_COMP','Yes').
+pgm_prop_i(web,21,'ATTRACTIONATTRACTIONWC','URLAccess','No').
+pgm_prop_i(web,15,'ATTRACTIONGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,15,'ATTRACTIONGENERAL','URLAccess','No').
+pgm_prop_i(trn,2,'ATTRACTION',idISBUSINESSCOMPONENT,'-1').
  
 model_wrkinfo_i([ '.NET','CloudNET002' ]).
  
@@ -105,12 +107,12 @@ datastore_i(1,'HelpKeyword','20').
 datastore_i(1,'DBMS',12).
 datastore_i(1,'NAME','Default').
  
-subview_i(2,512,6).
-subview_i(2,513,3).
-subview_i(2,514,5).
-subview_i(2,515,6).
-subview_i(2,516,3).
-subview_i(2,517,5).
+subview_i(2,504,6).
+subview_i(2,505,3).
+subview_i(2,506,5).
+subview_i(2,507,6).
+subview_i(2,508,3).
+subview_i(2,509,5).
  
 subtype_group_i(2,1,[ 'FlightDepartureAirport',[ [ 21,18 ],[ 22,19 ],[ 25,9 ],[ 27,14 ],[ 26,10 ],[ 28,15 ] ] ]).
 subtype_group_i(2,2,[ 'FlightArrivalAirport',[ [ 23,18 ],[ 24,19 ],[ 29,9 ],[ 31,14 ],[ 30,10 ],[ 32,15 ] ] ]).
@@ -129,7 +131,7 @@ lng_prop_i(1,'LangTimeFormat','12',v).
 lng_prop_i(1,'LangDecimalPoint','.',v).
 lng_prop_i(1,'FullyQualifiedName','English',d).
  
-ver_stamp('20260216.234434').
+ver_stamp('20260221.225304').
  
-ver_stamp(date(2026,2,16),time(20,45,5,97)).
+ver_stamp(date(2026,2,21),time(19,53,42,40)).
  

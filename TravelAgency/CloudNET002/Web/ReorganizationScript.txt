@@ -1,11 +1,8 @@
-CREATE TABLE [SupplierAttraction] ([SupplierId] smallint NOT NULL , [AttractionId] smallint NOT NULL , [SupplierAttractionDate] datetime NOT NULL , PRIMARY KEY([SupplierId], [AttractionId]));
-CREATE NONCLUSTERED INDEX [ISUPPLIERATTRACTION1] ON [SupplierAttraction] ([AttractionId] );
-INSERT INTO [SupplierAttraction] ([SupplierId], [AttractionId], [SupplierAttractionDate]) SELECT [SupplierId], [AttractionId], convert( DATETIME, '17530101', 112 ) FROM [Attractions] T  WHERE NOT EXISTS (SELECT 1 FROM [SupplierAttraction] WHERE SupplierId= T.SupplierId AND AttractionId= T.AttractionId);
+CREATE TABLE [TripAttraction] ([TripId] smallint NOT NULL , [AttractionId] smallint NOT NULL , PRIMARY KEY([TripId], [AttractionId]));
+CREATE NONCLUSTERED INDEX [ITRIPATTRACTION1] ON [TripAttraction] ([AttractionId] );
 
-DROP INDEX [IATTRACTIONS3] ON [Attractions];
-ALTER TABLE [Attractions] DROP CONSTRAINT [IATTRACTIONS3];
-ALTER TABLE [Attractions] DROP COLUMN [SupplierId];
+CREATE TABLE [Trip] ([TripId] smallint NOT NULL IDENTITY(1,1), [TripDate] datetime NOT NULL , [TripDescription] nvarchar(200) NOT NULL , PRIMARY KEY([TripId]));
 
-ALTER TABLE [SupplierAttraction] ADD CONSTRAINT [ISUPPLIERATTRACTION2] FOREIGN KEY ([SupplierId]) REFERENCES [Supplier] ([SupplierId]);
-ALTER TABLE [SupplierAttraction] ADD CONSTRAINT [ISUPPLIERATTRACTION1] FOREIGN KEY ([AttractionId]) REFERENCES [Attractions] ([AttractionId]);
+ALTER TABLE [TripAttraction] ADD CONSTRAINT [ITRIPATTRACTION2] FOREIGN KEY ([TripId]) REFERENCES [Trip] ([TripId]);
+ALTER TABLE [TripAttraction] ADD CONSTRAINT [ITRIPATTRACTION1] FOREIGN KEY ([AttractionId]) REFERENCES [Attractions] ([AttractionId]);
 

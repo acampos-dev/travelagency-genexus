@@ -1,3 +1,4 @@
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\trip.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\attractionwithoutparameters.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\supplier.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\airline.dll
@@ -7,6 +8,10 @@ C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\category.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\country.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\attraction.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\customer.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx00d1.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\gx00c0.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\attractionattraction1wc.dll
+C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\wwattractionsfromscratch.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\massiveinsertremove.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\categoriesandattractions.dll
 C:\Proyectos Genexus\TravelAgency\TravelAgency\CloudNET002\web\bin\enterattractionsfiltrer.dll

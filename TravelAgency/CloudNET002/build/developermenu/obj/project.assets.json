@@ -2419,6 +2419,24 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "attractionattraction1wc/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/attractionattraction1wc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/attractionattraction1wc.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "attractionattractionwc/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2905,6 +2923,42 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "gx00c0/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx00c0.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx00c0.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "gx00d1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx00d1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx00d1.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "massiveinsertremove/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2936,6 +2990,24 @@
         },
         "runtime": {
           "bin/placeholder/supplier.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "trip/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/trip.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/trip.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -2990,6 +3062,24 @@
         },
         "runtime": {
           "bin/placeholder/wwattraction.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "wwattractionsfromscratch/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.30.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.30.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/wwattractionsfromscratch.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/wwattractionsfromscratch.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -7960,6 +8050,11 @@
       "path": "../attraction/attraction.csproj",
       "msbuildProject": "../attraction/attraction.csproj"
     },
+    "attractionattraction1wc/1.0.0": {
+      "type": "project",
+      "path": "../attractionattraction1wc/attractionattraction1wc.csproj",
+      "msbuildProject": "../attractionattraction1wc/attractionattraction1wc.csproj"
+    },
     "attractionattractionwc/1.0.0": {
       "type": "project",
       "path": "../attractionattractionwc/attractionattractionwc.csproj",
@@ -8095,6 +8190,16 @@
       "path": "../gx00b1/gx00b1.csproj",
       "msbuildProject": "../gx00b1/gx00b1.csproj"
     },
+    "gx00c0/1.0.0": {
+      "type": "project",
+      "path": "../gx00c0/gx00c0.csproj",
+      "msbuildProject": "../gx00c0/gx00c0.csproj"
+    },
+    "gx00d1/1.0.0": {
+      "type": "project",
+      "path": "../gx00d1/gx00d1.csproj",
+      "msbuildProject": "../gx00d1/gx00d1.csproj"
+    },
     "massiveinsertremove/1.0.0": {
       "type": "project",
       "path": "../massiveinsertremove/massiveinsertremove.csproj",
@@ -8104,6 +8209,11 @@
       "type": "project",
       "path": "../supplier/supplier.csproj",
       "msbuildProject": "../supplier/supplier.csproj"
+    },
+    "trip/1.0.0": {
+      "type": "project",
+      "path": "../trip/trip.csproj",
+      "msbuildProject": "../trip/trip.csproj"
     },
     "viewattraction/1.0.0": {
       "type": "project",
@@ -8119,6 +8229,11 @@
       "type": "project",
       "path": "../wwattraction/wwattraction.csproj",
       "msbuildProject": "../wwattraction/wwattraction.csproj"
+    },
+    "wwattractionsfromscratch/1.0.0": {
+      "type": "project",
+      "path": "../wwattractionsfromscratch/wwattractionsfromscratch.csproj",
+      "msbuildProject": "../wwattractionsfromscratch/wwattractionsfromscratch.csproj"
     },
     "wwcountry/1.0.0": {
       "type": "project",
@@ -8140,6 +8255,7 @@
       "airport >= 1.0.0",
       "anumberofattractionsbycountry >= 1.0.0",
       "attraction >= 1.0.0",
+      "attractionattraction1wc >= 1.0.0",
       "attractionattractionwc >= 1.0.0",
       "attractiongeneral >= 1.0.0",
       "attractionwithoutparameters >= 1.0.0",
@@ -8166,11 +8282,15 @@
       "gx0091 >= 1.0.0",
       "gx00a0 >= 1.0.0",
       "gx00b1 >= 1.0.0",
+      "gx00c0 >= 1.0.0",
+      "gx00d1 >= 1.0.0",
       "massiveinsertremove >= 1.0.0",
       "supplier >= 1.0.0",
+      "trip >= 1.0.0",
       "viewattraction >= 1.0.0",
       "viewcountry >= 1.0.0",
       "wwattraction >= 1.0.0",
+      "wwattractionsfromscratch >= 1.0.0",
       "wwcountry >= 1.0.0"
     ]
   },
@@ -8232,6 +8352,9 @@
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\anumberofattractionsbycountry\\anumberofattractionsbycountry.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\anumberofattractionsbycountry\\anumberofattractionsbycountry.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattraction1wc\\attractionattraction1wc.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattraction1wc\\attractionattraction1wc.csproj"
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattractionwc\\attractionattractionwc.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattractionwc\\attractionattractionwc.csproj"
@@ -8317,17 +8440,29 @@
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00b1\\gx00b1.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00b1\\gx00b1.csproj"
             },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00c0\\gx00c0.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00c0\\gx00c0.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00d1\\gx00d1.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00d1\\gx00d1.csproj"
+            },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\massiveinsertremove\\massiveinsertremove.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\massiveinsertremove\\massiveinsertremove.csproj"
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\supplier\\supplier.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\supplier\\supplier.csproj"
             },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\trip\\trip.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\trip\\trip.csproj"
+            },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewattraction\\viewattraction.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewattraction\\viewattraction.csproj"
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewcountry\\viewcountry.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewcountry\\viewcountry.csproj"
+            },
+            "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattractionsfromscratch\\wwattractionsfromscratch.csproj": {
+              "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattractionsfromscratch\\wwattractionsfromscratch.csproj"
             },
             "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattraction\\wwattraction.csproj": {
               "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattraction\\wwattraction.csproj"

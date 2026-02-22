@@ -692,6 +692,89 @@
         }
       }
     },
+    "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattraction1wc\\attractionattraction1wc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattraction1wc\\attractionattraction1wc.csproj",
+        "projectName": "attractionattraction1wc",
+        "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattraction1wc\\attractionattraction1wc.csproj",
+        "packagesPath": "C:\\Users\\alagu\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattraction1wc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\NuGet.Config",
+          "C:\\Users\\alagu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattractionwc\\attractionattractionwc.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -1577,6 +1660,9 @@
               "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\anumberofattractionsbycountry\\anumberofattractionsbycountry.csproj": {
                 "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\anumberofattractionsbycountry\\anumberofattractionsbycountry.csproj"
               },
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattraction1wc\\attractionattraction1wc.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattraction1wc\\attractionattraction1wc.csproj"
+              },
               "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattractionwc\\attractionattractionwc.csproj": {
                 "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\attractionattractionwc\\attractionattractionwc.csproj"
               },
@@ -1661,17 +1747,29 @@
               "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00b1\\gx00b1.csproj": {
                 "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00b1\\gx00b1.csproj"
               },
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00c0\\gx00c0.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00c0\\gx00c0.csproj"
+              },
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00d1\\gx00d1.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00d1\\gx00d1.csproj"
+              },
               "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\massiveinsertremove\\massiveinsertremove.csproj": {
                 "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\massiveinsertremove\\massiveinsertremove.csproj"
               },
               "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\supplier\\supplier.csproj": {
                 "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\supplier\\supplier.csproj"
               },
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\trip\\trip.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\trip\\trip.csproj"
+              },
               "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewattraction\\viewattraction.csproj": {
                 "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewattraction\\viewattraction.csproj"
               },
               "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewcountry\\viewcountry.csproj": {
                 "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewcountry\\viewcountry.csproj"
+              },
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattractionsfromscratch\\wwattractionsfromscratch.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattractionsfromscratch\\wwattractionsfromscratch.csproj"
               },
               "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattraction\\wwattraction.csproj": {
                 "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattraction\\wwattraction.csproj"
@@ -3222,6 +3320,172 @@
         }
       }
     },
+    "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00c0\\gx00c0.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00c0\\gx00c0.csproj",
+        "projectName": "gx00c0",
+        "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00c0\\gx00c0.csproj",
+        "packagesPath": "C:\\Users\\alagu\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00c0\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\NuGet.Config",
+          "C:\\Users\\alagu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00d1\\gx00d1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00d1\\gx00d1.csproj",
+        "projectName": "gx00d1",
+        "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00d1\\gx00d1.csproj",
+        "packagesPath": "C:\\Users\\alagu\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\gx00d1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\NuGet.Config",
+          "C:\\Users\\alagu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\massiveinsertremove\\massiveinsertremove.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -3388,6 +3652,89 @@
         }
       }
     },
+    "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\trip\\trip.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\trip\\trip.csproj",
+        "projectName": "trip",
+        "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\trip\\trip.csproj",
+        "packagesPath": "C:\\Users\\alagu\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\trip\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\NuGet.Config",
+          "C:\\Users\\alagu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewattraction\\viewattraction.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -3479,6 +3826,89 @@
         "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewcountry\\viewcountry.csproj",
         "packagesPath": "C:\\Users\\alagu\\.nuget\\packages\\",
         "outputPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\viewcountry\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\NuGet.Config",
+          "C:\\Users\\alagu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattractionsfromscratch\\wwattractionsfromscratch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattractionsfromscratch\\wwattractionsfromscratch.csproj",
+        "projectName": "wwattractionsfromscratch",
+        "projectPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattractionsfromscratch\\wwattractionsfromscratch.csproj",
+        "packagesPath": "C:\\Users\\alagu\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyectos Genexus\\TravelAgency\\TravelAgency\\CloudNET002\\build\\wwattractionsfromscratch\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

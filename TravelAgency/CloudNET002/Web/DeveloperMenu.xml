@@ -46,6 +46,12 @@
       <ObjLink>attractionwithoutparameters.aspx</ObjLink>
    </Object>
    <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Trip</ObjName>
+      <ObjDesc>Trip</ObjDesc>
+      <ObjLink>trip.aspx</ObjLink>
+   </Object>
+   <Object>
       <ObjCls>13</ObjCls>
       <ObjName>WWCountry</ObjName>
       <ObjDesc>Countries</ObjDesc>
@@ -74,6 +80,12 @@
       <ObjName>MassiveInsertRemove</ObjName>
       <ObjDesc>Massive Insert Remove</ObjDesc>
       <ObjLink>massiveinsertremove.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWAttractionsFromScratch</ObjName>
+      <ObjDesc>WWAttractions From Scratch</ObjDesc>
+      <ObjLink>wwattractionsfromscratch.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>1</ObjCls>

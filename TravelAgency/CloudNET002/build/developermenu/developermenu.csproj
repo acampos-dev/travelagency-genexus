@@ -15,6 +15,9 @@
 	</PropertyGroup>
 	
 	<ItemGroup>
+		<ProjectReference Include=".\..\trip\trip.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
 		<ProjectReference Include=".\..\attractionwithoutparameters\attractionwithoutparameters.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
@@ -52,6 +55,18 @@
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\customer\customer.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\gx00d1\gx00d1.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\gx00c0\gx00c0.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\attractionattraction1wc\attractionattraction1wc.csproj" >
+			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include=".\..\wwattractionsfromscratch\wwattractionsfromscratch.csproj" >
 			<OutputItemType>$(CommonOutputItemType)</OutputItemType>
 		</ProjectReference>
 		<ProjectReference Include=".\..\massiveinsertremove\massiveinsertremove.csproj" >

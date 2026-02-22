@@ -1,0 +1,112 @@
+
+<ReorgSpec>
+<SpecVersion>18_0_10-184260</SpecVersion>
+<Table>
+<TableId>13</TableId>
+<TableName>TripAttraction</TableName>
+<Description>Attraction</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>new</ReorgCode>
+<ReorgMsg>TripAttraction is new</ReorgMsg>
+<ReorgAction>*</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>49</AttriId>
+<AttriName>TripId</AttriName>
+<Description>Trip Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>ITRIPATTRACTION</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>49</AttriId>
+<AttriName>TripId</AttriName>
+<Description>Trip Id</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index>
+<Index>
+<IndexName>ITRIPATTRACTION1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></Indices></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>2</TableId>
+<TableName>Attractions</TableName>
+<Description>Attractions</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>AttractionId</AttriName>
+<Description>Attraction Id</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>12</TableId>
+<TableName>Trip</TableName>
+<Description>Trip</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>49</AttriId>
+<AttriName>TripId</AttriName>
+<Description>Trip Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Statements>
+<Statement>CREATE TABLE [TripAttraction] ([TripId] smallint NOT NULL , [AttractionId] smallint NOT NULL , PRIMARY KEY([TripId], [AttractionId])) </Statement>
+<Statement>CREATE NONCLUSTERED INDEX [ITRIPATTRACTION1] ON [TripAttraction] ([AttractionId] )</Statement>
+<Statement>ALTER TABLE [TripAttraction] ADD CONSTRAINT [ITRIPATTRACTION2] FOREIGN KEY ([TripId]) REFERENCES [Trip] ([TripId])</Statement>
+<Statement>ALTER TABLE [TripAttraction] ADD CONSTRAINT [ITRIPATTRACTION1] FOREIGN KEY ([AttractionId]) REFERENCES [Attractions] ([AttractionId])</Statement></Statements>
+<NeedReorganizationProgram>False</NeedReorganizationProgram>
+<Warnings></Warnings>
+<Errors></Errors></ReorgSpec>
